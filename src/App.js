@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import { EnterSection } from "./components/EnterSection/EnterSection";
+import { NavbarSection } from "./components/NavbarSection/NavbarSection";
+import { TimerSection } from "./components/TimerSection/TimerSection";
+import { BubbleGhost } from "./components/BubbleGhost/BubbleGhost";
+import { CarouselSection } from "./components/CarouselSection/CarouselSection";
+import { RoadMapSection } from "./components/RoadMapSection/RoadMapSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <EnterSection />
+        <Route
+          exact
+          path="/start-play"
+          component={() => (
+            <>
+              {" "}
+              <TimerSection /> <BubbleGhost /> <CarouselSection />{" "}
+              <RoadMapSection />
+            </>
+          )}
+        />
+      </Router>
+    </>
   );
 }
 

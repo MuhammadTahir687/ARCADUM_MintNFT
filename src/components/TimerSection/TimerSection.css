@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans&family=IBM+Plex+Mono:wght@300&family=VT323&display=swap");
+
+.timer-section {
+  background-image: url("../../assetsIMG/Texture.jpg");
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.subheading-timer {
+  text-align: center;
+}
+
+.subheading-timer h1 {
+  font-size: 35px;
+  font-family: "8-bit fortress";
+  text-transform: uppercase;
+  line-height: 50px;
+  color: #fff;
+}
+
+.subheading-timer p {
+  padding-top: 17px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "8-bit fortress";
+  line-height: 40px;
+  color: #706e71;
+}
+
+.subheading-timer h2 {
+  font-size: 155px;
+  font-family: "8-bit fortress";
+  color: #fff;
+}
+
+.subheading-timer h4 {
+  font-size: 50px;
+  font-family: "16-bit fortress";
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}

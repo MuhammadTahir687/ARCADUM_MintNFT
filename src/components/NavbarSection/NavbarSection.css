@@ -1,0 +1,244 @@
+.navbar-section {
+  position: relative;
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  /* display: none; */
+}
+
+.header {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#comming-soon {
+  font-size: 17px;
+  font-family: "8-bit fortress";
+}
+#comming-soon:hover {
+  font-size: 18px;
+  color: #fff;
+}
+
+ul.button-header li {
+  display: inline-block;
+  margin: 12px;
+}
+
+ul.button-header {
+  margin-bottom: 0;
+  margin-top: 9px;
+}
+
+ul.button-header li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  transition: border-color 0.35s ease;
+}
+ul.button-header li a::before {
+  background-color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.35s ease;
+}
+
+ul.button-header li a:hover:before {
+  top: 0;
+}
+
+ul.button-header li a:hover {
+  color: #000;
+  transition: 0.25s;
+}
+
+.connect-wallet {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 0px 30px;
+  margin: 11px 0px 5px 16px;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  transition: border-color 0.35s ease;
+}
+
+.connect-wallet::before {
+  background-color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.35s ease;
+}
+
+.connect-wallet:hover:before {
+  top: 0;
+}
+
+.connect-wallet:hover {
+  color: #000;
+  transition: 0.25s;
+  border: 1px solid #fff;
+}
+
+.button-text h4 {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 18px;
+  font-family: "8-bit fortress";
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  letter-spacing: 1px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.classic-image {
+  width: 16%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.header-image {
+  width: 40%;
+  height: auto;
+  margin: 20px auto;
+  position: relative;
+  z-index: 99;
+}
+
+.arcade-image {
+  width: 32%;
+  height: auto;
+  z-index: 0;
+  margin: -55px auto 0px auto;
+}
+
+.artboard-image {
+  width: 6%;
+  position: absolute;
+  top: -249px;
+  right: 123px;
+  transform: rotate(-28deg);
+  z-index: -1;
+}
+
+.artboard-image-2 {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: -30px;
+}
+
+.artboard-image-22 {
+  width: 7%;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  right: 29%;
+  z-index: -1;
+  transform: rotate(55deg);
+}
+
+.artboard-image-3 {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  top: 15%;
+  left: 18%;
+}
+
+.artboard-image-4 {
+  width: 13%;
+  height: auto;
+  position: absolute;
+  bottom: -80px;
+  left: 26%;
+  z-index: -1;
+}
+
+.artboard-image-6 {
+  width: 8%;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  right: 10%;
+  z-index: -1;
+}
+
+.left-image {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.left-image:hover {
+  background-color: #440023;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.right-image {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}
+
+.right-image:hover {
+  background-color: #440023;
+  opacity: 1;
+}
+
+.Bboxes {
+  width: 100%;
+  position: relative;
+}
+
+.border-box-left {
+  width: 50%;
+  height: 76px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 100%;
+}
+
+.border-box-right {
+  width: 50%;
+  height: 76px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  float: left;
+  right: 0;
+  border-top-left-radius: 100%;
+}
+
+a.wow.fadeInLeftBig.navbar-brand {
+  width: 16%;
+  padding: 18px 0px;
+}

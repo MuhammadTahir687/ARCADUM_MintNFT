@@ -1,0 +1,137 @@
+import React, { useEffect } from "react";
+import "./NavbarSection.css";
+import logo from "../../assetsIMG/logo.png";
+import classic from "../../assetsIMG/classic.png";
+import header from "../../assetsIMG/Header.png";
+import arcade from "../../assetsIMG/Arcade.png";
+import artboard from "../../assetsIMG/Artboard.png";
+import Artboard2 from "../../assetsIMG/Artboard 2.png";
+import Artboard3 from "../../assetsIMG/Artboard 3.png";
+import artboard4 from "../../assetsIMG/Artboard 4.png";
+import left from "../../assetsIMG/LeftSide.png";
+import right from "../../assetsIMG/RightSide.png";
+import WOW from "wowjs";
+import { Link } from "react-router-dom";
+
+import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+
+export const NavbarSection = () => {
+  useEffect(() => {
+    new WOW.WOW().init({ live: false });
+  }, []);
+
+  return (
+    <div className="navbar-section">
+      <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Container>
+          <Navbar.Brand
+            href=""
+            className="wow fadeInLeftBig "
+            data-wow-delay=".50s"
+          >
+            <img src={logo} alt="image" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link
+                href=""
+                id="comming-soon"
+                className="wow fadeIn "
+                data-wow-delay=".50s"
+              >
+                Comming Soon
+              </Nav.Link>
+            </Nav>
+            <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
+              <ul className="button-header">
+                <li>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+              <Button className="connect-wallet"> Connect Wallet </Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <div className="header">
+        <div className="classic-image wow zoomIn" data-wow-delay=".50s">
+          <img src={classic} alt="classic" />
+        </div>
+        <div className="header-image wow zoomIn" data-wow-delay=".50s">
+          <img src={header} alt="header" />
+        </div>
+        <div className="left-image wow zoomIn" data-wow-delay=".50s">
+          <img src={left} alt="header" />
+        </div>
+        <div className="right-image wow zoomIn" data-wow-delay=".50s">
+          <img src={right} alt="header" />
+        </div>
+        <div className="arcade-image wow fadeInUp" data-wow-delay=".50s">
+          <img src={arcade} alt="header " />
+        </div>
+        <div
+          className="artboard-image wow fadeInDownBig "
+          data-wow-delay=".50s"
+        >
+          <img src={artboard} alt="image" />
+        </div>
+        <Link to="/start-play">
+          <div className="button-text ">
+            <h4 className="wow fadeInRightBig " data-wow-delay=".50s">
+              Press start
+              <br /> to play
+            </h4>
+          </div>
+        </Link>
+        <div
+          className="artboard-image-2 wow fadeInLeftBig "
+          data-wow-delay=".50s"
+        >
+          <img src={Artboard2} alt="image " />
+        </div>
+        <div
+          className="artboard-image-22 wow fadeInRightBig "
+          data-wow-delay=".50s"
+        >
+          <img src={Artboard2} alt="image" />
+        </div>
+        <div
+          className="artboard-image-3 wow fadeInDownBig "
+          data-wow-delay=".50s"
+        >
+          <img src={Artboard3} alt="image" />
+        </div>
+        <div
+          className="artboard-image-4 wow fadeInUpBig "
+          data-wow-delay=".50s"
+        >
+          <img src={artboard4} alt="image" />
+        </div>
+        <div
+          className="artboard-image-6 wow fadeInUpBig "
+          data-wow-delay=".50s"
+        >
+          <img src={Artboard3} alt="image" />
+        </div>
+        <div className="Bboxes">
+          <div className="border-box-left "></div>
+          <div className="border-box-right"></div>
+        </div>
+      </div>
+    </div>
+  );
+};

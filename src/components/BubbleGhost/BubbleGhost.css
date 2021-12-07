@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans&family=IBM+Plex+Mono:wght@300&family=VT323&display=swap");
+
+.bubble-image {
+  width: 40%;
+  height: auto;
+  margin: 0px auto;
+}
+.container {
+  max-width: 70%;
+  margin: 0px auto;
+}
+
+.subheading-bubble h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  font-weight: 700;
+}
+
+.subheading-bubble h2 span {
+  color: #ff0080 !important;
+}
+
+.subheading-bubble p {
+  color: #6e6e6e;
+  font-size: 25px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+}

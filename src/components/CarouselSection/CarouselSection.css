@@ -1,0 +1,32 @@
+.container {
+  max-width: 80%;
+  margin: 0px auto;
+}
+
+.owl-theme {
+  padding: 100px 0px 0px 0px;
+}
+
+.nft_coll_info a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 30px;
+  color: #6e6e6e;
+  font-weight: 700;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 50px !important;
+  height: 6px !important;
+
+  margin: 20px 7px !important;
+  background: #d6d6d6;
+  display: block;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
