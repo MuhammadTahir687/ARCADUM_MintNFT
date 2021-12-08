@@ -2,3 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.box-all {
+  background-color: #000;
+}

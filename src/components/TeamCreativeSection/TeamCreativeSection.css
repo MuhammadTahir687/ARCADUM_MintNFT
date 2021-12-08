@@ -1,0 +1,33 @@
+.img-team {
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.team-subheading p {
+  color: #8f8f8f;
+  font-size: 16px;
+  font-family: "IBM Plex Mono";
+}
+
+.heading {
+  position: relative;
+  margin-top: 70px;
+}
+
+.heading h3 {
+  font-size: 39px;
+  font-family: "IBM Plex Mono";
+  font-weight: 900;
+  color: #785c7a;
+}
+
+.heading h1 {
+  font-size: 45px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  position: absolute;
+  width: 155%;
+  left: -93px;
+  color: #ff007f;
+}

@@ -1,0 +1,54 @@
+.srcool-Group {
+  background-image: url("../../assetsIMG/Scroll Group 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+.scrool-timer h2 {
+  color: #fff;
+  font-family: "8-bit fortress";
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.scrool-timer h4 {
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 45px 0px;
+}
+
+.scrol-screen-subheading {
+  height: 90vh;
+}
+
+.scrool-lorem p {
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 90px;
+}
+
+button.scrol-btn {
+  padding: 6px 30px;
+  font-size: 20px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  border: 1px solid #fff;
+  margin: 15px auto;
+}
+
+button.scrol-btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.close i {
+  font-size: 50px;
+}

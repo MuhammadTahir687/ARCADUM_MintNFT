@@ -1,0 +1,46 @@
+.join-CommunitySection {
+  background-image: url("../../assetsIMG/Footer_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.join-subheading {
+  padding: 110px 0px;
+  text-align: center;
+}
+
+.join-subheading h1 {
+  color: #fff;
+  font-size: 38px;
+  font-family: "IBM Plex Mono";
+  text-align: center;
+  font-weight: bold;
+}
+
+.join-subheading p {
+  width: 60%;
+  margin: 40px auto;
+  color: #fff;
+  font-size: 15px;
+  font-family: "IBM Plex Mono";
+}
+
+button.join-button {
+  font-size: 25px;
+  padding: 8px 30px;
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  color: #000;
+}
+
+button.join-button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}

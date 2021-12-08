@@ -32,7 +32,12 @@ export const EnterSection = () => {
           <source src={video1} type="video/mp4" />
         </video>
         {visible == true ? (
-          <div className="enter-box">
+          <div
+            className={
+              visible == false ? "enter-box wow fadeInDownBig " : "enter-box"
+            }
+            data-wow-delay={visible == false ? ".50s" : null}
+          >
             <div className="enter-box-image">
               <img src={enter} />
             </div>

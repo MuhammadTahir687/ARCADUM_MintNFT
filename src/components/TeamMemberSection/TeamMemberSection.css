@@ -1,0 +1,37 @@
+.member-image {
+  width: 55%;
+  margin: 0px auto;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.member-section-subheading ul.button-header {
+  width: 62% !important;
+  margin: 0px auto;
+}
+
+.member-image:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.member-section-subheading h1 {
+  color: #795c7a;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.member-section-subheading p {
+  color: #9c9c9c;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 0px;
+}
+
+.sword {
+  margin-top: 40px;
+}

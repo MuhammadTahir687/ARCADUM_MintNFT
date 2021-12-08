@@ -8,7 +8,8 @@ import roadimg3 from "../../assetsIMG/Roadmap/E2.png";
 import roadimg4 from "../../assetsIMG/Roadmap/E3.png";
 import roadimg5 from "../../assetsIMG/Roadmap/E4.png";
 
-import img from "../../assetsIMG/Roadmap/Rectangle 24.png";
+import img2 from "../../assetsIMG/Roadmap/Rectangle 24.png";
+import img from "../../assetsIMG/Roadmap/Rectangle 26.png";
 
 export const RoadMapSection = () => {
   return (
@@ -30,14 +31,14 @@ export const RoadMapSection = () => {
 
           <Row className="box-roadmap-2">
             <Col sm={12} lg={8} md={8}>
-              <div className="border-roadmap"></div>
               <div className="roadmap-heading-1">
                 <h1>
+                  <div className="border-roadmap"></div>
                   <span className="span-roadmap">.01</span> Launch Roadmap
+                  <div className="rectangle-img">
+                    <img src={img2} />
+                  </div>
                 </h1>
-                <div className="rectangle-img">
-                  <img src={img} />
-                </div>
 
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -63,6 +64,9 @@ export const RoadMapSection = () => {
               <div className="roadmap-heading-1">
                 <h1>
                   <span className="span-roadmap">.02</span> Launch Roadmap
+                  <div className="rectangle-img">
+                    <img src={img} />
+                  </div>
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -88,6 +92,9 @@ export const RoadMapSection = () => {
               <div className="roadmap-heading-1">
                 <h1>
                   <span className="span-roadmap">.03</span> Launch Roadmap
+                  <div className="rectangle-img">
+                    <img src={img} />
+                  </div>
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -113,6 +120,9 @@ export const RoadMapSection = () => {
               <div className="roadmap-heading-1">
                 <h1>
                   <span className="span-roadmap">.04</span> Launch Roadmap
+                  <div className="rectangle-img">
+                    <img src={img} />
+                  </div>
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -138,6 +148,9 @@ export const RoadMapSection = () => {
                 <div className="roadmap-heading-1">
                   <h1>
                     <span className="span-roadmap">.05</span> Launch Roadmap
+                    <div className="rectangle-img">
+                      <img src={img} />
+                    </div>
                   </h1>
                   <p>
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed

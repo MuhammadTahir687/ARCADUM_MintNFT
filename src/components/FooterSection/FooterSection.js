@@ -1,24 +1,58 @@
 import React from "react";
 import "./FooterSection.css";
+import "../NavbarSection/NavbarSection.css";
 import logo from "../../assetsIMG/logo.png";
+import { Row, Col } from "react-bootstrap";
 
 export const FooterSection = () => {
+  const handleScroll = () => {
+    document.getElementById("nav").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
-      <Row>
-        <Col sm={12} lg={6} md={6} className="footer-left">
-          <img src={logo} alt="image" />
-          <p className="mt-2 mb-5">Lorem ipsun dolor site amit, consectetur</p>
-          <h6>All Right Reserved</h6>
-        </Col>
-        <Col sm={12} lg={6} md={6} className="footer-right">
-          <a href="/">
-            <h2>Home</h2>
-          </a>
-          <p>Terms & Conditions</p>
-          <h4> Smart Contract</h4>
-        </Col>
-      </Row>
+      <div className="container">
+        <div className="footer-subheading">
+          <Row>
+            <Col sm={12} lg={9} md={9} className="footer-subhead">
+              <div className="footer-image">
+                <img src={logo} alt="image" onClick={() => handleScroll()} />
+              </div>
+
+              <p className="mt-2 mb-5">
+                Lorem ipsun dolor site amit, consectetur
+              </p>
+              <h6>&#169;2021 Ar-Cadum. All Right Reserved</h6>
+            </Col>
+            <Col sm={12} lg={3} md={3} className="footer-right-subheading">
+              <a href="">
+                <h2>Home</h2>
+              </a>
+              <p>Terms & Conditions</p>
+              <p> Smart Contract</p>
+              <ul className="button-header px-0">
+                <li>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </div>
+      </div>
     </div>
   );
 };

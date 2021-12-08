@@ -3,11 +3,22 @@
   overflow: hidden;
   visibility: visible;
   opacity: 1;
-  /* display: none; */
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
+  height: 60px;
 }
 
 .header {
   position: relative;
+  height: calc(100vh - 60px);
 }
 
 img {
@@ -18,10 +29,29 @@ img {
 #comming-soon {
   font-size: 17px;
   font-family: "8-bit fortress";
+  cursor: pointer;
 }
+
+#comming-soon::before {
+  position: absolute;
+  bottom: 0;
+  background: red;
+  height: 1px;
+  display: block;
+  content: "";
+  width: 0;
+  top: 52px;
+  transition: 0.2s all ease-in;
+}
+
 #comming-soon:hover {
-  font-size: 18px;
-  color: #fff;
+  color: red;
+}
+
+#comming-soon:hover:before {
+  font-size: 17px;
+  color: red;
+  width: 10%;
 }
 
 ul.button-header li {
@@ -106,11 +136,17 @@ ul.button-header li a:hover {
   font-size: 18px;
   font-family: "8-bit fortress";
   color: #fff;
-  left: 50%;
+  left: 44%;
   top: 50%;
   letter-spacing: 1px;
   transform: translate(-50%, -50%);
   text-align: center;
+  transition: 0.3s;
+  transform: scale3d(1, 1, 1);
+}
+
+.button-text h4:hover {
+  transform: scale3d(1.1, 1.1, 1);
 }
 
 .classic-image {
@@ -128,21 +164,26 @@ ul.button-header li a:hover {
 }
 
 .arcade-image {
-  width: 32%;
+  width: 29%;
   height: auto;
   z-index: 0;
-  margin: -55px auto 0px auto;
+  margin: 0px auto 0px auto;
 }
 
 .artboard-image {
-  width: 6%;
+  width: 32%;
   position: absolute;
-  top: -249px;
-  right: 123px;
-  transform: rotate(-28deg);
+  top: -34%;
+  right: 10px;
   z-index: -1;
 }
+.logo-img {
+  transition: 0.3s;
+}
 
+.logo-img:hover {
+  transform: scale(1.1);
+}
 .artboard-image-2 {
   width: 15%;
   height: auto;
@@ -157,7 +198,7 @@ ul.button-header li a:hover {
   position: absolute;
   top: 30%;
   right: 29%;
-  z-index: -1;
+  z-index: 1;
   transform: rotate(55deg);
 }
 
@@ -214,7 +255,8 @@ ul.button-header li a:hover {
 
 .Bboxes {
   width: 100%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
 .border-box-left {
@@ -241,4 +283,31 @@ ul.button-header li a:hover {
 a.wow.fadeInLeftBig.navbar-brand {
   width: 16%;
   padding: 18px 0px;
+}
+
+.close {
+  width: 3%;
+  position: absolute;
+  top: 4px;
+  z-index: 99999;
+  left: 8%;
+}
+.btn-close {
+  font-size: 40px;
+  background: transparent;
+  color: #eee;
+  font-weight: bold;
+}
+
+.btn-close:hover {
+  color: #ff0078;
+}
+
+.btn-close:focus {
+  outline: none;
+  border: 0;
+}
+
+.modal-body {
+  padding: 0 !important;
 }

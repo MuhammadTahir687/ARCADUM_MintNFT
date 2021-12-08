@@ -55,11 +55,13 @@
 .box-roadmap-2 {
   margin-top: 100px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .box-roadmap-3 {
   margin-top: 50px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .roadmap-image {
@@ -77,13 +79,13 @@
   width: 2px;
   height: 160px;
   background-color: #e9328b;
-  left: 16%;
-  top: 11%;
+  left: 9%;
+  top: -28%;
 }
 
 .rectangle-img {
-  width: 2%;
+  width: 3%;
   position: absolute;
-  left: 265px;
-  top: 18%;
+  left: 96px;
+  top: 12%;
 }
