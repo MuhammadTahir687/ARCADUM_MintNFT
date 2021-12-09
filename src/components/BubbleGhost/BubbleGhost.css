@@ -28,3 +28,34 @@
   font-family: "IBM Plex Mono", monospace;
   text-align: left;
 }
+
+.game-section {
+  background-image: url("../../assetsIMG/Scroll Group 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.image-game {
+  width: 37%;
+  height: auto;
+  margin: 0px 169px 0px auto;
+  padding-top: 95px;
+}
+
+video#myVideo {
+  height: auto;
+  width: 100%;
+  margin: 0px auto;
+}
+
+button.onpress {
+  font-size: 13px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0px auto;
+  display: block;
+}

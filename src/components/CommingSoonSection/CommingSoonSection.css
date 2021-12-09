@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .scrool-timer h2 {
@@ -19,11 +19,12 @@
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 45px 0px;
+  padding: 35px 0px;
 }
 
 .scrol-screen-subheading {
-  height: 90vh;
+  position: relative;
+  height: calc(100vh - 60px);
 }
 
 .scrool-lorem p {
@@ -51,4 +52,12 @@ button.scrol-btn:hover {
 
 .close i {
   font-size: 50px;
+}
+
+.box-img {
+  height: 53px;
+  width: 34px;
+  background-color: #fff;
+  text-align: center;
+  margin: 46px auto 0px auto;
 }

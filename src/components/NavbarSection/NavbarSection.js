@@ -16,7 +16,7 @@ import artboard4 from "../../assetsIMG/Artboard 4.png";
 import left from "../../assetsIMG/LeftSide.png";
 import right from "../../assetsIMG/RightSide.png";
 import { CommingSoonSection } from "../CommingSoonSection/CommingSoonSection";
-import { TimerSection } from "../TimerSection/TimerSection";
+// import { TimerSection } from "../TimerSection/TimerSection";
 
 import WOW from "wowjs";
 import { Link } from "react-router-dom";
@@ -46,11 +46,10 @@ export const NavbarSection = () => {
   return (
     <>
       <Modal fullscreen={true} show={show} onHide={() => setShow(false)}>
-        {/* <Modal.Header closeButton> */}
         <div className="close" onClick={() => setShow(false)}>
           <button className="btn-close">X</button>
         </div>
-        {/* </Moda  l.Header> */}
+
         <Modal.Body>
           <CommingSoonSection />
         </Modal.Body>

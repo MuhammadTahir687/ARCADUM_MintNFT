@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./RoadMapSection.css";
 import { Row, Col } from "react-bootstrap";
 
@@ -12,6 +12,18 @@ import img2 from "../../assetsIMG/Roadmap/Rectangle 24.png";
 import img from "../../assetsIMG/Roadmap/Rectangle 26.png";
 
 export const RoadMapSection = () => {
+  const handleClick = () => {
+    document.getElementById("roadimg-2").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+  const handleOnClick = () => {
+    document.getElementById("roadimg-5").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div className="section-roadmap">
@@ -32,12 +44,12 @@ export const RoadMapSection = () => {
           <Row className="box-roadmap-2">
             <Col sm={12} lg={8} md={8}>
               <div className="roadmap-heading-1">
-                <h1>
+                <h1 className="head-img">
                   <div className="border-roadmap"></div>
-                  <span className="span-roadmap">.01</span> Launch Roadmap
                   <div className="rectangle-img">
                     <img src={img2} />
                   </div>
+                  <span className="span-roadmap">.01</span> Launch Roadmap
                 </h1>
 
                 <p>
@@ -54,7 +66,7 @@ export const RoadMapSection = () => {
             </Col>
             <Col sm={12} lg={4} md={4}>
               <div className="roadmap-image">
-                <img src={roadimg1} alt="img" />
+                <img src={roadimg1} alt="img" onClick={() => handleClick()} />
               </div>
             </Col>
           </Row>
@@ -62,11 +74,11 @@ export const RoadMapSection = () => {
           <Row className="box-roadmap-3">
             <Col sm={12} lg={8} md={8}>
               <div className="roadmap-heading-1">
-                <h1>
-                  <span className="span-roadmap">.02</span> Launch Roadmap
+                <h1 className="head-img">
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
+                  <span className="span-roadmap">.01</span> Launch Roadmap
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -81,8 +93,8 @@ export const RoadMapSection = () => {
               </div>
             </Col>
             <Col sm={12} lg={4} md={4}>
-              <div className="roadmap-image">
-                <img src={roadimg2} alt="img" />
+              <div className="roadmap-image" id="roadimg-2">
+                <img src={roadimg2} alt="img" onClick={() => handleOnClick()} />
               </div>
             </Col>
           </Row>
@@ -90,11 +102,11 @@ export const RoadMapSection = () => {
           <Row className="box-roadmap-3">
             <Col sm={12} lg={8} md={8}>
               <div className="roadmap-heading-1">
-                <h1>
-                  <span className="span-roadmap">.03</span> Launch Roadmap
+                <h1 className="head-img">
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
+                  <span className="span-roadmap">.01</span> Launch Roadmap
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -118,11 +130,11 @@ export const RoadMapSection = () => {
           <Row className="box-roadmap-3">
             <Col sm={12} lg={8} md={8}>
               <div className="roadmap-heading-1">
-                <h1>
-                  <span className="span-roadmap">.04</span> Launch Roadmap
+                <h1 className="head-img">
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
+                  <span className="span-roadmap">.01</span> Launch Roadmap
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -146,11 +158,11 @@ export const RoadMapSection = () => {
             <Row className="box-roadmap-3">
               <Col sm={12} lg={8} md={8}>
                 <div className="roadmap-heading-1">
-                  <h1>
-                    <span className="span-roadmap">.05</span> Launch Roadmap
+                  <h1 className="head-img">
                     <div className="rectangle-img">
                       <img src={img} />
                     </div>
+                    <span className="span-roadmap">.01</span> Launch Roadmap
                   </h1>
                   <p>
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed
@@ -165,7 +177,7 @@ export const RoadMapSection = () => {
                 </div>
               </Col>
               <Col sm={12} lg={4} md={4}>
-                <div className="roadmap-image-5">
+                <div className="roadmap-image-5" id="roadimg-5">
                   <img src={roadimg5} alt="img" />
                 </div>
               </Col>

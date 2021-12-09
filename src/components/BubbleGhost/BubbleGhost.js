@@ -3,9 +3,15 @@ import "./BubbleGhost.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 import bubble from "../../assetsIMG/BubbleGhost.png";
-import game from "../../assetsIMG/Scroll Group 2.png";
+import game from "../../assetsIMG/VideoGame.png";
+import video from "../../video/VideoGame.mp4";
 
 export const BubbleGhost = () => {
+  const handleClick = () => {
+    var vid = document.getElementById("myVideo");
+    vid.play();
+  };
+
   return (
     <div className="bubble-ghost py-5" style={{ backgroundColor: "#151515" }}>
       <Container className="container">
@@ -31,7 +37,9 @@ export const BubbleGhost = () => {
           <Col sm={12} lg={6} md={6}>
             <div className="game-section">
               <div className="image-game">
-                <img src={game} alt="game" />
+                <video id="myVideo" onClick={() => handleClick()}>
+                  <source src={video} type="video/mp4" />
+                </video>
               </div>
             </div>
           </Col>

@@ -1,20 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./CommingSoonSection.css";
+
+import { Section } from "../../Section";
+
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import header from "../../assetsIMG/Header.png";
 import { Link } from "react-router-dom";
 
+// import { CommunitySection } from "../CommunitySection/CommunitySection";
+
 export const CommingSoonSection = () => {
+  // const [show, setShow] = useState(false);
+  const [visibl, setVisibl] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const handleClick = () => {
+    setVisibl(true);
+    setScroll(!scroll);
+  };
+
+  useEffect(() => {
+    document.getElementById("pageSection").scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [scroll]);
+
   return (
     <div>
-      <div className="srcool-Group">
+      <div className="srcool-Group" id="soon">
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
-            {/* <Navbar.Brand>
-              <div className="close" onClick={() => setShow(false)}>
-            <button className="btn-close">X</button>
-          </div>
-            </Navbar.Brand> */}
+            <Navbar.Brand>
+              {/* <div className="close" onClick={() => setShow(false)}>
+                <button className="btn-close">X</button>
+              </div> */}
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto"></Nav>
@@ -61,9 +81,12 @@ export const CommingSoonSection = () => {
               <br /> l with own color palette
             </p>
             <button className="scrol-btn">Lorem ipsum</button>
+            <div className="box-img" onClick={() => handleClick()}></div>
           </div>
         </div>
       </div>
+
+      <div id="pageSection">{visibl && <Section />}</div>
     </div>
   );
 };
