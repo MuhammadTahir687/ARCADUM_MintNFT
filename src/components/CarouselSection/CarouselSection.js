@@ -19,84 +19,60 @@ export const CarouselSection = () => {
           <div className="item wow fadeInUp" data-wow-delay=".25s">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <a href="">
-                  <img src={image1} className="" alt="" />
-                </a>
+                <img src={image1} className="" alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <a href="">
-                  <h4>Comming Soon</h4>
-                </a>
+                <h4>Comming Soon</h4>
               </div>
             </div>
           </div>
           <div className="item wow fadeInUp" data-wow-delay=".75s">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <a href="">
-                  <img src={image1} alt="" />
-                </a>
+                <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <a href="">
-                  <h4>Comming Soon</h4>
-                </a>
+                <h4>Comming Soon</h4>
               </div>
             </div>
           </div>
           <div className="item wow fadeInUp" data-wow-delay="1s">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <a href="">
-                  <img src={image1} alt="" />
-                </a>
+                <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <a href="">
-                  <h4>Comming Soon</h4>
-                </a>
+                <h4>Comming Soon</h4>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <a href="">
-                  <img src={image1} alt="" />
-                </a>
+                <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <a href="">
-                  <h4>Comming Soon</h4>
-                </a>
+                <h4>Comming Soon</h4>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <a href="">
-                  <img src={image2} alt="" />
-                </a>
+                <img src={image2} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <a href="">
-                  <h4>1987</h4>
-                </a>
+                <h4>1987</h4>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <a href="">
-                  <img src={image1} alt="" />
-                </a>
+                <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <a href="">
-                  <h4>Comming Soon</h4>
-                </a>
+                <h4>Comming Soon</h4>
               </div>
             </div>
           </div>

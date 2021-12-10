@@ -164,19 +164,20 @@ ul.button-header li a:hover {
 }
 
 .arcade-image {
-  width: 31%;
+  width: 35%;
   height: auto;
   z-index: 0;
   margin: -45px auto 0px auto;
 }
 
 .artboard-image {
-  width: 32%;
+  width: 25%;
   position: absolute;
-  top: -34%;
-  right: 10px;
+  top: -25%;
+  right: 20px;
   z-index: -1;
 }
+
 .logo-img {
   transition: 0.3s;
 }
@@ -206,7 +207,7 @@ ul.button-header li a:hover {
   width: 4%;
   height: auto;
   position: absolute;
-  top: 15%;
+  top: 4%;
   left: 18%;
 }
 
@@ -241,7 +242,6 @@ ul.button-header li a:hover {
 .left-image h1 span {
   color: #fff;
 }
-
 
 .right-image h6 span {
   color: #fff;

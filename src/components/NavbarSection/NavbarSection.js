@@ -58,13 +58,15 @@ export const NavbarSection = () => {
       <div className="navbar-section" id="nav">
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
-            <Navbar.Brand
-              href=""
-              className="wow fadeInLeftBig logo-img"
-              data-wow-delay=".50s"
+            {/* <Navbar.Brand */}
+            <div
+              // href=""
+              className="wow fadeInLeftBig"
+              data-wow-delay=".50s logo-img"
             >
               <img src={logo} alt="image" />
-            </Navbar.Brand>
+              {/* </Navbar.Brand> */}
+            </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -155,7 +157,10 @@ export const NavbarSection = () => {
           </div>
 
           {/* </Link> */}
-          <div className="artboard-image-2 wow rotateIn " data-wow-delay=".50s">
+          <div
+            className="artboard-image-2 wow rotateIn "
+            data-wow-delay="1.50s"
+          >
             <img src={Artboard2} alt="image " />
           </div>
           <div
