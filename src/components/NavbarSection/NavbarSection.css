@@ -164,10 +164,10 @@ ul.button-header li a:hover {
 }
 
 .arcade-image {
-  width: 35%;
+  width: 31%;
   height: auto;
   z-index: 0;
-  margin: -45px auto 0px auto;
+  margin: 0px auto 0;
 }
 
 .artboard-image {
