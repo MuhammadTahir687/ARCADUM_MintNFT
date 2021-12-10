@@ -3,9 +3,9 @@ import "./CommunitySection.css";
 
 export const CommunitySection = () => {
   return (
-    <div>
+    <div className="cuminty">
       <div className="container">
-        <div className="join-CommunitySection">
+        <div className="join-communitysection">
           <div className="join-subheading">
             <h1>Join the Community</h1>
             <p>

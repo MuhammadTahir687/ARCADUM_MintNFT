@@ -1,4 +1,4 @@
-.join-CommunitySection {
+.join-communitysection {
   background-image: url("../../assetsIMG/Footer_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,6 +6,11 @@
   width: 100%;
   height: auto;
   margin-top: 50px;
+}
+
+.cuminty .container {
+  max-width: 90% !important;
+  margin: 0px auto;
 }
 
 .join-subheading {

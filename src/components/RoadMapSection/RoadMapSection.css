@@ -11,7 +11,7 @@
   z-index: 99999;
   position: absolute;
   top: -115px;
-  left: 90px;
+  left: 79px;
 }
 
 .roadmap-heading {
@@ -35,6 +35,8 @@
 
 .roadmap-heading-1 {
   background-color: #120d13;
+  position: relative;
+  z-index: 1;
 }
 
 .roadmap-heading-1 h1 {
@@ -78,21 +80,9 @@
   position: relative;
 }
 
-/* .border-roadmap {
-  position: absolute;
-  z-index: 999999;
-  width: 2px;
-  height: 160px;
-  background-color: #e9328b;
-  left: 9%;
-  top: -28%;
-} */
-
 .rectangle-img {
   width: 5%;
-  /* position: absolute; */
-  /* left: 96px; */
-  /* top: 12%; */
+
   margin-right: 40px;
 }
 
@@ -111,13 +101,13 @@ h1.head-img {
   z-index: 9999999;
   position: absolute;
   top: 100px;
-  left: 90px;
+  left: 78px;
 }
 
-/* div#roadimg-5 {
-  width: 52%;
+div#roadimg-5 {
+  width: 56%;
   position: absolute;
-  top: -70%;
-  right: 36px;
+  top: -76%;
+  right: 41px;
   z-index: 0;
-} */
+}

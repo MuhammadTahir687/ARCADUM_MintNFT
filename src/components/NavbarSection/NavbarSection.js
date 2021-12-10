@@ -110,10 +110,28 @@ export const NavbarSection = () => {
             <img src={header} alt="header" />
           </div>
           <div className="left-image wow zoomIn" data-wow-delay=".50s">
-            <img src={left} alt="header" />
+            {/* <img src={left} alt="header" /> */}
+            <h1>
+              Game Ownership
+              <br />{" "}
+              <span>
+                forever minted <br />
+                on the blockchain
+              </span>
+            </h1>
           </div>
           <div className="right-image wow zoomIn" data-wow-delay=".50s">
-            <img src={right} alt="header" />
+            {/* <img src={right} alt="header" /> */}
+
+            <h6>
+              Public sale start
+              <br />{" "}
+              <span>
+                december 20
+                <br />
+                7pm est x{" "}
+              </span>
+            </h6>
           </div>
           <div className="arcade-image wow fadeInUp" data-wow-delay=".50s">
             <img src={arcade} alt="header " />
@@ -124,8 +142,7 @@ export const NavbarSection = () => {
           >
             <img src={artboard} alt="image" />
           </div>
-          {/* <Link to="/start-play"> */}
-          {/* {visibl == true ? ( */}
+
           <div className="button-text ">
             <h4
               className="wow fadeInRightBig "

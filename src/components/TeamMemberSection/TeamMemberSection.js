@@ -106,66 +106,61 @@ export const TeamMemberSection = () => {
             </Col>
           </Row>
           <div className="sword">
-            <Row>
-              <Col sm={12} lg={4} md={4} className="mt-4">
-                <div className="member-section-subheading">
-                  <div className="member-image">
-                    <img src={piza} alt="img" />
-                  </div>
-                  <h1>Lorem ipsum</h1>
-                  <p>
-                    Lorem ipsum doler site amet, consectetur <br />
-                    adipiscing elit, sed do eiusmod tempor <br /> incididunt
-                  </p>
-                  <ul className="button-header">
-                    <li>
-                      <a href="">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-              <Col sm={12} lg={4} md={4} className="mt-4">
-                <div className="member-section-subheading">
-                  <div className="member-image">
-                    <img src={sword} alt="img" />
-                  </div>
-                  <h1>Lorem ipsum</h1>
-                  <p>
-                    Lorem ipsum doler site amet, consectetur <br />
-                    adipiscing elit, sed do eiusmod tempor <br /> incididunt
-                  </p>
-                  <ul className="button-header">
-                    <li>
-                      <a href="">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </Col>
-            </Row>
+            <div className="member-section-subheading sword-flex">
+              <div className="member-image">
+                <img src={piza} alt="img" />
+              </div>
+              <h1>Lorem ipsum</h1>
+              <p>
+                Lorem ipsum doler site amet, consectetur <br />
+                adipiscing elit, sed do eiusmod tempor <br /> incididunt
+              </p>
+              <ul className="button-header">
+                <li>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="member-section-subheading sword-flex">
+              <div className="member-image">
+                <img src={sword} alt="img" />
+              </div>
+              <h1>Lorem ipsum</h1>
+              <p>
+                Lorem ipsum doler site amet, consectetur <br />
+                adipiscing elit, sed do eiusmod tempor <br /> incididunt
+              </p>
+              <ul className="button-header">
+                <li>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -32,24 +32,27 @@ export const EnterSection = () => {
           <source src={video1} type="video/mp4" />
         </video>
         {visible == true ? (
-          <div
-            className={
-              visible == false ? "enter-box wow fadeInDownBig " : "enter-box"
-            }
-            data-wow-delay={visible == false ? ".50s" : null}
-          >
-            <div className="enter-box-image">
-              <img src={enter} />
-            </div>
-            <button
-              onClick={() => {
-                setVisible(false);
-              }}
-              className="btn-enter"
+          <div id="boxex">
+            <div
+              className={
+                visible == false ? "enter-box wow fadeInDownBig " : "enter-box"
+              }
+              data-wow-delay={visible == false ? ".50s" : null}
             >
-              Enter
-            </button>
+              <div className="enter-box-image">
+                <img src={enter} />
+              </div>
+              <button
+                onClick={() => {
+                  setVisible(false);
+                }}
+                className="btn-enter"
+              >
+                Enter
+              </button>
+            </div>
           </div>
+          
         ) : (
           <NavbarSection />
         )}

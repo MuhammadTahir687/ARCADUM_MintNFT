@@ -11,8 +11,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  /* padding-top: 0.5rem; */
-  /* padding-bottom: 0.5rem; */
   height: 60px;
 }
 
@@ -136,18 +134,19 @@ ul.button-header li a:hover {
   font-size: 18px;
   font-family: "8-bit fortress";
   color: #fff;
-  left: 45%;
-  top: 63%;
+  left: 50%;
+  top: 50%;
   letter-spacing: 1px;
   transform: translate(-50%, -50%);
   text-align: center;
   transition: 0.3s;
   cursor: pointer;
-  transform: scale3d(1, 1, 1);
+  /* transform: scale3d(1, 1, 1); */
 }
 
 .button-text h4:hover {
-  transform: scale3d(1.1, 1.1, 1);
+  /* transform: scale3d(1.1, 1.1, 1); */
+  color: #ff0078;
 }
 
 .classic-image {
@@ -159,16 +158,16 @@ ul.button-header li a:hover {
 .header-image {
   width: 40%;
   height: auto;
-  margin: 84px auto 40px auto;
+  margin: 20px auto 40px auto;
   position: relative;
   z-index: 99;
 }
 
 .arcade-image {
-  width: 29%;
+  width: 31%;
   height: auto;
   z-index: 0;
-  margin: 0px auto 0px auto;
+  margin: -45px auto 0px auto;
 }
 
 .artboard-image {
@@ -229,24 +228,34 @@ ul.button-header li a:hover {
   z-index: -1;
 }
 
-.left-image {
-  width: 10%;
+.left-image h1 {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 16%;
+  font-size: 20px;
+  color: #ff217c;
+  font-family: "8-bit fortress";
+  text-transform: uppercase;
 }
 
-.left-image:hover {
-  background-color: #440023;
-  opacity: 1;
-  border-radius: 50%;
+.left-image h1 span {
+  color: #fff;
 }
 
-.right-image {
-  width: 10%;
+
+.right-image h6 span {
+  color: #fff;
+  font-size: 23px !important;
+}
+
+.right-image h6 {
   position: absolute;
-  top: 50%;
-  right: 20%;
+  text-transform: uppercase;
+  top: 40%;
+  right: 12%;
+  font-size: 12px;
+  color: #ff217c;
+  font-family: "8-bit fortress";
 }
 
 .right-image:hover {

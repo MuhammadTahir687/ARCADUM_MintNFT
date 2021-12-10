@@ -78,7 +78,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
-                  <span className="span-roadmap">.01</span> Launch Roadmap
+                  <span className="span-roadmap">.02</span> Physical Part
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -106,7 +106,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
-                  <span className="span-roadmap">.01</span> Launch Roadmap
+                  <span className="span-roadmap">.03</span> Ar-Cadum x Artists
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -121,7 +121,7 @@ export const RoadMapSection = () => {
               </div>
             </Col>
             <Col sm={12} lg={4} md={4}>
-              <div className="roadmap-image">
+              <div className="roadmap-image-art">
                 <img src={roadimg3} alt="img" />
               </div>
             </Col>
@@ -134,7 +134,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
-                  <span className="span-roadmap">.01</span> Launch Roadmap
+                  <span className="span-roadmap">.04</span> Ar-Cadum Multiverse
                 </h1>
                 <p>
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do
@@ -162,7 +162,7 @@ export const RoadMapSection = () => {
                     <div className="rectangle-img">
                       <img src={img} />
                     </div>
-                    <span className="span-roadmap">.01</span> Launch Roadmap
+                    <span className="span-roadmap">.05</span> Future of Ar-Cadum
                   </h1>
                   <p>
                     Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed

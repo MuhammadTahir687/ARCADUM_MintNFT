@@ -6,7 +6,7 @@
 }
 
 .member-section-subheading ul.button-header {
-  width: 62% !important;
+  width: 80% !important;
   margin: 0px auto;
 }
 
@@ -21,6 +21,7 @@
   font-family: "IBM Plex Mono";
   font-size: 28px;
   font-weight: bold;
+  margin: 5px 0px;
 }
 
 .member-section-subheading p {
@@ -34,4 +35,11 @@
 
 .sword {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sword-flex {
+  margin: 0px 40px;
 }

@@ -6,6 +6,7 @@ import { Section } from "../../Section";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import header from "../../assetsIMG/Header.png";
 import { Link } from "react-router-dom";
+import arrow from "../../assetsIMG/Arrow.png";
 
 // import { CommunitySection } from "../CommunitySection/CommunitySection";
 
@@ -81,7 +82,9 @@ export const CommingSoonSection = () => {
               <br /> l with own color palette
             </p>
             <button className="scrol-btn">Lorem ipsum</button>
-            <div className="box-img" onClick={() => handleClick()}></div>
+            <div className="box-img" onClick={() => handleClick()}>
+              <img src={arrow} alt="arrow" />
+            </div>
           </div>
         </div>
       </div>

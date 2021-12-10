@@ -18,6 +18,7 @@
   color: #6f5b71;
   font-size: 20px;
   font-family: "IBM Plex Mono";
+  padding-top: 11px;
 }
 
 .footer-right-subheading {
@@ -37,6 +38,7 @@
   color: #6f5b71;
   font-size: 20px;
   font-family: "IBM Plex Mono";
+  margin-bottom: 0;
 }
 
 .footer-right-subheading p:hover {
