@@ -43,3 +43,15 @@
 .sword-flex {
   margin: 0px 40px;
 }
+
+@media only screen and (max-width: 600px) {
+  .member-section-subheading ul.button-header {
+    width: 65% !important;
+    margin: 12px auto;
+  }
+
+  .member-section-subheading ul.team-section {
+    width: 100% !important;
+    margin: 10px auto;
+  }
+}

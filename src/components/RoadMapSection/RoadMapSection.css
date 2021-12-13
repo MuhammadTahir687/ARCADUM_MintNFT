@@ -111,3 +111,42 @@ div#roadimg-5 {
   right: 104px;
   z-index: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .roadmap-heading p {
+    color: #6f6f6f;
+    font-size: 25px;
+    width: 100%;
+    margin: 20px auto;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .roadmap-heading-1 p {
+    color: #9e9b9e;
+    font-size: 17px;
+    margin: 0px auto;
+    padding-top: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px 0px 40px 100px;
+  }
+
+  .rectangle-img {
+    width: 12%;
+    margin-right: 5px;
+  }
+  .roadmap-heading-1::before {
+    content: "";
+    height: 416px;
+    width: 1px;
+    background-color: #787778;
+    z-index: 9999999;
+    position: absolute;
+    top: 125px;
+    left: 81px;
+  }
+  .roadmap-heading-1 h1 {
+    color: #fff;
+    font-size: 18px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+  }
+}

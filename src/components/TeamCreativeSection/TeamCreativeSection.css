@@ -31,3 +31,21 @@
   left: -93px;
   color: #ff007f;
 }
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .heading h1 {
+    font-size: 45px;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    position: relative;
+    width: 155%;
+    left: 0px;
+    color: #ff007f;
+  }
+}

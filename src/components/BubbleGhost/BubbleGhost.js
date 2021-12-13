@@ -3,7 +3,7 @@ import "./BubbleGhost.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 import bubble from "../../assetsIMG/BubbleGhost.png";
-import game from "../../assetsIMG/VideoGame.png";
+import game from "../../assetsIMG/Scroll Group 2.png";
 import video from "../../video/VideoGame.mp4";
 
 export const BubbleGhost = () => {
@@ -36,7 +36,11 @@ export const BubbleGhost = () => {
           </Col>
           <Col sm={12} lg={6} md={6}>
             <div className="game-section">
+              {/* <div className="scroll-img-1"> */}
+
+              {/* </div> */}
               <div className="image-game">
+                <img src={game} alt="game" className="game-img" />
                 <video id="myVideo" onClick={() => handleClick()}>
                   <source src={video} type="video/mp4" />
                 </video>

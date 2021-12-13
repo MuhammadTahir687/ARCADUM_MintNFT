@@ -13,8 +13,6 @@ import artboard from "../../assetsIMG/E44.png";
 import Artboard2 from "../../assetsIMG/Artboard 2.png";
 import Artboard3 from "../../assetsIMG/Artboard 3.png";
 import artboard4 from "../../assetsIMG/Artboard 4.png";
-import left from "../../assetsIMG/LeftSide.png";
-import right from "../../assetsIMG/RightSide.png";
 import { CommingSoonSection } from "../CommingSoonSection/CommingSoonSection";
 // import { TimerSection } from "../TimerSection/TimerSection";
 
@@ -112,7 +110,6 @@ export const NavbarSection = () => {
             <img src={header} alt="header" />
           </div>
           <div className="left-image wow zoomIn" data-wow-delay=".50s">
-            {/* <img src={left} alt="header" /> */}
             <h1>
               Game Ownership
               <br />{" "}
@@ -123,8 +120,6 @@ export const NavbarSection = () => {
             </h1>
           </div>
           <div className="right-image wow zoomIn" data-wow-delay=".50s">
-            {/* <img src={right} alt="header" /> */}
-
             <h6>
               Public sale start
               <br />{" "}
@@ -135,25 +130,25 @@ export const NavbarSection = () => {
               </span>
             </h6>
           </div>
+
           <div className="arcade-image wow fadeInUp" data-wow-delay=".50s">
             <img src={arcade} alt="header " />
+            <div className="button-text ">
+              <h4
+                className="wow fadeInRightBig "
+                data-wow-delay=".50s"
+                onClick={() => handleClick()}
+              >
+                Press start
+                <br /> to play
+              </h4>
+            </div>
           </div>
           <div
             className="artboard-image wow fadeInDownBig "
             data-wow-delay=".50s"
           >
             <img src={artboard} alt="image" />
-          </div>
-
-          <div className="button-text ">
-            <h4
-              className="wow fadeInRightBig "
-              data-wow-delay=".50s"
-              onClick={() => handleClick()}
-            >
-              Press start
-              <br /> to play
-            </h4>
           </div>
 
           {/* </Link> */}

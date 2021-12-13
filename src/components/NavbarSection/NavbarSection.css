@@ -141,7 +141,6 @@ ul.button-header li a:hover {
   text-align: center;
   transition: 0.3s;
   cursor: pointer;
-  /* transform: scale3d(1, 1, 1); */
 }
 
 .button-text h4:hover {
@@ -168,6 +167,7 @@ ul.button-header li a:hover {
   height: auto;
   z-index: 0;
   margin: 0px auto 0;
+  position: relative;
 }
 
 .artboard-image {
@@ -189,7 +189,7 @@ ul.button-header li a:hover {
   width: 15%;
   height: auto;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: -30px;
 }
 
@@ -231,8 +231,8 @@ ul.button-header li a:hover {
 
 .left-image h1 {
   position: absolute;
-  top: 50%;
-  left: 16%;
+  top: 60%;
+  left: 14%;
   font-size: 20px;
   color: #ff217c;
   font-family: "8-bit fortress";
@@ -256,11 +256,6 @@ ul.button-header li a:hover {
   font-size: 12px;
   color: #ff217c;
   font-family: "8-bit fortress";
-}
-
-.right-image:hover {
-  background-color: #440023;
-  opacity: 1;
 }
 
 .Bboxes {
@@ -321,3 +316,128 @@ a.wow.fadeInLeftBig.navbar-brand {
 .modal-body {
   padding: 0 !important;
 }
+
+.left-image::before {
+  content: "";
+  height: 130px;
+  width: 130px;
+  background-color: #390023;
+  position: absolute;
+  top: 55%;
+  left: 17%;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 0.6;
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+.right-image::before {
+  content: "";
+  height: 110px;
+  width: 110px;
+  background-color: #390023;
+  position: absolute;
+  top: 36%;
+  right: 16%;
+  z-index: -1;
+  opacity: 0.6;
+  transition: 0.5s ease;
+  transform: rotate(45deg);
+}
+
+.left-image:hover::before {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
+
+.right-image:hover::before {
+  transform: scale(1.5);
+  opacity: 0.8;
+  /* transform: rotate(45deg); */
+}
+
+@media only screen and (max-width: 600px) {
+  .arcade-image {
+    width: 100% !important;
+    height: auto;
+    z-index: 0;
+    margin: 0px auto 0;
+    position: relative;
+  }
+
+  .right-image::before {
+    display: none;
+  }
+
+  .left-image::before {
+    display: none;
+  }
+
+  .right-image {
+    display: none;
+  }
+
+  .left-image {
+    display: none;
+  }
+}
+
+/* @media only screen and (max-width: 800px) {
+  .arcade-image {
+    width: 90% !important;
+    height: auto;
+    z-index: 0;
+    margin: 0px auto 0;
+    position: relative;
+  }
+} */
+
+@media only screen and (max-width: 1200px) {
+  .arcade-image {
+    width: 60%;
+    height: auto;
+    z-index: 0;
+    margin: 0px auto 0;
+    position: relative;
+  }
+
+  .left-image h1 {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    font-size: 20px;
+    color: #ff217c;
+    font-family: "8-bit fortress";
+    text-transform: uppercase;
+  }
+
+  .left-image h1 span {
+    color: #fff;
+  }
+
+  .right-image h6 span {
+    color: #fff;
+    font-size: 23px !important;
+  }
+
+  .right-image h6 {
+    position: absolute;
+    text-transform: uppercase;
+    top: 40%;
+    right: 8%;
+    font-size: 12px;
+    color: #ff217c;
+    font-family: "8-bit fortress";
+  }
+}
+
+/* @media only screen and (max-width: 1800px) {
+  .arcade-image {
+    width: 32%;
+    height: auto;
+    z-index: 0;
+    margin: 0px auto 0;
+    position: relative;
+  }
+} */

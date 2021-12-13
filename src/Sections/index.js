@@ -12,8 +12,8 @@ export const Sections = () => {
   return (
     <div>
       <TimerSection />
-      <BubbleGhost />
       <div className="box-all">
+        <BubbleGhost />
         <CarouselSection />
         <RoadMapSection />
         <TeamCreativeSection />

@@ -115,7 +115,7 @@ export const TeamMemberSection = () => {
                 Lorem ipsum doler site amet, consectetur <br />
                 adipiscing elit, sed do eiusmod tempor <br /> incididunt
               </p>
-              <ul className="button-header">
+              <ul className="button-header team-section">
                 <li>
                   <a href="">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -143,7 +143,7 @@ export const TeamMemberSection = () => {
                 Lorem ipsum doler site amet, consectetur <br />
                 adipiscing elit, sed do eiusmod tempor <br /> incididunt
               </p>
-              <ul className="button-header">
+              <ul className="button-header team-section">
                 <li>
                   <a href="">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
