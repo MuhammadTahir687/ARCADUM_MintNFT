@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./RoadMapSection.css";
+import "./RoadMapSectionComming.css";
 import "../../App.css";
 import { Row, Col } from "react-bootstrap";
 
@@ -12,18 +12,18 @@ import roadimg5 from "../../assetsIMG/Roadmap/E4.png";
 import img2 from "../../assetsIMG/Roadmap/Rectangle 24.png";
 import img from "../../assetsIMG/Roadmap/Rectangle 26.png";
 
-export const RoadMapSection = () => {
+export const RoadMapSectionComming = () => {
   const handleClick = () => {
     document.getElementById("roadimg-2").scrollIntoView({
       behavior: "smooth",
     });
   };
 
-  const handleOnClick = () => {
-    document.getElementById("roadimg-5").scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+  // const handleOnClick = () => {
+  //   document.getElementById("roadimg-5").scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
     <div>
@@ -94,8 +94,8 @@ export const RoadMapSection = () => {
               </div>
             </Col>
             <Col sm={12} lg={4} md={4}>
-              <div className="roadmap-image" id="roadimg-2">
-                <img src={roadimg2} alt="img" onClick={() => handleOnClick()} />
+              <div className="roadmap-image-2" id="roadimg-2">
+                <img src={roadimg2} alt="img" />
               </div>
             </Col>
           </Row>
@@ -158,7 +158,7 @@ export const RoadMapSection = () => {
           <div className="box-roadmap-5">
             <Row className="box-roadmap-3">
               <Col sm={12} lg={8} md={8}>
-                <div className="roadmap-heading-1">
+                <div className="roadmap-heading">
                   <h1 className="head-img">
                     <div className="rectangle-img">
                       <img src={img} />
@@ -175,11 +175,6 @@ export const RoadMapSection = () => {
                     incididunt ut labore et dolore magna aliqua.aliqua do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
-                </div>
-              </Col>
-              <Col sm={12} lg={4} md={4}>
-                <div className="roadmap-image-5" id="roadimg-5">
-                  <img src={roadimg5} alt="img" />
                 </div>
               </Col>
             </Row>

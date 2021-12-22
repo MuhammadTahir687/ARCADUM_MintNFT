@@ -1,6 +1,6 @@
 import React from "react";
 import "./CommunitySection.css";
-
+import "../../App.css";
 export const CommunitySection = () => {
   return (
     <div className="cuminty">

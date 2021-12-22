@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./EnterSection.css";
+import "../../App.css";
 import { Link } from "react-router-dom";
 
 import enter from "../../assetsIMG/enter.png";

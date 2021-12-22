@@ -1,5 +1,5 @@
-.srcool-Group {
-  background-image: url("../../assetsIMG/Popup.png");
+.modal-body {
+  background-image: url("../../assetsIMG/ComingSoon_BG.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -8,12 +8,12 @@
 }
 
 .scrool-timer {
-  padding-top: 50px;
+  padding-top: 130px;
 }
 
 .scrool-timer h2 {
   color: #fff;
-  font-family: "8-bit fortress";
+  font-family: "8 Bit Fortress";
   font-size: 55px;
   font-weight: bold;
 }
@@ -30,6 +30,17 @@
 .scrol-screen-subheading {
   position: relative;
   height: calc(100% - 60px);
+}
+
+.scrol-screen-subheading {
+  background-image: url("../../assetsIMG/Casette..png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 727px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: -97px;
 }
 
 .scrool-lorem p {
@@ -67,11 +78,37 @@ button.scrol-btn:hover {
   cursor: pointer;
 }
 
-.header-image {
-  width: 40%;
+.header-image-comming {
+  width: 80%;
   height: auto;
   margin: 0px auto 0px auto;
   position: relative;
   z-index: 99;
-  padding-top: 30px;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .scrol-screen-subheading {
+    background-image: url("../../assetsIMG/Casette..png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 605px;
+    height: 727px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    top: -97px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scrol-screen-subheading {
+    background-image: url("../../assetsIMG/Casette..png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 382px;
+    height: 727px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    top: -97px;
+  }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./TimerSection.css";
+import "../../App.css";
 
 export const TimerSection = () => {
   return (

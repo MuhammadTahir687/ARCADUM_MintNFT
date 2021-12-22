@@ -8,6 +8,7 @@ import { TeamMemberSection } from "../components/TeamMemberSection/TeamMemberSec
 import { CommunitySection } from "../components/CommunitySection/CommunitySection";
 import { FooterSection } from "../components/FooterSection/FooterSection";
 
+
 export const Sections = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ export const Sections = () => {
         <TeamMemberSection />
         <CommunitySection />
         <FooterSection />
+        
       </div>
     </div>
   );

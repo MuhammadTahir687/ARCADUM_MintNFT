@@ -1,5 +1,6 @@
 import React from "react";
 import "./TeamMemberSection.css";
+import "../../App.css";
 import "../NavbarSection/NavbarSection.css";
 import { Row, Col } from "react-bootstrap";
 

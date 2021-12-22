@@ -1,7 +1,9 @@
 .img-team {
-  width: 100%;
+  position: absolute;
+  width: 16%;
   height: auto;
   margin: 0px auto;
+  right: 49%;
 }
 
 .team-subheading p {
@@ -30,6 +32,10 @@
   width: 155%;
   left: -93px;
   color: #ff007f;
+}
+
+.team-section {
+  margin: 130px 0px;
 }
 
 @media only screen and (max-width: 600px) {

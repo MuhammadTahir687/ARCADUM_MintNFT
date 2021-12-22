@@ -1,11 +1,11 @@
 import React from "react";
-import "./FooterSection.css";
+import "./FooterSectionStore.css";
 import "../../App.css";
 import "../NavbarSection/NavbarSection.css";
 import logo from "../../assetsIMG/logo.png";
 import { Row, Col } from "react-bootstrap";
 
-export const FooterSection = () => {
+export const FooterSectionStore = () => {
   const handleScroll = () => {
     document.getElementById("nav").scrollIntoView({
       behavior: "smooth",
@@ -50,7 +50,9 @@ export const FooterSection = () => {
                   </a>
                 </li>
               </ul>
-              <h6 className="copy-right">&#169;2021 Ar-Cadum. All Right Reserved</h6>
+              <h6 className="copy-right">
+                &#169;2021 Ar-Cadum. All Right Reserved
+              </h6>
             </Col>
           </Row>
         </div>

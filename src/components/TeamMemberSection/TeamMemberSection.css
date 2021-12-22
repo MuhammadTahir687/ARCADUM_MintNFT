@@ -6,8 +6,11 @@
 }
 
 .member-section-subheading ul.button-header {
-  width: 80% !important;
+  width: 100% !important;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .member-image:hover {

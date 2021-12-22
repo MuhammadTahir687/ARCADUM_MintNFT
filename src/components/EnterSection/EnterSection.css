@@ -6,6 +6,7 @@ img {
 * {
   padding: 0;
   margin: 0;
+  /* overflow-x: hidden; */
 }
 
 .enter-box-image img {
@@ -21,7 +22,7 @@ img {
   color: #fff;
   background-color: transparent;
   font-size: 20px;
-  font-family: "8-bit fortress";
+  font-family: "8 Bit Fortress";
   text-decoration: none;
   text-transform: uppercase;
   z-index: 9999999;

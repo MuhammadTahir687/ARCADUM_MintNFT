@@ -1,5 +1,6 @@
 import React from "react";
 import "./BubbleGhost.css";
+import "../../App.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 import bubble from "../../assetsIMG/BubbleGhost.png";

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CarouselSection.css";
+import "../../App.css";
 import image1 from "../../assetsIMG/QuestionMark-01.jpg";
 import image2 from "../../assetsIMG/BubbleGhost.png";
-
+import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -62,7 +63,7 @@ export const CarouselSection = () => {
                 <img src={image2} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <h4>1987</h4>
+                <h4 style={{ color: "#fff" }}>1987</h4>
               </div>
             </div>
           </div>
@@ -77,6 +78,12 @@ export const CarouselSection = () => {
             </div>
           </div>
         </OwlCarousel>
+        <div className="buy-drop-btn">
+          {/* <button className="drop-btn">Buy Drop #1</button> */}
+          <Link to="explore" className="drop-btn">
+            Buy Drop #1
+          </Link>
+        </div>
       </div>
     </div>
   );

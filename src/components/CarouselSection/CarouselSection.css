@@ -16,6 +16,12 @@
   font-weight: 700;
 }
 
+.nft_coll_info h4 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "IBM Plex Mono";
+}
+
 .nft_wrap img:hover {
   transform: scale(1.1);
 }
@@ -31,10 +37,69 @@
 .owl-theme .owl-dots .owl-dot span {
   width: 50px !important;
   height: 6px !important;
-
-  margin: 20px 7px !important;
+  margin: 95px 7px 33px 0px !important;
   background: #d6d6d6;
   display: block;
   transition: opacity 200ms ease;
   border-radius: 30px;
+}
+
+.buy-drop-btn {
+  position: relative;
+}
+
+a.drop-btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  z-index: 9;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 43%;
+  top: -135px;
+  text-decoration: none !important;
+  color: #000;
+  background-color: #fff;
+}
+
+a.drop-btn:hover {
+  background-color: transparent;
+  color: #fff;
+  transition: 0.6s;
+  transform: scaleX(2);
+}
+
+@media screen and (max-width: 992px) {
+  a.drop-btn {
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    z-index: 9;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 35%;
+    top: -131px;
+    text-decoration: none !important;
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a.drop-btn {
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    z-index: 9;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 20%;
+    top: -131px;
+    text-decoration: none !important;
+    color: #000;
+    background-color: #fff;
+  }
 }

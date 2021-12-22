@@ -2,6 +2,13 @@
   width: 20%;
   cursor: pointer;
 }
+.copy-right {
+  color: #6f5b71;
+  font-size: 20px;
+  font-family: "IBM Plex Mono";
+  padding-top: 11px;
+  display: none;
+}
 
 .footer-subheading {
   padding: 70px 50px;
@@ -44,4 +51,72 @@
 .footer-right-subheading p:hover {
   color: #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-image {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footer-image {
+    width: 100% !important;
+  }
+
+  .footer-subhead p {
+    color: #fff;
+    font-size: 16px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-right-subheading p {
+    color: #6f5b71;
+    font-size: 20px;
+    font-family: "IBM Plex Mono";
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .footer-right-subheading a h2 {
+    color: #fff;
+    font-size: 25px;
+    font-family: "IBM Plex Mono";
+    display: none;
+  }
+
+  .footer-subhead h6 {
+    color: #6f5b71;
+    font-size: 20px;
+    font-family: "IBM Plex Mono";
+    padding-top: 11px;
+    display: none;
+  }
+
+  .footer-subheading {
+    padding: 60px 0px;
+  }
+
+  .copy-right {
+    display: block !important;
+    text-align: center;
+  }
+
+  video#myVideo-1 {
+    height: auto;
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+    cursor: pointer;
+  }
+
+  ul.button-header {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 10px 0px;
+  }
 }

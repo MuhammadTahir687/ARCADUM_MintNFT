@@ -46,6 +46,7 @@ video#myVideo {
   position: absolute;
   top: 14%;
   right: 30%;
+  cursor: pointer;
 }
 
 button.onpress {
@@ -60,4 +61,40 @@ button.onpress {
 
 .image-game {
   position: relative;
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  .bubble-image {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+
+  .subheading-bubble h2 {
+    color: #fff;
+    font-size: 30px;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: left;
+    font-weight: 700;
+    padding: 12px 0px !important;
+  }
+
+  .subheading-bubble p {
+    color: #6e6e6e;
+    font-size: 19px;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: left;
+    padding: 0px 0px 20px 0px;
+  }
+  .nft_coll_info h4 {
+    text-align: center;
+    font-size: 16px;
+    font-family: "IBM Plex Mono";
+    color: #fff;
+  }
+  
 }

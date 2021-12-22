@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Sections } from "../../Sections";
 
 import "./NavbarSection.css";
+import "../../App.css";
 import "../TimerSection/TimerSection.css";
 import "../CommingSoonSection/CommingSoonSection.css";
 import logo from "../../assetsIMG/logo.png";
@@ -14,10 +15,9 @@ import Artboard2 from "../../assetsIMG/Artboard 2.png";
 import Artboard3 from "../../assetsIMG/Artboard 3.png";
 import artboard4 from "../../assetsIMG/Artboard 4.png";
 import { CommingSoonSection } from "../CommingSoonSection/CommingSoonSection";
-// import { TimerSection } from "../TimerSection/TimerSection";
 
 import WOW from "wowjs";
-import { Link } from "react-router-dom";
+
 import { Modal } from "react-bootstrap";
 
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
@@ -26,6 +26,7 @@ export const NavbarSection = () => {
   const [show, setShow] = useState(false);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [play, setPlay] = useState(false);
   useEffect(() => {
     new WOW.WOW().init({ live: false });
   }, []);
@@ -39,8 +40,11 @@ export const NavbarSection = () => {
     document.getElementById("pageSections").scrollIntoView({
       behavior: "smooth",
     });
+    // setTimeout(() => {
+    //   setShow(true);
+    // }, 4000);
   }, [scroll]);
-
+  // clearInterval(myInterval);
   return (
     <>
       <Modal fullscreen={true} show={show} onHide={() => setShow(false)}>
@@ -70,6 +74,10 @@ export const NavbarSection = () => {
               <Nav className="me-auto">
                 <div
                   onClick={() => setShow(true)}
+                  // setInterval(() => {
+
+                  // }, 1000)
+                  // }
                   id="comming-soon"
                   className="wow fadeIn nav-link"
                   data-wow-delay=".50s"
@@ -97,6 +105,34 @@ export const NavbarSection = () => {
                   </li>
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
+                {play == false ? (
+                  <div
+                    class="music-play"
+                    id="play"
+                    onClick={() => {
+                      setPlay(true);
+                      document.getElementById("myaudio").play();
+                    }}
+                  >
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </div>
+                ) : (
+                  <div
+                    class="music-play"
+                    id="play"
+                    onClick={() => {
+                      setPlay(false);
+                      document.getElementById("myaudio").pause();
+                    }}
+                  >
+                    <i class="fa fa-pause" aria-hidden="true"></i>
+                  </div>
+                )}
+                <audio
+                  id="myaudio"
+                  src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3"
+                  preload="auto"
+                ></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -136,7 +172,7 @@ export const NavbarSection = () => {
             <div className="button-text ">
               <h4
                 className="wow fadeInRightBig "
-                data-wow-delay=".50s"
+                data-wow-delay=".1s"
                 onClick={() => handleClick()}
               >
                 Press start

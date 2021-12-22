@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterSectionComming.css";
+import "../../App.css";
 import "../NavbarSection/NavbarSection.css";
 import logo from "../../assetsIMG/logo.png";
 import { Row, Col } from "react-bootstrap";
@@ -49,6 +50,9 @@ export const FooterSectionComming = () => {
                   </a>
                 </li>
               </ul>
+              <h6 className="copy-right">
+                &#169;2021 Ar-Cadum. All Right Reserved
+              </h6>
             </Col>
           </Row>
         </div>

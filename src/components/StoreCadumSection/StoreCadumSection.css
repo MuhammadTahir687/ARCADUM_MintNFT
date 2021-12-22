@@ -1,0 +1,167 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.store-cadum {
+  background-image: url("../../assetsIMG/Texture.jpg");
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bubble-image-store {
+  width: 60%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.subheading-bubble-store {
+  padding: 80px 0px 0px 0px;
+}
+
+.subheading-bubble-store h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  font-weight: 700;
+}
+
+.subheading-bubble-store h2 span {
+  color: #ff0080 !important;
+  padding-right: 20px;
+}
+
+.subheading-bubble-store p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  font-weight: 700;
+}
+
+.stor-random p {
+  color: #7a7579;
+  text-align: center;
+  font-size: 16px;
+}
+
+button.store-btn {
+  padding: 10px 60px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #fff;
+}
+
+button.store-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+i.fa.fa-shopping-cart {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+video#myVideo-1 {
+  height: auto;
+  width: 50%;
+  margin: 0px auto;
+  display: block;
+  cursor: pointer;
+}
+
+.store-arrow-btn {
+  width: 7%;
+  display: block;
+  margin: 30px auto 30px auto;
+}
+
+.store-subheading {
+  padding: 80px 0px 20px 0px;
+}
+
+.table-heading-2 {
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+}
+
+.table-heading {
+  background-color: #7c1143;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+}
+
+.border-bottom-2 {
+  border-bottom: 1px solid #eaeaea;
+  padding: 5px 0px;
+}
+
+.border-bottom-2 p {
+  font-size: 12px;
+  font-family: "IBM Plex Mono";
+}
+
+.border-bottom-1 p {
+  font-size: 12px;
+  font-family: "IBM Plex Mono";
+}
+
+.video-store {
+  z-index: 9999;
+  position: relative;
+}
+
+.store-video {
+  padding: 50px 0px 20px 0px;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 600px) {
+  .stor-random p {
+    display: none;
+  }
+
+  button.store-btn {
+    display: none;
+  }
+
+  .store-arrow-btn {
+    width: 7%;
+    display: none;
+    margin: 30px auto 30px auto;
+  }
+
+  .subheading-bubble-store p {
+    font-size: 14px;
+  }
+
+  .subheading-bubble-store h2 {
+    color: #fff;
+    font-size: 20px;
+  }
+  .subheading-bubble-store {
+    padding: 5px 0px 0px 0px;
+  }
+
+  .bubble-image-store {
+    width: 100%;
+
+    margin: 0px auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

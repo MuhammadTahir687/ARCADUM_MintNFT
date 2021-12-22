@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./CommingSoonSection.css";
+import "../../App.css";
 
 import { Section } from "../../Section";
 
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import header from "../../assetsIMG/Header.png";
-import { Link } from "react-router-dom";
+
 import arrow from "../../assetsIMG/Arrow.png";
 
-// import { CommunitySection } from "../CommunitySection/CommunitySection";
+
 
 export const CommingSoonSection = () => {
-  // const [show, setShow] = useState(false);
+
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
 
@@ -64,7 +65,10 @@ export const CommingSoonSection = () => {
         </Navbar>
 
         <div className="scrol-screen-subheading">
-          <div className="header-image wow zoomIn" data-wow-delay=".50s">
+          <div
+            className="header-image-comming wow zoomIn"
+            data-wow-delay=".50s"
+          >
             <img src={header} alt="header" />
           </div>
           <div className="scrool-timer text-center">

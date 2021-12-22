@@ -1,6 +1,6 @@
 import React from "react";
 import { BubbleGhost } from "../components/BubbleGhost/BubbleGhost";
-import { RoadMapSection } from "../components/RoadMapSection/RoadMapSection";
+import { RoadMapSectionComming } from "../components/RoadMapSectionComming/RoadMapSectionComming";
 import { CommunitySection } from "../components/CommunitySection/CommunitySection";
 import { FooterSectionComming } from "../components/FooterSectionComming/FooterSectionComming";
 
@@ -9,7 +9,7 @@ export const Section = () => {
     <div>
       <div className="box-all">
         <BubbleGhost />
-        <RoadMapSection />
+        <RoadMapSectionComming />
         <CommunitySection />
         <FooterSectionComming />
       </div>
