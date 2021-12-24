@@ -76,13 +76,23 @@
   margin: 30px auto;
 }
 
+.roadmap-image-4 {
+  width: 62%;
+  margin: 0px auto;
+}
+
+.roadmap-image-art img {
+  width: 58%;
+  margin: 0px auto;
+  display: block;
+}
+
 .box-roadmap-5 {
   position: relative;
 }
 
 .rectangle-img {
   width: 5%;
-
   margin-right: 40px;
 }
 
@@ -95,7 +105,7 @@ h1.head-img {
 
 .roadmap-heading-1::before {
   content: "";
-  height: 393px;
+  height: 268px;
   width: 1px;
   background-color: #787778;
   z-index: 9999999;
@@ -154,6 +164,7 @@ div#roadimg-5 {
   }
 
   .roadmap-image,
+  .roadmap-image-4,
   .roadmap-image-art,
   .roadmap-image-5 {
     display: none;
@@ -234,7 +245,7 @@ div#roadimg-5 {
   }
 
   .roadmap-image,
-  .roadmap-image-art,
+  .roadmap-image-4 .roadmap-image-art,
   .roadmap-image-5 {
     display: none;
   }
@@ -293,4 +304,14 @@ div#roadimg-5 {
   padding-top: 20px;
   font-family: "IBM Plex Mono", monospace;
   padding: 20px 80px 40px 150px;
+}
+
+.roadmap-heading-5::before {
+  height: 686px;
+  width: 1px;
+  background-color: #787778;
+  z-index: 9999999;
+  position: absolute;
+  top: 93px;
+  left: 41px;
 }

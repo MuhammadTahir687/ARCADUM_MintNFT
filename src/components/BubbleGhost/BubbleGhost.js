@@ -14,7 +14,7 @@ export const BubbleGhost = () => {
   };
 
   return (
-    <div className="bubble-ghost py-5" style={{ backgroundColor: "#151515" }}>
+    <div className="bubble-ghost py-5">
       <Container className="container">
         <Row>
           <Col sm={12} lg={6} md={6}>
@@ -22,16 +22,13 @@ export const BubbleGhost = () => {
               <div className="bubble-image">
                 <img src={bubble} alt="image" />
               </div>
-              <h2 className="py-4">
+              <h2 className="py-2">
                 <span>Bubble Ghost</span>(1987)
               </h2>
               <p>
-                In Bubble Ghost you must help a <br />
-                mischievous littele spook blow a <br />
-                delicate bubble through a <br />
-                castle filed with diabolical
-                <br />
-                devic and demons.
+                In Bubble Ghost you must help a mischievous littele spook blow a
+                delicate bubble through a castle filed with diabolical devic and
+                demons.
               </p>
             </div>
           </Col>
@@ -42,7 +39,7 @@ export const BubbleGhost = () => {
               {/* </div> */}
               <div className="image-game">
                 <img src={game} alt="game" className="game-img" />
-                <video id="myVideo" onClick={() => handleClick()}>
+                <video autoPlay loop id="myVideo">
                   <source src={video} type="video/mp4" />
                 </video>
               </div>

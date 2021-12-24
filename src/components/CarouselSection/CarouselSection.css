@@ -20,6 +20,7 @@
   text-align: center;
   font-size: 30px;
   font-family: "IBM Plex Mono";
+  color: #585858;
 }
 
 .nft_wrap img:hover {
@@ -61,13 +62,15 @@ a.drop-btn {
   text-decoration: none !important;
   color: #000;
   background-color: #fff;
+  transition: 0.2s ease-in-out 0s;
 }
 
 a.drop-btn:hover {
   background-color: transparent;
   color: #fff;
-  transition: 0.6s;
-  transform: scaleX(2);
+  transform: scaleX(1.5);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 992px) {
@@ -84,6 +87,7 @@ a.drop-btn:hover {
     text-decoration: none !important;
     color: #000;
     background-color: #fff;
+    transition: 0.6s ease;
   }
 }
 
@@ -101,5 +105,12 @@ a.drop-btn:hover {
     text-decoration: none !important;
     color: #000;
     background-color: #fff;
+  }
+
+  .nft_coll_info h4 {
+    text-align: center;
+    font-size: 16px;
+    font-family: "IBM Plex Mono";
+    color: #fff;
   }
 }

@@ -8,20 +8,20 @@ import { TeamMemberSection } from "../components/TeamMemberSection/TeamMemberSec
 import { CommunitySection } from "../components/CommunitySection/CommunitySection";
 import { FooterSection } from "../components/FooterSection/FooterSection";
 
-
 export const Sections = () => {
   return (
     <div>
+      <div className="timer-section-bubble_ghost">
       <TimerSection />
+      <BubbleGhost />
+      </div>
       <div className="box-all">
-        <BubbleGhost />
         <CarouselSection />
         <RoadMapSection />
         <TeamCreativeSection />
         <TeamMemberSection />
         <CommunitySection />
         <FooterSection />
-        
       </div>
     </div>
   );

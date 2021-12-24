@@ -100,7 +100,7 @@ h1.head-img {
 
 .roadmap-heading-1::before {
   content: "";
-  height: 393px;
+  height: 220px;
   width: 1px;
   background-color: #787778;
   z-index: 9999999;

@@ -11,3 +11,13 @@ body {
 .box-all-footer {
   background-color: #120d13;
 }
+
+.timer-section-bubble_ghost {
+  background-image: url("./assetsIMG/Texture.jpg");
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

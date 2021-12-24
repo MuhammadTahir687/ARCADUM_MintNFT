@@ -4,7 +4,7 @@ import "../../App.css";
 
 export const TimerSection = () => {
   return (
-    <div className="timer-section py-5" id="timer">
+    <div className="timer-section pt-5" id="timer">
       <div className="subheading-timer">
         <h1>
           own an actual piece of the game <br />
@@ -24,7 +24,7 @@ export const TimerSection = () => {
         <h2>0 : 00 : 00</h2>
 
         <h4>
-          public slae starts
+          public sale starts
           <br />
           december 20th 7pm est
         </h4>

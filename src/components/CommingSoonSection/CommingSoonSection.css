@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.srcool-Group {
+  position: relative;
+}
+
 .scrool-timer {
   padding-top: 130px;
 }
@@ -36,7 +40,7 @@
   background-image: url("../../assetsIMG/Casette..png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 700px;
+  width: 611px;
   height: 727px;
   margin: 0px auto 0px auto;
   position: relative;

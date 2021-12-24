@@ -1,24 +1,31 @@
-.footer-image-1 {
+.footer-image {
   width: 20%;
   cursor: pointer;
+}
+.copy-right {
+  color: #6f5b71;
+  font-size: 20px;
+  font-family: "IBM Plex Mono";
+  padding-top: 11px;
+  display: none;
 }
 
 .footer-subheading {
   padding: 70px 50px;
 }
 
-.footer-subhead-1 p {
+.footer-subhead p {
   color: #fff;
   font-size: 19px;
   font-family: "IBM Plex Mono";
   font-weight: 400;
-  margin-bottom: 0 !important;
 }
 
-.footer-subhead-1 h6 {
+.footer-subhead h6 {
   color: #6f5b71;
   font-size: 20px;
   font-family: "IBM Plex Mono";
+  padding-top: 11px;
 }
 
 .footer-right-subheading {
@@ -38,18 +45,12 @@
   color: #6f5b71;
   font-size: 20px;
   font-family: "IBM Plex Mono";
+  margin-bottom: 0;
 }
 
 .footer-right-subheading p:hover {
   color: #fff;
   cursor: pointer;
-}
-.copy-right {
-  color: #6f5b71;
-  font-size: 20px;
-  font-family: "IBM Plex Mono";
-  padding-top: 11px;
-  display: none;
 }
 
 @media screen and (max-width: 992px) {

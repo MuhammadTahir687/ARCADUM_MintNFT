@@ -82,10 +82,9 @@ export const CommingSoonSection = () => {
           </div>
           <div className="scrool-lorem text-center">
             <p>
-              Each artwork is origina
-              <br /> l with own color palette
+             Own 1,987 unique in-game sprites
             </p>
-            <button className="scrol-btn">Lorem ipsum</button>
+            <button className="scrol-btn">Power Up</button>
             <div className="box-img" onClick={() => handleClick()}>
               <img src={arrow} alt="arrow" />
             </div>

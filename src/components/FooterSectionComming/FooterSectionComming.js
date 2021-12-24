@@ -17,8 +17,8 @@ export const FooterSectionComming = () => {
       <div className="container">
         <div className="footer-subheading">
           <Row>
-            <Col sm={12} lg={9} md={9} className="footer-subhead-1">
-              <div className="footer-image-1">
+            <Col sm={12} lg={9} md={9} className="footer-subhead">
+              <div className="footer-image">
                 <img src={logo} alt="image" onClick={() => handleScroll()} />
               </div>
 

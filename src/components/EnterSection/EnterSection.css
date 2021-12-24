@@ -41,3 +41,10 @@ div#boxex {
   width: 100%;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .enter-box-image img {
+    width: 30%;
+    height: auto;
+  }
+}

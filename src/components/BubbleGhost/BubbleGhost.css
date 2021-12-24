@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans&family=IBM+Plex+Mono:wght@300&family=VT323&display=swap");
 
 .bubble-image {
-  width: 40%;
+  width: 56%;
   height: auto;
   margin: 0px auto;
 }
@@ -64,7 +64,6 @@ button.onpress {
 }
 
 @media screen and (max-width: 992px) {
-
 }
 
 @media screen and (max-width: 600px) {
@@ -76,11 +75,16 @@ button.onpress {
 
   .subheading-bubble h2 {
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "IBM Plex Mono", monospace;
     text-align: left;
     font-weight: 700;
     padding: 12px 0px !important;
+  }
+
+  .subheading-bubble h2 span {
+    color: #ff0080 !important;
+    padding-right: 10px;
   }
 
   .subheading-bubble p {
@@ -96,5 +100,4 @@ button.onpress {
     font-family: "IBM Plex Mono";
     color: #fff;
   }
-  
 }
