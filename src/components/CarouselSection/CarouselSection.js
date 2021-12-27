@@ -8,15 +8,44 @@ import OwlCarousel from "react-owl-carousel";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-const options = {
-  items: 2,
-};
+// const options = {
+//   items: 2,
+// };
 
 export const CarouselSection = () => {
+  const options = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      700: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  };
   return (
     <div className="carousel-section" style={{ backgroundColor: "#151515" }}>
       <div className="container">
-        <OwlCarousel className="owl-theme" loop margin={30} nav>
+        <OwlCarousel
+          className="owl-theme"
+          {...options}
+          margin={30}
+          loop={true}
+          nav={true}
+          dots={false}
+          autoplay={false}
+          dots={true}
+          items={3}
+        >
           <div className="item wow fadeInUp" data-wow-delay=".25s">
             <div className="nft_coll">
               <div className="nft_wrap">

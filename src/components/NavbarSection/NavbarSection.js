@@ -26,7 +26,7 @@ export const NavbarSection = () => {
   const [show, setShow] = useState(false);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
-  const [play, setPlay] = useState(false);
+  // const [play, setPlay] = useState(false);
   useEffect(() => {
     new WOW.WOW().init({ live: false });
   }, []);
@@ -60,15 +60,15 @@ export const NavbarSection = () => {
       <div className="navbar-section" id="nav">
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
-            {/* <Navbar.Brand */}
-            <div
-              // href=""
-              className="wow fadeInLeftBig"
-              data-wow-delay=".50s logo-img"
-            >
-              <img src={logo} alt="image" />
-              {/* </Navbar.Brand> */}
-            </div>
+            <Navbar.Brand href="/">
+              <div
+                className="wow fadeInLeftBig"
+                data-wow-delay=".50s logo-img"
+                id="logo-image"
+              >
+                <img src={logo} alt="image" />
+              </div>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -84,7 +84,6 @@ export const NavbarSection = () => {
                 >
                   Comming Soon
                 </div>
-                {/* </Link> */}
               </Nav>
               <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
                 <ul className="button-header">
@@ -105,7 +104,7 @@ export const NavbarSection = () => {
                   </li>
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
-                {play == false ? (
+                {/* {play == false ? (
                   <div
                     class="music-play"
                     id="play"
@@ -127,12 +126,12 @@ export const NavbarSection = () => {
                   >
                     <i class="fa fa-pause" aria-hidden="true"></i>
                   </div>
-                )}
-                <audio
+                )} */}
+                {/* <audio
                   id="myaudio"
                   src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3"
                   preload="auto"
-                ></audio>
+                ></audio> */}
               </Nav>
             </Navbar.Collapse>
           </Container>

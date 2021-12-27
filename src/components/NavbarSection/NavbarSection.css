@@ -99,7 +99,7 @@ ul.button-header li a:hover {
   border: 1px solid #fff;
   background: transparent;
   padding: 0px 30px;
-  margin: 11px 0px 5px 16px;
+  margin: 14px 0px 6px 16px;
   position: relative;
   text-decoration: none;
   z-index: 0;
@@ -417,6 +417,12 @@ a.wow.fadeInLeftBig.navbar-brand {
     position: relative;
     z-index: 99;
   }
+
+  #responsive-navbar-nav {
+    background-color: #130018;
+    z-index: 999;
+    padding: 20px 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -428,6 +434,12 @@ a.wow.fadeInLeftBig.navbar-brand {
     position: absolute;
     bottom: 0px;
     left: 15% !important;
+  }
+
+  #responsive-navbar-nav {
+    background-color: #130018;
+    z-index: 999;
+    padding: 20px 10px;
   }
 
   .header-image {
@@ -493,7 +505,12 @@ a.wow.fadeInLeftBig.navbar-brand {
   .classic-image {
     width: 46%;
     height: auto;
-    margin: 50px auto 0px auto;
+    margin: 0px auto 0px auto;
+  }
+  div#logo-image {
+    width: 45% !important;
+    position: absolute;
+    top: 12px;
   }
 }
 

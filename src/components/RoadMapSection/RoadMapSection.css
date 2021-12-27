@@ -210,7 +210,7 @@ div#roadimg-5 {
   }
   .roadmap-heading-1 p {
     color: #9e9b9e;
-    font-size: 17px;
+    font-size: 15px;
     margin: 0px auto;
     padding-top: 20px;
     font-family: "IBM Plex Mono", monospace;
@@ -219,7 +219,7 @@ div#roadimg-5 {
 
   .roadmap-heading-5 p {
     color: #9e9b9e;
-    font-size: 17px;
+    font-size: 15px;
     margin: 0px auto;
     padding-top: 20px;
     font-family: "IBM Plex Mono", monospace;
@@ -256,13 +256,13 @@ div#roadimg-5 {
   }
   .roadmap-heading-1::before {
     content: "";
-    height: 686px;
+    height: 270px !important;
     width: 1px;
     background-color: #787778;
     z-index: 9999999;
     position: absolute;
     top: 93px;
-    left: 41px;
+    left: 34px !important;
   }
 
   .roadmap-heading-1 h1 {
@@ -299,7 +299,7 @@ div#roadimg-5 {
 
 .roadmap-heading-5 p {
   color: #9e9b9e;
-  font-size: 17px;
+  font-size: 15px;
   margin: 0px auto;
   padding-top: 20px;
   font-family: "IBM Plex Mono", monospace;

@@ -81,7 +81,7 @@
   }
 
   .heading h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-family: "IBM Plex Mono";
     font-weight: 900;
     color: #785c7a;
@@ -96,7 +96,7 @@
   }
 
   .heading h1 {
-    font-size: 25px;
+    font-size: 17px;
     font-family: "IBM Plex Mono";
     font-weight: bold;
     position: relative;

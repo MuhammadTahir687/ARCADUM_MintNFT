@@ -1,7 +1,6 @@
 import React from "react";
 import "./TeamMemberSection.css";
 import "../../App.css";
-import "../NavbarSection/NavbarSection.css";
 import { Row, Col } from "react-bootstrap";
 
 import heart from "../../assetsIMG/Icon/Heart_Icon.svg";
@@ -16,7 +15,7 @@ export const TeamMemberSection = () => {
       <div className="team-member py-5" style={{ backgroundColor: "#000" }}>
         <div className="container">
           <Row>
-            <Col sm={12} lg={4} md={4}>
+            <Col sm={12} lg={4} md={6}>
               <div className="member-section-subheading">
                 <div className="overlay">
                   <div className="member-image">
@@ -28,7 +27,7 @@ export const TeamMemberSection = () => {
                   Lorem ipsum doler site amet, consectetur <br />
                   adipiscing elit, sed do eiusmod tempor <br /> incididunt
                 </p>
-                <ul className="button-header">
+                <ul className="button-header-team-section">
                   <li>
                     <a href="">
                       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -47,7 +46,7 @@ export const TeamMemberSection = () => {
                 </ul>
               </div>
             </Col>
-            <Col sm={12} lg={4} md={4}>
+            <Col sm={12} lg={4} md={6}>
               <div className="member-section-subheading">
                 <div className="member-image">
                   <img src={coin} alt="img" />
@@ -57,7 +56,7 @@ export const TeamMemberSection = () => {
                   Lorem ipsum doler site amet, consectetur <br />
                   adipiscing elit, sed do eiusmod tempor <br /> incididunt
                 </p>
-                <ul className="button-header">
+                <ul className="button-header-team-section">
                   <li>
                     <a href="">
                       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -76,7 +75,7 @@ export const TeamMemberSection = () => {
                 </ul>
               </div>
             </Col>
-            <Col sm={12} lg={4} md={4}>
+            <Col sm={12} lg={4} md={6}>
               <div className="member-section-subheading">
                 <div className="member-image">
                   <img src={chest} alt="img" />
@@ -86,7 +85,7 @@ export const TeamMemberSection = () => {
                   Lorem ipsum doler site amet, consectetur <br />
                   adipiscing elit, sed do eiusmod tempor <br /> incididunt
                 </p>
-                <ul className="button-header">
+                <ul className="button-header-team-section">
                   <li>
                     <a href="">
                       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -106,6 +105,7 @@ export const TeamMemberSection = () => {
               </div>
             </Col>
           </Row>
+
           <div className="sword">
             <div className="member-section-subheading sword-flex">
               <div className="member-image">
@@ -116,7 +116,7 @@ export const TeamMemberSection = () => {
                 Lorem ipsum doler site amet, consectetur <br />
                 adipiscing elit, sed do eiusmod tempor <br /> incididunt
               </p>
-              <ul className="button-header team-section">
+              <ul className="button-header-team-section team-section">
                 <li>
                   <a href="">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -144,7 +144,7 @@ export const TeamMemberSection = () => {
                 Lorem ipsum doler site amet, consectetur <br />
                 adipiscing elit, sed do eiusmod tempor <br /> incididunt
               </p>
-              <ul className="button-header team-section">
+              <ul className="button-header-team-section team-section">
                 <li>
                   <a href="">
                     <i class="fa fa-twitter" aria-hidden="true"></i>

@@ -49,3 +49,32 @@ button.join-button:hover {
   border: 1px solid #fff;
   color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+  .join-subheading p {
+    width: 100%;
+    margin: 37px auto;
+    color: #fff;
+    font-size: 13px;
+    font-family: "IBM Plex Mono";
+    padding: 0px 10px;
+  }
+
+  .join-subheading h1 {
+    color: #fff;
+    font-size: 21px;
+    font-family: "IBM Plex Mono";
+    text-align: center;
+    font-weight: 700;
+  }
+
+  button.join-button {
+    font-size: 17px;
+    padding: 8px 20px;
+    background: #fff;
+    border: 1px solid #fff;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    color: #000;
+  }
+}
