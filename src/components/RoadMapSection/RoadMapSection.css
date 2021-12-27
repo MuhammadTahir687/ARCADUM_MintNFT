@@ -71,6 +71,11 @@
   position: relative;
 }
 
+div#roadimg-2 {
+  width: 40%;
+  margin: 30px auto;
+}
+
 .roadmap-image {
   width: 60%;
   margin: 30px auto;
@@ -115,7 +120,7 @@ h1.head-img {
 }
 
 div#roadimg-5 {
-  width: 56%;
+  width: 50%;
   position: absolute;
   top: 3%;
   right: 60px;
@@ -125,6 +130,7 @@ div#roadimg-5 {
 @media screen and (max-width: 992px) {
   .roadmap-image,
   .roadmap-image-art,
+  div#roadimg-2,
   .roadmap-image-5 {
     display: none;
   }
@@ -166,7 +172,8 @@ div#roadimg-5 {
   .roadmap-image,
   .roadmap-image-4,
   .roadmap-image-art,
-  .roadmap-image-5 {
+  .roadmap-image-5,
+  div#roadimg-2 {
     display: none;
   }
 

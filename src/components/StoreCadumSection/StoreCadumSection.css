@@ -124,12 +124,28 @@ video#myVideo-1 {
   padding: 50px 0px 20px 0px;
 }
 
+thead {
+  background-color: #8c0041;
+  color: #fff;
+}
+
+tbody {
+  background: #fff;
+}
+
+.tabel {
+  margin: 40px 0px;
+}
+
 @media screen and (max-width: 992px) {
 }
 
 @media screen and (max-width: 600px) {
   .stor-random p {
     display: none;
+  }
+  div#store-cadum {
+    width: 58%;
   }
 
   button.store-btn {

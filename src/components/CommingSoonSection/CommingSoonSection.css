@@ -12,7 +12,7 @@
 }
 
 .scrool-timer {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 .scrool-timer h2 {
@@ -91,6 +91,14 @@ button.scrol-btn:hover {
   padding-top: 100px;
 }
 
+/* .close {
+  width: 3%;
+  position: absolute;
+  top: -13px;
+  z-index: 99999;
+  left: 8%;
+} */
+
 @media screen and (max-width: 992px) {
   .scrol-screen-subheading {
     background-image: url("../../assetsIMG/Casette..png");
@@ -109,10 +117,34 @@ button.scrol-btn:hover {
     background-image: url("../../assetsIMG/Casette..png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 382px;
-    height: 727px;
-    margin: 0px auto 0px auto;
+    width: 371px;
+    height: 445px;
+    margin: 100px 0px 150px 12px;
     position: relative;
-    top: -97px;
+    top: 0px;
+  }
+  .scrool-timer h2 {
+    color: #fff;
+    font-family: "8 Bit Fortress";
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .scrool-timer {
+    padding-top: 35px;
+  }
+  .scrool-timer h4 {
+    color: #fff;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0px;
+  }
+  .scrool-lorem p {
+    color: #fff;
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 80px;
   }
 }

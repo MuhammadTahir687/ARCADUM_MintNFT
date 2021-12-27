@@ -14,7 +14,7 @@ export const BubbleGhost = () => {
   };
 
   return (
-    <div className="bubble-ghost py-5">
+    <div className="bubble-ghost pb-5">
       <Container className="container">
         <Row>
           <Col sm={12} lg={6} md={6}>

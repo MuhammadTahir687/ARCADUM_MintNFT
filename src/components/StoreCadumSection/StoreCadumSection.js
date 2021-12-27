@@ -24,7 +24,11 @@ export const StoreCadumSection = () => {
       <div className="store-cadum" id="store">
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
-            <div className="wow fadeInLeftBig" data-wow-delay=".50s logo-img">
+            <div
+              className="wow fadeInLeftBig"
+              data-wow-delay=".50s logo-img"
+              id="store-cadum"
+            >
               <a href="/">
                 <img src={logo} alt="image" />
               </a>
@@ -106,8 +110,7 @@ export const StoreCadumSection = () => {
               </div>
             </Col>
             <Col sm={12} lg={6} md={6}>
-              <div className="table-heading">
-                <Row>
+              {/* <Row>
                   <Col sm={12} lg={7} md={7}>
                     <h6>ITEM</h6>
                   </Col>
@@ -115,7 +118,7 @@ export const StoreCadumSection = () => {
                     <h6>RARITY</h6>
                   </Col>
                   <Col sm={12} lg={2} md={2}>
-                    <h6>EDITIONS</h6>
+                    <h6>RARITY</h6>
                   </Col>
                 </Row>
               </div>
@@ -164,7 +167,39 @@ export const StoreCadumSection = () => {
                   <Col sm={12} lg={2} md={2}>
                     <p>1082</p>
                   </Col>
-                </Row>
+                </Row>*/}
+              <div className="tabel">
+                <table class="table ">
+                  <thead>
+                    <tr>
+                      <th>ITEM</th>
+                      <th>RARITY</th>
+                      <th>EDITIONS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bubble Ghost Waving - Animated Sprite</td>
+                      <td>Secret</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Blowing a Bubble - Animated Sprite</td>
+                      <td>Power-Up</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Bubble Ghost Floating Logo - Animated Sprite</td>
+                      <td>Retro</td>
+                      <td>800</td>
+                    </tr>
+                    <tr>
+                      <td>Bubble Ghost Screen - Animated</td>
+                      <td>Classic</td>
+                      <td>1082</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </Col>
           </Row>

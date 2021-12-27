@@ -294,7 +294,7 @@ a.wow.fadeInLeftBig.navbar-brand {
 .close {
   width: 3%;
   position: absolute;
-  top: 4px;
+  top: -10px;
   z-index: 99999;
   left: 8%;
 }
@@ -445,7 +445,7 @@ a.wow.fadeInLeftBig.navbar-brand {
   .header-image {
     width: 30%;
     height: auto;
-    margin: 20px auto 20px auto;
+    margin: 14px auto 2px auto;
     position: relative;
     z-index: 99;
   }

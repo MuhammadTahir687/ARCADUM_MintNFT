@@ -90,7 +90,7 @@ export const RoadMapSection = () => {
               </div>
             </Col>
             <Col sm={12} lg={4} md={4}>
-              <div className="roadmap-image" id="roadimg-2">
+              <div className="roadmap-image-2" id="roadimg-2">
                 <img src={roadimg2} alt="img" onClick={() => handleOnClick()} />
               </div>
             </Col>
@@ -144,7 +144,7 @@ export const RoadMapSection = () => {
           <div className="box-roadmap-5">
             <Row className="box-roadmap-3">
               <Col sm={12} lg={8} md={8}>
-                <div className="roadmap-heading-5 roadmap-heading-1">
+                <div className="roadmap-heading-5 ">
                   <h1 className="head-img">
                     <div className="rectangle-img">
                       <img src={img} />

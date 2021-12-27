@@ -35,25 +35,29 @@ export const NavbarSection = () => {
     setVisibl(true);
     setScroll(!scroll);
   };
-
   useEffect(() => {
     document.getElementById("pageSections").scrollIntoView({
       behavior: "smooth",
     });
-    // setTimeout(() => {
-    //   setShow(true);
-    // }, 4000);
   }, [scroll]);
+
+  useEffect(() => {
+    // document.getElementById("pageSections").scrollIntoView({
+    //   behavior: "smooth",
+    // });
+    setTimeout(() => {
+      setShow(true);
+    }, 6000);
+  }, []);
   // clearInterval(myInterval);
   return (
     <>
       <Modal fullscreen={true} show={show} onHide={() => setShow(false)}>
-        <div className="close" onClick={() => setShow(false)}>
-          <button className="btn-close">X</button>
-        </div>
-
         <Modal.Body>
           <CommingSoonSection />
+          <div className="close" onClick={() => setShow(false)}>
+            <button className="btn-close">X</button>
+          </div>
         </Modal.Body>
       </Modal>
 

@@ -9,12 +9,11 @@ import header from "../../assetsIMG/Header.png";
 
 import arrow from "../../assetsIMG/Arrow.png";
 
-
-
 export const CommingSoonSection = () => {
-
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
+  // const [show, setShow] = useState(false);
+  const [hide, setHide] = useState(false);
 
   const handleClick = () => {
     setVisibl(true);
@@ -33,7 +32,7 @@ export const CommingSoonSection = () => {
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
             <Navbar.Brand>
-              {/* <div className="close" onClick={() => setShow(false)}>
+              {/* <div className="close" onClick={() => setHide(true)}>
                 <button className="btn-close">X</button>
               </div> */}
             </Navbar.Brand>
@@ -81,9 +80,7 @@ export const CommingSoonSection = () => {
             </h4>
           </div>
           <div className="scrool-lorem text-center">
-            <p>
-             Own 1,987 unique in-game sprites
-            </p>
+            <p>Own 1,987 unique in-game sprites</p>
             <button className="scrol-btn">Power Up</button>
             <div className="box-img" onClick={() => handleClick()}>
               <img src={arrow} alt="arrow" />
