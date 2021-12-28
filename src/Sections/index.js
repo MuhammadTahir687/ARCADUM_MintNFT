@@ -12,10 +12,12 @@ export const Sections = () => {
   return (
     <div>
       <div className="timer-section-bubble_ghost">
-      <TimerSection />
-      <BubbleGhost />
+        <div className="overlay">
+          <TimerSection />
+        </div>
       </div>
       <div className="box-all">
+        <BubbleGhost />
         <CarouselSection />
         <RoadMapSection />
         <TeamCreativeSection />

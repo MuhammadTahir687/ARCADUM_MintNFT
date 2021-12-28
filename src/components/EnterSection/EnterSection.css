@@ -9,6 +9,12 @@ img {
   /* overflow-x: hidden; */
 }
 
+.enter-section-color {
+  background: #000;
+  z-index: 0;
+  position: relative;
+}
+
 .enter-box-image img {
   width: 12%;
   height: auto;

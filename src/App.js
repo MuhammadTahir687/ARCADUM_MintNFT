@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { EnterSection } from "./components/EnterSection/EnterSection";
 import { StoreCadumSection } from "./components/StoreCadumSection/StoreCadumSection";
 import { FooterSectionStore } from "./components/FooterSectionStore/FooterSectionStore";
+import { SubPageProduct } from "./components/SubPageProduct/SubPageProduct";
 
 function App() {
   return (
@@ -33,7 +34,19 @@ function App() {
               </div>
               <div className="box-all-footer">
                 <FooterSectionStore />
-               
+              </div>
+            </>
+          )}
+        />
+        <Route
+          exact
+          path="/sub-page"
+          component={() => (
+            <>
+              {" "}
+              <SubPageProduct />
+              <div className="box-all-footer">
+                <FooterSectionStore />
               </div>
             </>
           )}

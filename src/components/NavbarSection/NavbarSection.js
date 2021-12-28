@@ -7,6 +7,8 @@ import "../../App.css";
 import "../TimerSection/TimerSection.css";
 import "../CommingSoonSection/CommingSoonSection.css";
 import logo from "../../assetsIMG/logo.png";
+import music from "../../assetsIMG/MusicPlayer.png";
+import audio from "../../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 import classic from "../../assetsIMG/classic.png";
 import header from "../../assetsIMG/Header.png";
 import arcade from "../../assetsIMG/Arcade.png";
@@ -26,7 +28,7 @@ export const NavbarSection = () => {
   const [show, setShow] = useState(false);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
-  // const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(false);
   useEffect(() => {
     new WOW.WOW().init({ live: false });
   }, []);
@@ -64,13 +66,21 @@ export const NavbarSection = () => {
       <div className="navbar-section" id="nav">
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
-            <Navbar.Brand href="/">
+            <Navbar.Brand>
               <div
+                onClick={() => {
+                  setPlay(!play);
+                  {
+                    play == true
+                      ? document.getElementById("myaudio").play()
+                      : document.getElementById("myaudio").pause();
+                  }
+                }}
                 className="wow fadeInLeftBig"
                 data-wow-delay=".50s logo-img"
-                id="logo-image"
+                id="logo-image-music"
               >
-                <img src={logo} alt="image" />
+                <img src={music} alt="image" />
               </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -131,11 +141,7 @@ export const NavbarSection = () => {
                     <i class="fa fa-pause" aria-hidden="true"></i>
                   </div>
                 )} */}
-                {/* <audio
-                  id="myaudio"
-                  src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3"
-                  preload="auto"
-                ></audio> */}
+                <audio id="myaudio" src={audio} preload="auto"></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>

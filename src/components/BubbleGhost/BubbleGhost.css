@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans&family=IBM+Plex+Mono:wght@300&family=VT323&display=swap");
 
 .bubble-image {
-  width: 56%;
+  width: 38%;
   height: auto;
-  margin: 0px auto;
+  margin: -139px auto 0px 132px !important;
+  position: relative;
 }
+
+.bubble-ghost {
+  position: relative;
+  margin-bottom: 100px !important;
+}
+
 .container {
   max-width: 70%;
   margin: 0px auto;
@@ -28,6 +35,11 @@
   font-size: 25px;
   font-family: "IBM Plex Mono", monospace;
   text-align: left;
+}
+
+.game-section {
+  margin: -139px 0px !important;
+  position: relative;
 }
 
 /* .game-section {
@@ -70,7 +82,12 @@ button.onpress {
   .bubble-image {
     width: 100%;
     height: auto;
-    margin: 0px auto;
+    margin: 0px auto !important ;
+  }
+
+  .game-section {
+    margin: 0px 0px !important;
+    position: relative;
   }
 
   .subheading-bubble h2 {

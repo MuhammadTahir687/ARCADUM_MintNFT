@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import "./StoreCadumSection.css";
 // import "./NavbarSection.css";
 import { Row, Col, Container } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
+import audio from "../../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 import logo from "../../assetsIMG/logo.png";
 import bubble from "../../assetsIMG/BubbleGhost.png";
 import arrow from "../../assetsIMG/Arrow.png";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import arvideo from "../../video/arcadum.mp4";
+import music from "../../assetsIMG/MusicPlayer.png";
 import video from "../../video/VideoGame.mp4";
 
 export const StoreCadumSection = () => {
@@ -25,7 +27,7 @@ export const StoreCadumSection = () => {
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Container>
             <div
-              className="wow fadeInLeftBig"
+              className="wow fadeInLeftBig "
               data-wow-delay=".50s logo-img"
               id="store-cadum"
             >
@@ -35,7 +37,23 @@ export const StoreCadumSection = () => {
             </div>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto"></Nav>
+              <Nav className="me-auto">
+                <div
+                  onClick={() => {
+                    setPlay(!play);
+                    {
+                      play == true
+                        ? document.getElementById("myaudio").play()
+                        : document.getElementById("myaudio").pause();
+                    }
+                  }}
+                  className="wow fadeInLeftBig"
+                  data-wow-delay=".50s logo-img"
+                  id="logo-image-music"
+                >
+                  <img src={music} alt="image" />
+                </div>
+              </Nav>
               <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
                 <ul className="button-header">
                   <li>
@@ -55,6 +73,7 @@ export const StoreCadumSection = () => {
                   </li>
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
+                <audio id="myaudio" src={audio} preload="auto"></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -85,10 +104,10 @@ export const StoreCadumSection = () => {
                     <br />
                     devic and demons.
                   </p>
-                  <button className="store-btn">
+                  <Link to="sub-page" className="store-btn">
                     O.148 ETH | Buy Now{" "}
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  </button>
+                  </Link>
                 </div>
               </Col>
             </Row>
@@ -110,64 +129,6 @@ export const StoreCadumSection = () => {
               </div>
             </Col>
             <Col sm={12} lg={6} md={6}>
-              {/* <Row>
-                  <Col sm={12} lg={7} md={7}>
-                    <h6>ITEM</h6>
-                  </Col>
-                  <Col sm={12} lg={3} md={3}>
-                    <h6>RARITY</h6>
-                  </Col>
-                  <Col sm={12} lg={2} md={2}>
-                    <h6>RARITY</h6>
-                  </Col>
-                </Row>
-              </div>
-
-              <div className="table-heading-2">
-                <Row className="border-bottom-2">
-                  <Col sm={12} lg={7} md={7}>
-                    <p>Bubble Ghost Waving - Animated Sprite</p>
-                  </Col>
-                  <Col sm={12} lg={3} md={3}>
-                    <p>Secret</p>
-                  </Col>
-                  <Col sm={12} lg={2} md={2}>
-                    <p>5</p>
-                  </Col>
-                </Row>
-                <Row className="border-bottom-2">
-                  <Col sm={12} lg={7} md={7}>
-                    <p>Blowing a Bubble - Animated Sprite</p>
-                  </Col>
-                  <Col sm={12} lg={3} md={3}>
-                    <p>Power-Up</p>
-                  </Col>
-                  <Col sm={12} lg={2} md={2}>
-                    <p>100</p>
-                  </Col>
-                </Row>
-                <Row className="border-bottom-2">
-                  <Col sm={12} lg={7} md={7}>
-                    <p>Bubble Ghost Floating Logo - Animated Sprite</p>
-                  </Col>
-                  <Col sm={12} lg={3} md={3}>
-                    <p>Retro</p>
-                  </Col>
-                  <Col sm={12} lg={2} md={2}>
-                    <p>800</p>
-                  </Col>
-                </Row>
-                <Row className="border-bottom-1">
-                  <Col sm={12} lg={7} md={7}>
-                    <p>Bubble Ghost Screen - Animated</p>
-                  </Col>
-                  <Col sm={12} lg={3} md={3}>
-                    <p>Classic</p>
-                  </Col>
-                  <Col sm={12} lg={2} md={2}>
-                    <p>1082</p>
-                  </Col>
-                </Row>*/}
               <div className="tabel">
                 <table class="table ">
                   <thead>

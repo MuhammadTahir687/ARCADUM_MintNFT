@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans&family=IBM+Plex+Mono:wght@300&family=VT323&display=swap");
+
+.bubble-image-comming {
+  width: 38%;
+  height: auto;
+  margin: 60px auto 0px 132px;
+  position: relative;
+}
+
+.bubble-ghost-comming {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0px auto;
+}
+
+.subheading-bubble-comming h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  font-weight: 700;
+}
+
+.subheading-bubble-comming h2 span {
+  color: #ff0080 !important;
+  padding-right: 20px;
+}
+
+.subheading-bubble-comming p {
+  color: #6e6e6e;
+  font-size: 25px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+}
+
+.game-section-comming {
+  margin: 60px 0px;
+  position: relative;
+}
+
+/* .game-section {
+  background-image: url("../../assetsIMG/Scroll Group 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 670px;
+} */
+
+video#myVideo {
+  height: auto;
+  width: 36%;
+  margin: 0px auto;
+  display: block;
+  position: absolute;
+  top: 14%;
+  right: 30%;
+  cursor: pointer;
+}
+
+button.onpress {
+  font-size: 13px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0px auto;
+  display: block;
+}
+
+.image-game-comming {
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 600px) {
+  .bubble-image-comming {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+
+  /* .game-section {
+    margin: 0px 0px;
+    position: relative;
+  } */
+
+  .subheading-bubble-comming h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: left;
+    font-weight: 700;
+    padding: 12px 0px !important;
+  }
+
+  .subheading-bubble-comming h2 span {
+    color: #ff0080 !important;
+    padding-right: 10px;
+  }
+
+  .subheading-bubble-comming p {
+    color: #eee;
+    font-size: 19px;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: left;
+    padding: 0px 0px 20px 0px;
+  }
+  .nft_coll_info h4 {
+    text-align: center;
+    font-size: 16px;
+    font-family: "IBM Plex Mono";
+    color: #fff;
+  }
+}

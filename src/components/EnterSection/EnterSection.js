@@ -14,49 +14,52 @@ export const EnterSection = () => {
   }, []);
   return (
     <>
-      <div className="enter-bg-image">
-        <video
-          autoPlay="autoplay"
-          loop
-          muted
-          style={{
-            position: "absolute",
-            width: "100%",
-            height: "100%",
-            top: "50%",
-            left: "50%",
-            objectFit: "cover",
-            transform: "translate(-50%, -50%)",
-            zIndex: "-1",
-          }}
-        >
-          <source src={video1} type="video/mp4" />
-        </video>
-        {visible == true ? (
-          <div id="boxex">
-            <div
-              className={
-                visible == false ? "enter-box wow fadeInDownBig " : "enter-box"
-              }
-              data-wow-delay={visible == false ? ".50s" : null}
-            >
-              <div className="enter-box-image">
-                <img src={enter} />
-              </div>
-              <button
-                onClick={() => {
-                  setVisible(false);
-                }}
-                className="btn-enter"
+      <div className="enter-section-color">
+        <div className="enter-bg-image">
+          <video
+            autoPlay="autoplay"
+            loop
+            muted
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              top: "50%",
+              left: "50%",
+              objectFit: "cover",
+              transform: "translate(-50%, -50%)",
+              zIndex: "-1",
+            }}
+          >
+            <source src={video1} type="video/mp4" />
+          </video>
+          {visible == true ? (
+            <div id="boxex">
+              <div
+                className={
+                  visible == false
+                    ? "enter-box wow fadeInDownBig "
+                    : "enter-box"
+                }
+                data-wow-delay={visible == false ? ".50s" : null}
               >
-                Enter
-              </button>
+                <div className="enter-box-image">
+                  <img src={enter} />
+                </div>
+                <button
+                  onClick={() => {
+                    setVisible(false);
+                  }}
+                  className="btn-enter"
+                >
+                  Enter
+                </button>
+              </div>
             </div>
-          </div>
-          
-        ) : (
-          <NavbarSection />
-        )}
+          ) : (
+            <NavbarSection />
+          )}
+        </div>
       </div>
     </>
   );

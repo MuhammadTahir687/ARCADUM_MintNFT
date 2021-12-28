@@ -3,10 +3,10 @@ import "./CommingSoonSection.css";
 import "../../App.css";
 
 import { Section } from "../../Section";
-
+import audio from "../../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import header from "../../assetsIMG/Header.png";
-
+import music from "../../assetsIMG/MusicPlayer.png";
 import arrow from "../../assetsIMG/Arrow.png";
 
 export const CommingSoonSection = () => {
@@ -19,6 +19,8 @@ export const CommingSoonSection = () => {
     setVisibl(true);
     setScroll(!scroll);
   };
+
+  const [play, setPlay] = useState(false);
 
   useEffect(() => {
     document.getElementById("pageSection").scrollIntoView({
@@ -35,6 +37,21 @@ export const CommingSoonSection = () => {
               {/* <div className="close" onClick={() => setHide(true)}>
                 <button className="btn-close">X</button>
               </div> */}
+              <div
+                onClick={() => {
+                  setPlay(!play);
+                  {
+                    play == true
+                      ? document.getElementById("myaudio").play()
+                      : document.getElementById("myaudio").pause();
+                  }
+                }}
+                className="wow fadeInLeftBig"
+                data-wow-delay=".50s logo-img"
+                id="logo-image-music"
+              >
+                <img src={music} alt="image" />
+              </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -58,6 +75,7 @@ export const CommingSoonSection = () => {
                   </li>
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
+                <audio id="myaudio" src={audio} preload="auto"></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>

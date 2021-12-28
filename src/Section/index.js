@@ -1,5 +1,5 @@
 import React from "react";
-import { BubbleGhost } from "../components/BubbleGhost/BubbleGhost";
+import { BubbleGhostComming } from "../components/BubbleGhostComming/BubbleGhostComming";
 import { RoadMapSectionComming } from "../components/RoadMapSectionComming/RoadMapSectionComming";
 import { CommunitySection } from "../components/CommunitySection/CommunitySection";
 import { FooterSectionComming } from "../components/FooterSectionComming/FooterSectionComming";
@@ -7,8 +7,10 @@ import { FooterSectionComming } from "../components/FooterSectionComming/FooterS
 export const Section = () => {
   return (
     <div>
+      <div className="bubble-gosht-comming-section">
+        <BubbleGhostComming />
+      </div>
       <div className="box-all">
-        <BubbleGhost />
         <RoadMapSectionComming />
         <CommunitySection />
         <FooterSectionComming />
