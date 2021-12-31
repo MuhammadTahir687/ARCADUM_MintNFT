@@ -52,17 +52,17 @@ export const CarouselSection = () => {
                 <img src={image1} className="" alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <h4>Comming Soon</h4>
+                <h4>coming Soon</h4>
               </div>
             </div>
           </div>
           <div className="item wow fadeInUp" data-wow-delay=".75s">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <img src={image1} alt="" />
+                <img src={image2} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <h4>Comming Soon</h4>
+                <h4>coming Soon</h4>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export const CarouselSection = () => {
                 <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <h4>Comming Soon</h4>
+                <h4>coming Soon</h4>
               </div>
             </div>
           </div>
@@ -82,14 +82,14 @@ export const CarouselSection = () => {
                 <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <h4>Comming Soon</h4>
+                <h4>coming Soon</h4>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="nft_coll">
               <div className="nft_wrap">
-                <img src={image2} alt="" />
+                <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
                 <h4 style={{ color: "#fff" }}>1987</h4>
@@ -102,7 +102,37 @@ export const CarouselSection = () => {
                 <img src={image1} alt="" />
               </div>
               <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
-                <h4>Comming Soon</h4>
+                <h4>coming Soon</h4>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="nft_coll">
+              <div className="nft_wrap">
+                <img src={image1} alt="" />
+              </div>
+              <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
+                <h4>coming Soon</h4>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="nft_coll">
+              <div className="nft_wrap">
+                <img src={image1} alt="" />
+              </div>
+              <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
+                <h4 style={{ color: "#fff" }}>1987</h4>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="nft_coll">
+              <div className="nft_wrap">
+                <img src={image1} alt="" />
+              </div>
+              <div className="nft_coll_info" style={{ paddingTop: "20px" }}>
+                <h4>coming Soon</h4>
               </div>
             </div>
           </div>

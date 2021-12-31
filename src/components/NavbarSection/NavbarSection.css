@@ -246,14 +246,14 @@ ul.button-header li a:hover {
 
 .right-image h6 span {
   color: #fff;
-  font-size: 23px !important;
+  font-size: 35px !important;
 }
 
 .right-image h6 {
   position: absolute;
   text-transform: uppercase;
-  top: 40%;
-  right: 12%;
+  top: 38%;
+  right: 13%;
   font-size: 12px;
   color: #ff217c;
   font-family: "8 Bit Fortress";
@@ -298,18 +298,19 @@ a.wow.fadeInLeftBig.navbar-brand {
   z-index: 99999;
   left: 10%;
 }
-.btn-close {
+.btn-close-comming {
   font-size: 40px;
   background: transparent;
   color: #fff;
   font-weight: 400;
+  border: 0;
 }
 
-.btn-close:hover {
+.btn-close-comming:hover {
   color: #ff0078;
 }
 
-.btn-close:focus {
+.btn-close-comming:focus {
   outline: none;
   border: 0;
 }
@@ -427,9 +428,36 @@ div#logo-image {
     z-index: 999;
     padding: 20px 10px;
   }
+  #nav-web {
+    display: none;
+  }
+  #nav-responsive {
+    display: block !important;
+  }
+  .navbar .container {
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 0;
+  }
+}
+
+#nav-responsive,
+#jan-sale-responsive {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
+  #jan-sale {
+    display: none;
+  }
+  #jan-sale-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    flex-direction: column;
+    font-size: 23px !important;
+  }
   .arcade-image {
     width: 70% !important;
     height: auto;
@@ -468,12 +496,12 @@ div#logo-image {
 
   .right-image::before {
     content: "";
-    height: 130px;
-    width: 130px;
+    height: 130px !important;
+    width: 130px !important;
     background-color: #390023;
     position: absolute;
     top: 18% !important;
-    right: 35% !important;
+    right: 38% !important;
     z-index: -1;
     opacity: 0.6;
     transition: 0.5s ease;
@@ -493,6 +521,12 @@ div#logo-image {
     font-size: 15px !important;
     color: #ff217c;
     font-family: "8 Bit Fortress";
+  }
+
+  h6#jan-sale-responsive span {
+    font-size: 22px !important;
+    font-family: "8 Bit Fortress";
+    text-align: center;
   }
 
   .left-image {
@@ -524,6 +558,11 @@ div#logo-image {
     position: absolute;
     top: 12px;
     cursor: pointer;
+  }
+  .navbar .container {
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0;
   }
 }
 
@@ -609,39 +648,90 @@ div#logo-image {
   }
 }
 
-.music-play {
+.music-play-audio {
   color: #fff;
-  margin-left: 25px;
   background: transparent;
-  padding: 9px 20px;
-  margin-top: 13px;
-  border-radius: 4px;
-  border: 1px solid #fff;
+  padding: 4px 0px;
   position: relative;
   text-decoration: none;
   z-index: 0;
   cursor: pointer;
 }
 
-.music-play::before {
-  background-color: white;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.35s ease;
+#nav-responsive {
+  display: none;
 }
 
-.music-play:hover:before {
+#nav-color {
+  background-color: #e40051 !important;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
   top: 0;
 }
 
-.music-play:hover {
-  color: #000;
-  transition: 0.25s;
-  border: 1px solid #fff;
+div#nav-icon-responsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+ul.button-header-responsive {
+  padding-left: 0px !important;
+}
+
+ul.button-header-responsive li a {
+  color: #fff;
+}
+
+ul.button-header-responsive li {
+  list-style-type: none;
+  padding: 13px 0px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+#comming-soon-responsive {
+  font-size: 18 px;
+  font-family: "8 Bit Fortress";
+  cursor: pointer;
+  color: #fff;
+  padding-top: 30px;
+}
+
+#connect-wallet {
+  border: 0;
+  background: transparent;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+butoon.btn-cross {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  right: 29px;
+  top: 10px;
+  font-weight: 700;
+}
+
+.offcanvas {
+  background-color: #e40051 !important;
+  width: 100%;
+  z-index: 9999999;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+button.navbar-toggler.collapsed {
+  background: #fff;
+  z-index: 9999;
 }

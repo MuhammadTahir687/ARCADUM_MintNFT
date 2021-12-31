@@ -19,7 +19,7 @@
 .scrool-timer h2 {
   color: #fff;
   font-family: "8 Bit Fortress";
-  font-size: 55px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -118,11 +118,13 @@ button.scrol-btn:hover {
     background-image: url("../../assetsIMG/Casette..png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 371px;
+    width: 350px;
     height: 445px;
-    margin: 100px 0px 150px 12px;
-    position: relative;
-    top: 0px;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
   }
   .scrool-timer h2 {
     color: #fff;
@@ -146,7 +148,7 @@ button.scrol-btn:hover {
     font-family: "IBM Plex Mono";
     font-size: 15px;
     font-weight: 600;
-    padding-top: 25px;
+    padding-top: 40px;
   }
 
   button.scrol-btn {
@@ -164,7 +166,7 @@ button.scrol-btn:hover {
     margin: 0px auto 0px -9px;
     position: relative;
     z-index: 99;
-    padding-top: 100px;
+    padding-top: 80px;
   }
   .box-img {
     width: 70px;

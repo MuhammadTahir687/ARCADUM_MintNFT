@@ -58,7 +58,7 @@ a.drop-btn {
   z-index: 9;
   border: 1px solid #fff;
   position: absolute;
-  left: 43%;
+  left: 41%;
   bottom: 80px;
   text-decoration: none !important;
   color: #000;
@@ -69,9 +69,10 @@ a.drop-btn {
 a.drop-btn:hover {
   background-color: transparent;
   color: #fff;
-  transform: scaleX(1.5);
+  transform: scaleX(1.2);
   font-size: 20px;
   font-weight: 500;
+  border: 2px solid #fff;
 }
 
 @media screen and (max-width: 992px) {

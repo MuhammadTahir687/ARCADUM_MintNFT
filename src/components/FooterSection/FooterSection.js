@@ -23,9 +23,9 @@ export const FooterSection = () => {
               </div>
 
               <p className="mt-2 mb-5">
-                Lorem ipsun dolor site amit, consectetur
+                Game ownership forever minted on the blockchain
               </p>
-              <h6>&#169;2021 Ar-Cadum. All Right Reserved</h6>
+              <h6>&#169;2022 Ar-Cadum. All Right Reserved</h6>
             </Col>
             <Col sm={12} lg={3} md={3} className="footer-right-subheading">
               <a href="">
@@ -50,7 +50,9 @@ export const FooterSection = () => {
                   </a>
                 </li>
               </ul>
-              <h6 className="copy-right">&#169;2021 Ar-Cadum. All Right Reserved</h6>
+              <h6 className="copy-right">
+                &#169;2021 Ar-Cadum. All Right Reserved
+              </h6>
             </Col>
           </Row>
         </div>

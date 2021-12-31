@@ -52,7 +52,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img2} />
                   </div>
-                  <span className="span-roadmap">.01</span>-Launch Roadmap
+                  <span className="span-roadmap">.01</span> Launch Roadmap
                 </h1>
 
                 <p>
@@ -80,7 +80,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
-                  <span className="span-roadmap">.02</span>-be the key
+                  <span className="span-roadmap">.02</span> Be The Key
                 </h1>
                 <p>
                   Because NFTs are not fungible, they can be used to represent
@@ -103,7 +103,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
-                  <span className="span-roadmap">.03</span>COMMUNITY LOVE
+                  <span className="span-roadmap">.03</span> Community Love
                 </h1>
                 <p>
                   Build profiles share, play and captivate your audience. Grow a
@@ -125,7 +125,7 @@ export const RoadMapSection = () => {
                   <div className="rectangle-img">
                     <img src={img} />
                   </div>
-                  <span className="span-roadmap">.04</span>-WHATS YOUR SCORE
+                  <span className="span-roadmap">.04</span> Whats Your Score
                 </h1>
                 <p>
                   Create a custom Arcadum scoreboard to monitor your gaming
@@ -149,7 +149,7 @@ export const RoadMapSection = () => {
                     <div className="rectangle-img">
                       <img src={img} />
                     </div>
-                    <span className="span-roadmap">.05</span>-Metaverse MASHUP
+                    <span className="span-roadmap">.05</span> Metaverse Mashup
                   </h1>
                   <p>
                     We are excited to work with a group of partners and people

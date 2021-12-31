@@ -1,5 +1,6 @@
 import React from "react";
 import "./SubPageProduct.css";
+import audio from "../../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 
 import { Row, Col, Navbar, Nav, Button, Container } from "react-bootstrap";
 import subimage from "../../assetsIMG/sub-image.png";
@@ -18,7 +19,7 @@ export const SubPageProduct = () => {
   return (
     <div>
       <div className="sub-page" style={{ backgroundColor: "#070009" }}>
-        <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar collapseOnSelect expand="lg" variant="dark" id="nav-web">
           <Container>
             <div
               className="wow fadeInLeftBig"
@@ -51,6 +52,56 @@ export const SubPageProduct = () => {
                   </li>
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+
+        <Navbar collapseOnSelect expand="lg" variant="dark" id="nav-responsive">
+          <Container>
+            <Navbar.Brand>
+              {/* <div
+                onClick={() => {
+                  setPlay(!play);
+                  {
+                    play == true
+                      ? document.getElementById("myaudio").play()
+                      : document.getElementById("myaudio").pause();
+                  }
+                }}
+                className="wow fadeInLeftBig"
+                data-wow-delay=".50s logo-img"
+                id="logo-image-music"
+              >
+                <img src={music} alt="image" />
+              </div> */}
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="nav-color">
+              <Nav className="me-auto"></Nav>
+              <Nav
+                id="nav-icon-responsive"
+                className="wow fadeInRightBig "
+                data-wow-delay=".50s"
+              >
+                <ul className="button-header-responsive">
+                  <li>
+                    <a href="">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="">OpenSea</a>
+                  </li>
+                  <li>
+                    <a href="">DisCord</a>
+                  </li>
+                </ul>
+
+                <Button className="connect-wallet" id="connect-wallet">
+                  {" "}
+                  Connect Wallet{" "}
+                </Button>
+
+                <audio id="myaudio" src={audio} preload="auto"></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>

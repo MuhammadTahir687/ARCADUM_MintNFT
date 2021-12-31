@@ -26,9 +26,9 @@ export const BubbleGhostComming = () => {
                 <span>Bubble Ghost</span>(1987)
               </h2>
               <p>
-                In Bubble Ghost you must help a mischievous littele spook blow a
-                delicate bubble through a castle filed with diabolical devic and
-                demons.
+                In Bubble Ghost you must help a mischievous Litte spook blow a
+                delicate bubble through a castle filed with diabolical Devices
+                and demons.
               </p>
             </div>
           </Col>

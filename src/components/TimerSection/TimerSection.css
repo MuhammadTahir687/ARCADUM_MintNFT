@@ -28,9 +28,10 @@
 }
 
 .subheading-timer h2 {
-  font-size: 155px;
+  font-size: 100px;
   font-family: "8 Bit Fortress";
   color: #fff;
+  font-weight: 400;
 }
 
 .subheading-timer h4 {
@@ -99,7 +100,7 @@
   }
 
   .subheading-timer h2 {
-    font-size: 55px;
+    font-size: 30px;
     font-family: "8 Bit Fortress";
     color: #fff;
     padding: 4px 0px;

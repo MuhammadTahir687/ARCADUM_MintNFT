@@ -195,3 +195,47 @@ tbody {
     height: auto;
   }
 }
+
+.arcade-image-store {
+  width: 30%;
+  right: 16px;
+  top: -28%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.arcade-image-store-1 {
+  width: 14%;
+  left: -55px;
+  bottom: 20%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+.arcade-image-store-2 {
+  width: 8%;
+  right: 12%;
+  bottom: 20%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+.arcade-image-store-22 {
+  width: 5%;
+  left: 24%;
+  top: 14%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.arcade-image-store-12 {
+  width: 7%;
+  position: absolute;
+  top: 18%;
+  right: 35%;
+  z-index: 0;
+  transform: rotate(55deg);
+  opacity: 0.3;
+}

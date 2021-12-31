@@ -52,12 +52,12 @@
 
 video#myVideo {
   height: auto;
-  width: 36%;
+  width: 39%;
   margin: 0px auto;
   display: block;
   position: absolute;
-  top: 14%;
-  right: 30%;
+  top: 12%;
+  right: 28%;
   cursor: pointer;
 }
 
