@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import "./StoreCadumSection.css";
-// import "./NavbarSection.css";
 import { Row, Col, Container, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import audio from "../../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
@@ -9,7 +8,7 @@ import logo from "../../assetsIMG/logo.png";
 import bubble from "../../assetsIMG/BubbleGhost.png";
 import arrow from "../../assetsIMG/Arrow.png";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import arvideo from "../../video/arcadum.mp4";
+import arvideo from "../../video/VideoGame.mp4";
 import music from "../../assetsIMG/pause.png";
 import playing from "../../assetsIMG/play.png";
 import video from "../../video/VideoGame.mp4";
@@ -18,7 +17,7 @@ import Artboard2 from "../../assetsIMG/Artboard 2.png";
 import Artboard3 from "../../assetsIMG/Artboard 3.png";
 
 export const StoreCadumSection = () => {
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(true);
 
   const handleClick = () => {
     var video = document.getElementById("myVideo-1");
@@ -55,7 +54,8 @@ export const StoreCadumSection = () => {
                 <Nav className="me-auto">
                   {play == false ? (
                     <div
-                      class="music-play-audio"
+                      className="music-play-audio wow fadeInLeftBig"
+                      data-wow-delay=".50s"
                       id="play"
                       onClick={() => {
                         setPlay(true);
@@ -96,7 +96,13 @@ export const StoreCadumSection = () => {
                     </li>
                   </ul>
                   <Button className="connect-wallet"> Connect Wallet </Button>
-                  <audio id="myaudio" src={audio} preload="auto"></audio>
+                  <audio
+                    autoplay="autoplay"
+                    loop="loop"
+                    id="myaudio"
+                    src={audio}
+                    preload="auto"
+                  ></audio>
                 </Nav>
               </Navbar.Collapse>
             </Container>
@@ -194,10 +200,10 @@ export const StoreCadumSection = () => {
                       delicate bubble through a <br />
                       castle filed with diabolical
                       <br />
-                      devic and demons.
+                      devices and demons.
                     </p>
                     <Link to="sub-page" className="store-btn">
-                      O.148 ETH | Buy Now{" "}
+                      0.1 ETH | Buy Now{" "}
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     </Link>
                   </div>
@@ -213,7 +219,7 @@ export const StoreCadumSection = () => {
                   <img src={Artboard3} alt="image" />
                 </Col>
               </Row>
-              <div className="store-arrow-btn">
+              <div className="store-arrow-btn wobble-vertical-on-hover">
                 <img src={arrow} alt="image" />
               </div>
             </div>
@@ -226,7 +232,12 @@ export const StoreCadumSection = () => {
           <Row>
             <Col sm={12} lg={6} md={6}>
               <div className="video-store">
-                <video loop id="myVideo-1" onClick={() => handleClick()}>
+                <video
+                  autoPlay
+                  loop
+                  id="myVideo-1"
+                  onClick={() => handleClick()}
+                >
                   <source src={arvideo} type="video/mp4" />
                 </video>
               </div>

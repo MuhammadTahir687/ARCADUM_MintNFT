@@ -1,5 +1,5 @@
 import React from "react";
-import { TimerSection } from "../components/TimerSection/TimerSection";
+import TimerSection from "../components/TimerSection/TimerSection";
 import { BubbleGhost } from "../components/BubbleGhost/BubbleGhost";
 import { CarouselSection } from "../components/CarouselSection/CarouselSection";
 import { RoadMapSection } from "../components/RoadMapSection/RoadMapSection";
@@ -18,10 +18,14 @@ export const Sections = () => {
       </div>
       <div className="box-all">
         <BubbleGhost />
-        <CarouselSection />
+        <CarouselSection
+          className2="buy-drop-btn"
+          to1="explore"
+          className1="drop-btn"
+        />
         <RoadMapSection />
-        <TeamCreativeSection />
-        <TeamMemberSection />
+        {/* <TeamCreativeSection />
+        <TeamMemberSection /> */}
         <CommunitySection />
         <FooterSection />
       </div>

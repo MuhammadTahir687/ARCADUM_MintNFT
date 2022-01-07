@@ -1,5 +1,5 @@
 .container {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0px auto;
 }
 
@@ -51,14 +51,16 @@
 }
 
 a.drop-btn {
-  padding: 10px 30px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 200px;
   font-size: 20px;
   font-weight: 700;
   display: block;
   z-index: 9;
   border: 1px solid #fff;
   position: absolute;
-  left: 41%;
+  left: 42%;
   bottom: 80px;
   text-decoration: none !important;
   color: #000;
@@ -69,10 +71,13 @@ a.drop-btn {
 a.drop-btn:hover {
   background-color: transparent;
   color: #fff;
-  transform: scaleX(1.2);
   font-size: 20px;
   font-weight: 500;
   border: 2px solid #fff;
+  width: 240px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  margin: 0px auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -110,7 +115,7 @@ a.drop-btn:hover {
     z-index: 9;
     border: 1px solid #fff;
     position: absolute;
-    left: 20%;
+    left: 24%;
     bottom: 80px;
     text-decoration: none !important;
     color: #000;
@@ -123,4 +128,33 @@ a.drop-btn:hover {
     font-family: "IBM Plex Mono";
     color: #fff;
   }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 15px !important;
+    height: 6px !important;
+    margin: 80px 7px 33px 0px !important;
+    background: #d6d6d6;
+    display: block;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+  }
+  #question {
+    display: block !important;
+  }
+  #question-1 {
+    display: none;
+  }
+  #bubble {
+    display: block !important;
+  }
+  #bubble-1 {
+    display: none;
+  }
+}
+
+#bubble {
+  display: none;
+}
+#question {
+  display: none;
 }

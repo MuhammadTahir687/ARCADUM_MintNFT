@@ -36,7 +36,7 @@ export const NavbarSection = () => {
   const [show, setShow] = useState(false);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(true);
   useEffect(() => {
     new WOW.WOW().init({ live: false });
   }, []);
@@ -55,11 +55,11 @@ export const NavbarSection = () => {
     });
   }, [scroll]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 6000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShow(true);
+  //   }, 6000);
+  // }, []);
 
   return (
     <>
@@ -76,25 +76,10 @@ export const NavbarSection = () => {
         <Navbar collapseOnSelect expand="lg" variant="dark" id="nav-web">
           <Container>
             <Navbar.Brand>
-              {/* <div
-                onClick={() => {
-                  setPlay(!play);
-                  {
-                    play == true
-                      ? document.getElementById("myaudio").play()
-                      : document.getElementById("myaudio").pause();
-                  }
-                }}
-                className="wow fadeInLeftBig"
-                data-wow-delay=".50s logo-img"
-                id="logo-image-music"
-              >
-                <img src={music} alt="image" />
-              </div> */}
-
               {play == false ? (
                 <div
-                  class="music-play-audio"
+                  className="music-play-audio wow fadeInLeftBig"
+                  data-wow-delay=".50s"
                   id="play"
                   onClick={() => {
                     setPlay(true);
@@ -148,7 +133,13 @@ export const NavbarSection = () => {
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
 
-                <audio id="myaudio" src={audio} preload="auto"></audio>
+                <audio
+                  autoplay="autoplay"
+                  loop="loop"
+                  id="myaudio"
+                  src={audio}
+                  preload="auto"
+                ></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -159,7 +150,8 @@ export const NavbarSection = () => {
             <Navbar.Brand>
               {play == false ? (
                 <div
-                  class="music-play-audio"
+                  className="music-play-audio wow fadeInLeftBig"
+                  data-wow-delay=".50s"
                   id="play"
                   onClick={() => {
                     setPlay(true);
@@ -249,7 +241,7 @@ export const NavbarSection = () => {
               Public sale start
               <br />{" "}
               <span>
-                jan 20
+                feb 03
                 <br />
                 7pm est
               </span>

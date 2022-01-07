@@ -7,6 +7,7 @@ import enter from "../../assetsIMG/enter.png";
 import video1 from "../../video/Video.mp4";
 import WOW from "wowjs";
 import { NavbarSection } from "../NavbarSection/NavbarSection";
+
 export const EnterSection = () => {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
@@ -57,7 +58,9 @@ export const EnterSection = () => {
               </div>
             </div>
           ) : (
-            <NavbarSection />
+            <>
+              <NavbarSection />
+            </>
           )}
         </div>
       </div>

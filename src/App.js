@@ -7,28 +7,19 @@ import { EnterSection } from "./components/EnterSection/EnterSection";
 import { StoreCadumSection } from "./components/StoreCadumSection/StoreCadumSection";
 import { FooterSectionStore } from "./components/FooterSectionStore/FooterSectionStore";
 import { SubPageProduct } from "./components/SubPageProduct/SubPageProduct";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
-        <Route
-          exact
-          path="/"
-          component={() => (
-            <>
-              {" "}
-              <EnterSection />
-            </>
-          )}
-        />
-
+        <ScrollToTop />
+        <Route exact path="/" component={() => <EnterSection />} />
         <Route
           exact
           path="/explore"
           component={() => (
             <>
-              {" "}
               <div className="box-all">
                 <StoreCadumSection />
               </div>
@@ -43,7 +34,6 @@ function App() {
           path="/sub-page"
           component={() => (
             <>
-              {" "}
               <SubPageProduct />
               <div className="box-all-footer">
                 <FooterSectionStore />

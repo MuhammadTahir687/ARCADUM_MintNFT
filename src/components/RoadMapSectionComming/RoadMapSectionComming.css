@@ -72,17 +72,17 @@
 }
 
 .roadmap-image {
-  width: 60%;
+  width: 47%;
   margin: 30px auto;
 }
 
 .roadmap-image-4 {
-  width: 62%;
+  width: 55%;
   margin: 0px auto;
 }
 
 .roadmap-image-art img {
-  width: 58%;
+  width: 45%;
   margin: 0px auto;
   display: block;
 }
@@ -134,7 +134,7 @@ h1.head-img {
     margin: 0px auto;
     padding-top: 20px;
     font-family: "IBM Plex Mono", monospace;
-    padding: 20px 0px 40px 60px !important;
+    padding: 20px 10px 40px 60px !important;
   }
 
   .border-roadmap::after {
@@ -206,16 +206,16 @@ h1.head-img {
     margin: 0px auto;
     padding-top: 20px;
     font-family: "IBM Plex Mono", monospace;
-    padding: 20px 0px 40px 60px;
+    padding: 20px 10px 40px 60px !important;
   }
 
   .roadmap-heading-5 p {
     color: #9e9b9e;
-    font-size: 15px;
+    font-size: 15px !important;
     margin: 0px auto;
     padding-top: 20px;
     font-family: "IBM Plex Mono", monospace;
-    padding: 20px 0px 40px 60px !important;
+    padding: 20px 10px 40px 60px !important;
   }
 
   .border-roadmap::after {
@@ -259,14 +259,14 @@ h1.head-img {
 
   .roadmap-heading-1 h1 {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px !important;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
   }
 
   .roadmap-heading-5 h1 {
     color: #fff;
-    font-size: 18px !important ;
+    font-size: 16px !important ;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 700;
   }
@@ -291,7 +291,7 @@ h1.head-img {
 
 .roadmap-heading-5 p {
   color: #9e9b9e;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0px auto;
   padding-top: 20px;
   font-family: "IBM Plex Mono", monospace;

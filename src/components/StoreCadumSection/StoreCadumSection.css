@@ -121,6 +121,8 @@ video#myVideo-1 {
 .video-store {
   z-index: 9999;
   position: relative;
+  width: 80%;
+  margin: 0px auto;
 }
 
 .store-video {
@@ -141,6 +143,15 @@ tbody {
 }
 
 @media screen and (max-width: 992px) {
+  a.store-btn {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -149,13 +160,16 @@ tbody {
   }
 
   a.store-btn {
-    padding: 10px 26px;
+    padding: 10px 16px;
     font-size: 15px;
     font-weight: 500;
     border: 1px solid #fff;
     text-decoration: none;
     color: #000;
     background-color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 
   div#store-cadum {
@@ -238,4 +252,42 @@ tbody {
   z-index: 0;
   transform: rotate(55deg);
   opacity: 0.3;
+}
+
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(36px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(14px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(8px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.wobble-vertical-on-hover {
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-vertical-on-hover:hover {
+  animation-name: wobble-vertical-on-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }

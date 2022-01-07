@@ -11,32 +11,32 @@ import playing from "../../assetsIMG/play.png";
 import arrow from "../../assetsIMG/Arrow.png";
 
 export const CommingSoonSection = () => {
-  // var des = new Date("jan 20, 2022 12:00:00").getTime();
-  // var x = setInterval(function () {
-  //   var now = new Date().getTime();
+  useEffect(() => {
+    var des = new Date("feb 03, 2022 00:00:00").getTime();
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var diff = des - now;
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var mint = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  //   var diff = des - now;
-  //   // if (diff > 0) {
-  //   var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  //   var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  //   var mint = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  //   var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-  //   document.getElementById("demo-2").innerHTML =
-  //     days + " : " + hours + " : " + mint + " : " + seconds;
-  // }, 1000);
+      setTimer(days + " : " + hours + " : " + mint + " : " + seconds);
+    }, 1000);
+  }, []);
 
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [show, setShow] = useState(false);
   const [hide, setHide] = useState(false);
+  const [timer, setTimer] = useState("");
 
   const handleClick = () => {
     setVisibl(true);
     setScroll(!scroll);
   };
 
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(true);
 
   useEffect(() => {
     document.getElementById("pageSection").scrollIntoView({
@@ -52,7 +52,8 @@ export const CommingSoonSection = () => {
             <Navbar.Brand>
               {play == false ? (
                 <div
-                  class="music-play-audio"
+                  className="music-play-audio wow fadeInLeftBig"
+                  data-wow-delay=".50s"
                   id="play"
                   onClick={() => {
                     setPlay(true);
@@ -160,7 +161,13 @@ export const CommingSoonSection = () => {
                     Connect Wallet{" "}
                   </Button>
 
-                  <audio id="myaudio" src={audio} preload="auto"></audio>
+                  <audio
+                    autoplay="autoplay"
+                    loop="loop"
+                    id="myaudio"
+                    src={audio}
+                    preload="auto"
+                  ></audio>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -175,12 +182,12 @@ export const CommingSoonSection = () => {
             <img src={header} alt="header" />
           </div>
           <div className="scrool-timer text-center">
-            <h2 id="demo-2">0 : 00 : 00</h2>
+            <h2>{timer}</h2>
 
             <h4>
               public slae starts
               <br />
-              december 20th 7pm est
+              february 03rd 7pm est
             </h4>
           </div>
           <div className="scrool-lorem text-center">

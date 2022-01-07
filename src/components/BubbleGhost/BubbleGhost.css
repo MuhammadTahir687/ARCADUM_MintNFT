@@ -13,7 +13,7 @@
 }
 
 .container {
-  max-width: 70%;
+  max-width: 90%;
   margin: 0px auto;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .game-section {
-  margin: -139px 0px !important;
+  margin: -127px 0px !important;
   position: relative;
 }
 
@@ -76,13 +76,18 @@ button.onpress {
 }
 
 @media screen and (max-width: 992px) {
+  .game-section {
+    margin: 10px 0px !important;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .bubble-image {
     width: 100%;
     height: auto;
-    margin: 0px auto !important ;
+    margin: -150px auto 0px auto !important;
+    position: relative;
   }
 
   .game-section {
@@ -106,7 +111,7 @@ button.onpress {
 
   .subheading-bubble p {
     color: #eee;
-    font-size: 19px;
+    font-size: 16px;
     font-family: "IBM Plex Mono", monospace;
     text-align: left;
     padding: 0px 0px 20px 0px;

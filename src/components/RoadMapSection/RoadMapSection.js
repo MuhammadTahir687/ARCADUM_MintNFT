@@ -61,7 +61,7 @@ export const RoadMapSection = () => {
                   actual sprites from the games you know and love. So what are
                   sprites ? if you grew up playing 8-bit and 16-bit games you
                   might be familiar with their unique visual style A
-                  two-dimensional bitmap that is integrated into a larger scene,
+                  twodimensional bitmap that is integrated into a larger scene,
                   most often in a 2D video game.
                 </p>
               </div>
@@ -130,7 +130,7 @@ export const RoadMapSection = () => {
                 <p>
                   Create a custom Arcadum scoreboard to monitor your gaming
                   companions. Track points for competitions. Share the live
-                  results. Step up your game and rack up point to rank high on
+                  results. Step up your game and rack up points to rank high on
                   the mother board.
                 </p>
               </div>
@@ -159,15 +159,15 @@ export const RoadMapSection = () => {
                     future can produce a world that looks as though it has
                     evolved over many years. Blending future tech with inherited
                     pieces and items that have sentimental importance is what
-                    makes arcadum unique. There’s something special about a
+                    makes Arcadum unique. There’s something special about a
                     world that stimulates your nostalgic senses.
                   </p>
                 </div>
               </Col>
-              <Col sm={12} lg={4} md={4}>
-                <div className="roadmap-image-5" id="roadimg-5">
+              <Col sm={12} lg={4} md={4} id="roadimg-5">
+                {/* <div className="roadmap-image-5" id="roadimg-5">
                   <img src={roadimg5} alt="img" />
-                </div>
+                </div> */}
               </Col>
             </Row>
           </div>

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./TimerSection.css";
 import "../../App.css";
 
-export const TimerSection = () => {
+const TimerSection = () => {
   useEffect(() => {
-    var dest = new Date("jan 20, 2022 12:00:00").getTime();
+    var dest = new Date("feb 03, 2022 00:00:00").getTime();
 
-    var x = setInterval(function () {
+    setInterval(() => {
       var now = new Date().getTime();
 
       var diff = dest - now;
@@ -14,11 +14,11 @@ export const TimerSection = () => {
       var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var mint = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-      document.getElementById("demo").innerHTML =
-        days + " : " + hours + " : " + mint + " : " + seconds;
+      setTimer(days + " : " + hours + " : " + mint + " : " + seconds);
     }, 1000);
   }, []);
+
+  const [timer, setTimer] = useState("");
 
   return (
     <div className="timer-section py-5 " id="timer">
@@ -35,17 +35,18 @@ export const TimerSection = () => {
         <p>
           Each artwork is original with its own color palette and creation
           <br />
-          from the S ystems you know and love.
+          from the Systems you know and love.
         </p>
 
-        <h2 id="demo"></h2>
+        <h2>{timer}</h2>
 
         <h4>
           public sale starts
           <br />
-          January 20th 7pm est
+          february 03rd 7pm est
         </h4>
       </div>
     </div>
   );
 };
+export default TimerSection;
