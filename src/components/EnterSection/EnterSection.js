@@ -18,8 +18,8 @@ export const EnterSection = () => {
       <div className="enter-section-color">
         <div className="enter-bg-image">
           <video
-            autoPlay="autoplay"
             loop
+            autoPlay
             muted
             style={{
               position: "absolute",

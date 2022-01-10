@@ -60,7 +60,7 @@ a.drop-btn {
   z-index: 9;
   border: 1px solid #fff;
   position: absolute;
-  left: 42%;
+  left: 43%;
   bottom: 80px;
   text-decoration: none !important;
   color: #000;
@@ -115,7 +115,7 @@ a.drop-btn:hover {
     z-index: 9;
     border: 1px solid #fff;
     position: absolute;
-    left: 24%;
+    left: 20%;
     bottom: 80px;
     text-decoration: none !important;
     color: #000;
