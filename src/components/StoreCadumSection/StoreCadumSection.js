@@ -26,9 +26,10 @@ export default function StoreCadumSection() {
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
 
-  const handleClick = (e) => {
-    setVisibl(true);
-    setScroll(!scroll);
+  const handleClick = () => {
+    document.getElementById("section-store").scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (

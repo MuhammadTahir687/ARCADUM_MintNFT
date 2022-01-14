@@ -16,7 +16,7 @@ import playing from "../assetsIMG/play.png";
 import logo from "../assetsIMG/logo.png";
 import audio from "../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 import { Link } from "react-router-dom";
-export const Screen = ({ wavingimage, children }) => {
+export const Screen = ({ wavingimage, children, child }) => {
   const [play, setPlay] = useState(true);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -205,7 +205,7 @@ export const Screen = ({ wavingimage, children }) => {
                     </div>
                     <div className="list-price">
                       <h6 className="head-6">Editions:</h6>
-                      <p className="para-6">5</p>
+                      <p className="para-6">{child}</p>
                     </div>
                     <div className="list-price">
                       <h6 className="head-6">Origin:</h6>

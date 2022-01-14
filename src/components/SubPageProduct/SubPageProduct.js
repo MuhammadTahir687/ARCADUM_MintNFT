@@ -29,25 +29,41 @@ function SubPageProduct() {
   if (idd == "waving") {
     return (
       <>
-        <Screen wavingimage={waving} children={"Bubble Ghost Waving"} />
+        <Screen
+          wavingimage={waving}
+          children={"Bubble Ghost Waving"}
+          child={"5"}
+        />
       </>
     );
   } else if (idd == "blowing") {
     return (
       <>
-        <Screen wavingimage={blowing} children={"Blowing a Bubble"} />
+        <Screen
+          wavingimage={blowing}
+          children={"Blowing a Bubble"}
+          child={"100"}
+        />
       </>
     );
   } else if (idd == "bubble") {
     return (
       <>
-        <Screen wavingimage={bubbleImage} children={"Bubble Ghost Logo"} />
+        <Screen
+          wavingimage={bubbleImage}
+          children={"Bubble Ghost Logo"}
+          child={"800"}
+        />
       </>
     );
   } else if (idd == "bubblevideo") {
     return (
       <>
-        <Screen wavingimage={bubbleVideo} children={"Bubble Ghost Screen"} />
+        <Screen
+          wavingimage={bubbleVideo}
+          children={"Bubble Ghost Screen"}
+          child={"1082"}
+        />
       </>
     );
   } else {
