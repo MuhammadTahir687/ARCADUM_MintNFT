@@ -15,7 +15,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 export const CarouselSection = ({ to1, className1, className2 }) => {
   const options = {
     responsive: {
-      0: {
+      0: {  
         items: 1,
       },
       400: {

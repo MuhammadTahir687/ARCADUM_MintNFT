@@ -74,7 +74,7 @@ a.drop-btn:hover {
   font-size: 20px;
   font-weight: 500;
   border: 2px solid #fff;
-  width: 240px;
+  /* width: 240px; */
   transition: 0.3s ease-in-out;
   text-align: center;
   margin: 0px auto;

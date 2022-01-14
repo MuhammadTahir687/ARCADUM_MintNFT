@@ -8,20 +8,27 @@ import logo from "../../assetsIMG/logo.png";
 import bubble from "../../assetsIMG/BubbleGhost.png";
 import arrow from "../../assetsIMG/Arrow.png";
 import { Navbar, Nav, Button } from "react-bootstrap";
-import arvideo from "../../video/VideoGame.mp4";
+
 import music from "../../assetsIMG/pause.png";
 import playing from "../../assetsIMG/play.png";
-import video from "../../video/VideoGame.mp4";
+
 import artboard from "../../assetsIMG/E44.png";
 import Artboard2 from "../../assetsIMG/Artboard 2.png";
 import Artboard3 from "../../assetsIMG/Artboard 3.png";
 
-export const StoreCadumSection = () => {
-  const [play, setPlay] = useState(true);
+import waving from "../../assetsIMG/Waving_ArCadum.png";
+import blowing from "../../assetsIMG/BlowingBubbles_ArCadum.png";
+import bubbleImage from "../../assetsIMG/BubbleGhostLogo_ArCadum.png";
+import bubbleVideo from "../../assetsIMG/VideoGameImage.png";
 
-  const handleClick = () => {
-    var video = document.getElementById("myVideo-1");
-    video.play();
+export default function StoreCadumSection() {
+  const [play, setPlay] = useState(true);
+  const [visibl, setVisibl] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  const handleClick = (e) => {
+    setVisibl(true);
+    setScroll(!scroll);
   };
 
   return (
@@ -202,10 +209,10 @@ export const StoreCadumSection = () => {
                       <br />
                       devices and demons.
                     </p>
-                    <Link to="sub-page" className="store-btn">
+                    <button className="store-btn">
                       0.1 ETH | Buy Now{" "}
                       <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </Link>
+                    </button>
                   </div>
                 </Col>
               </Row>
@@ -219,7 +226,10 @@ export const StoreCadumSection = () => {
                   <img src={Artboard3} alt="image" />
                 </Col>
               </Row>
-              <div className="store-arrow-btn wobble-vertical-on-hover">
+              <div
+                className="store-arrow-btn wobble-vertical-on-hover"
+                onClick={() => handleClick()}
+              >
                 <img src={arrow} alt="image" />
               </div>
             </div>
@@ -227,54 +237,85 @@ export const StoreCadumSection = () => {
         </div>
       </div>
 
-      <div className="store-video">
+      <div className="store-video" id="section-store">
         <div className="container">
           <Row>
             <Col sm={12} lg={6} md={6}>
-              <div className="video-store">
-                <video
-                  autoPlay
-                  loop
-                  id="myVideo-1"
-                  onClick={() => handleClick()}
-                >
-                  <source src={arvideo} type="video/mp4" />
-                </video>
+              <div className="card">
+                <Link to="/account?name=waving">
+                  <div className="image-waving">
+                    <img src={waving} alt="image" />
+                  </div>
+                </Link>
+                <div className="button-bottom">
+                  <button className="btn-waving">
+                    <h6>Bubble Ghost Waving</h6>
+                    <p>0.1 ETH</p>
+                  </button>
+                  <button className="btn-rarity">
+                    <h6>Rarity</h6>
+                    <p>Secret</p>
+                  </button>
+                </div>
               </div>
             </Col>
             <Col sm={12} lg={6} md={6}>
-              <div className="tabel">
-                <table class="table ">
-                  <thead>
-                    <tr>
-                      <th>ITEM</th>
-                      <th>RARITY</th>
-                      <th>EDITIONS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Bubble Ghost Waving - Animated Sprite</td>
-                      <td>Secret</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>Blowing a Bubble - Animated Sprite</td>
-                      <td>Power-Up</td>
-                      <td>100</td>
-                    </tr>
-                    <tr>
-                      <td>Bubble Ghost Floating Logo - Animated Sprite</td>
-                      <td>Retro</td>
-                      <td>800</td>
-                    </tr>
-                    <tr>
-                      <td>Bubble Ghost Screen - Animated</td>
-                      <td>Classic</td>
-                      <td>1082</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="card">
+                <Link to="/account?name=blowing">
+                  <div className="image-waving">
+                    <img src={blowing} alt="image" />
+                  </div>
+                </Link>
+                <div className="button-bottom">
+                  <button className="btn-waving">
+                    <h6>Bubble Ghost Waving</h6>
+                    <p>0.1 ETH</p>
+                  </button>
+                  <button className="btn-rarity">
+                    <h6>Rarity</h6>
+                    <p>Secret</p>
+                  </button>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={12} lg={6} md={6}>
+              <div className="card">
+                <Link to="/account?name=bubble">
+                  <div className="image-waving">
+                    <img src={bubbleImage} alt="image" />
+                  </div>
+                </Link>
+                <div className="button-bottom">
+                  <button className="btn-waving">
+                    <h6>Bubble Ghost Waving</h6>
+                    <p>0.1 ETH</p>
+                  </button>
+                  <button className="btn-rarity">
+                    <h6>Rarity</h6>
+                    <p>Secret</p>
+                  </button>
+                </div>
+              </div>
+            </Col>
+            <Col sm={12} lg={6} md={6}>
+              <div className="card">
+                <Link to="/account?name=bubblevideo">
+                  <div className="image-waving">
+                    <img src={bubbleVideo} alt="image" />
+                  </div>
+                </Link>
+                <div className="button-bottom">
+                  <button className="btn-waving">
+                    <h6>Bubble Ghost Waving</h6>
+                    <p>0.1 ETH</p>
+                  </button>
+                  <button className="btn-rarity">
+                    <h6>Rarity</h6>
+                    <p>Secret</p>
+                  </button>
+                </div>
               </div>
             </Col>
           </Row>
@@ -282,4 +323,5 @@ export const StoreCadumSection = () => {
       </div>
     </>
   );
-};
+}
+// }

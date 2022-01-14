@@ -9,8 +9,9 @@ import header from "../../assetsIMG/Header.png";
 import music from "../../assetsIMG/pause.png";
 import playing from "../../assetsIMG/play.png";
 import arrow from "../../assetsIMG/Arrow.png";
+import Music from "../../music";
 
-export const CommingSoonSection = () => {
+export const CommingSoonSection = ({ onClick1, onClick2 }) => {
   useEffect(() => {
     var des = new Date("feb 03, 2022 00:00:00").getTime();
     var x = setInterval(function () {
@@ -185,7 +186,7 @@ export const CommingSoonSection = () => {
             <h2>{timer}</h2>
 
             <h4>
-              public slae starts
+              public sale starts
               <br />
               february 03rd 7pm est
             </h4>

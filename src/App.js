@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { EnterSection } from "./components/EnterSection/EnterSection";
-import { StoreCadumSection } from "./components/StoreCadumSection/StoreCadumSection";
+import StoreCadumSection from "./components/StoreCadumSection/StoreCadumSection";
 import { FooterSectionStore } from "./components/FooterSectionStore/FooterSectionStore";
-import { SubPageProduct } from "./components/SubPageProduct/SubPageProduct";
+import SubPageProduct from "./components/SubPageProduct/SubPageProduct";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -31,10 +31,12 @@ function App() {
         />
         <Route
           exact
-          path="/sub-page"
+          path="/account"
           component={() => (
             <>
-              <SubPageProduct />
+              <div className="subpage-image">
+                <SubPageProduct />
+              </div>
               <div className="box-all-footer">
                 <FooterSectionStore />
               </div>

@@ -51,7 +51,7 @@ img {
   font-size: 16px;
 }
 
-a.store-btn {
+button.store-btn {
   padding: 10px 60px;
   font-size: 20px;
   font-weight: 500;
@@ -61,7 +61,7 @@ a.store-btn {
   background-color: #fff;
 }
 
-a.store-btn:hover {
+button.store-btn:hover {
   background-color: transparent;
   color: #fff;
 }
@@ -129,21 +129,8 @@ video#myVideo-1 {
   padding: 50px 0px 20px 0px;
 }
 
-thead {
-  background-color: #8c0041;
-  color: #fff;
-}
-
-tbody {
-  background: #fff;
-}
-
-.tabel {
-  margin: 40px 0px;
-}
-
 @media screen and (max-width: 992px) {
-  a.store-btn {
+  button.store-btn {
     padding: 10px;
     font-size: 15px;
     font-weight: 500;
@@ -159,7 +146,7 @@ tbody {
     display: none;
   }
 
-  a.store-btn {
+  button.store-btn {
     padding: 10px 16px;
     font-size: 15px;
     font-weight: 500;
@@ -291,3 +278,57 @@ tbody {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
+
+.image-waving {
+  width: 85%;
+  margin: 0px auto;
+  transition: 0.3s ease;
+}
+
+.image-waving:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  width: 100%;
+  background: #130e14;
+  border: 2px solid #130e14;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.button-bottom {
+  display: grid;
+  background-color: #efefef !important;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.store-video .container {
+  width: 55%;
+}
+
+button.btn-waving {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 11px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0px;
+  background-color: #fff;
+  box-shadow: 0px 15px 10px -15px #fff;
+}
+
+.btn-rarity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 11px;
+  background-color: #efefef;
+  border: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+

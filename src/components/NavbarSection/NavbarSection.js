@@ -18,7 +18,7 @@ import Artboard2 from "../../assetsIMG/Artboard 2.png";
 import Artboard3 from "../../assetsIMG/Artboard 3.png";
 import artboard4 from "../../assetsIMG/Artboard 4.png";
 import { CommingSoonSection } from "../CommingSoonSection/CommingSoonSection";
-
+import Music from "../../music";
 import WOW from "wowjs";
 
 import { Modal } from "react-bootstrap";
@@ -44,9 +44,6 @@ export const NavbarSection = () => {
   const handleClick = (e) => {
     setVisibl(true);
     setScroll(!scroll);
-  };
-  const handleNav = (e) => {
-    alert("clicked");
   };
 
   useEffect(() => {
