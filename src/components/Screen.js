@@ -16,7 +16,7 @@ import playing from "../assetsIMG/play.png";
 import logo from "../assetsIMG/logo.png";
 import audio from "../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 import { Link } from "react-router-dom";
-export const Screen = ({ wavingimage }) => {
+export const Screen = ({ wavingimage, children }) => {
   const [play, setPlay] = useState(true);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -168,7 +168,7 @@ export const Screen = ({ wavingimage }) => {
                       <img src={wavingimage} alt="image" />
                     </div>
                     <button className="btn-waving-sub">
-                      <h6>Bubble Ghost Waving</h6>
+                      <h6>{children}</h6>
                     </button>
                   </div>
                 </Col>

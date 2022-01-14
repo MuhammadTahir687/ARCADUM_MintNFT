@@ -268,12 +268,12 @@ export default function StoreCadumSection() {
                 </Link>
                 <div className="button-bottom">
                   <button className="btn-waving">
-                    <h6>Bubble Ghost Waving</h6>
+                    <h6>Blowing a Bubble</h6>
                     <p>0.1 ETH</p>
                   </button>
                   <button className="btn-rarity">
                     <h6>Rarity</h6>
-                    <p>Secret</p>
+                    <p>Power-Up</p>
                   </button>
                 </div>
               </div>
@@ -289,12 +289,12 @@ export default function StoreCadumSection() {
                 </Link>
                 <div className="button-bottom">
                   <button className="btn-waving">
-                    <h6>Bubble Ghost Waving</h6>
+                    <h6>Bubble Ghost Logo</h6>
                     <p>0.1 ETH</p>
                   </button>
                   <button className="btn-rarity">
                     <h6>Rarity</h6>
-                    <p>Secret</p>
+                    <p>Retro</p>
                   </button>
                 </div>
               </div>
@@ -308,12 +308,12 @@ export default function StoreCadumSection() {
                 </Link>
                 <div className="button-bottom">
                   <button className="btn-waving">
-                    <h6>Bubble Ghost Waving</h6>
+                    <h6>Bubble Ghost Screen</h6>
                     <p>0.1 ETH</p>
                   </button>
                   <button className="btn-rarity">
                     <h6>Rarity</h6>
-                    <p>Secret</p>
+                    <p>Classic</p>
                   </button>
                 </div>
               </div>

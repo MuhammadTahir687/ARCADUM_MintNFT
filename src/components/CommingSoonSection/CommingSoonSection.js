@@ -37,7 +37,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
     setScroll(!scroll);
   };
 
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState();
 
   useEffect(() => {
     document.getElementById("pageSection").scrollIntoView({
@@ -78,7 +78,16 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto"></Nav>
+              <Nav className="me-auto">
+                <div
+                  onClick={() => setShow(true)}
+                  id="comming-soon"
+                  className="wow fadeIn nav-link"
+                  data-wow-delay=".50s"
+                >
+                  Coming Soon
+                </div>
+              </Nav>
               <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
                 <ul className="button-header">
                   <li>
@@ -98,7 +107,14 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
                   </li>
                 </ul>
                 <Button className="connect-wallet"> Connect Wallet </Button>
-                <audio id="myaudio" src={audio} preload="auto"></audio>
+
+                <audio
+                  autoplay="autoplay"
+                  loop="loop"
+                  id="myaudio"
+                  src={audio}
+                  preload="auto"
+                ></audio>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -109,7 +125,8 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
             <Navbar.Brand>
               {play == false ? (
                 <div
-                  class="music-play-audio"
+                  className="music-play-audio wow fadeInLeftBig"
+                  data-wow-delay=".50s"
                   id="play"
                   onClick={() => {
                     setPlay(true);
@@ -156,19 +173,21 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
                       <a href="">DisCord</a>
                     </li>
                   </ul>
+                  <div
+                    onClick={() => setShow(true)}
+                    id="comming-soon-responsive"
+                    className="wow fadeIn nav-link"
+                    data-wow-delay=".50s"
+                  >
+                    Coming Soon
+                  </div>
 
                   <Button className="connect-wallet" id="connect-wallet">
                     {" "}
                     Connect Wallet{" "}
                   </Button>
 
-                  <audio
-                    autoplay="autoplay"
-                    loop="loop"
-                    id="myaudio"
-                    src={audio}
-                    preload="auto"
-                  ></audio>
+                  <audio id="myaudio" src={audio} preload="auto"></audio>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -186,7 +205,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
             <h2>{timer}</h2>
 
             <h4>
-              public sale starts
+              public slae starts
               <br />
               february 03rd 7pm est
             </h4>
