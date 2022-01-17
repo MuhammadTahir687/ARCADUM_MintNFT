@@ -9,7 +9,11 @@ import header from "../../assetsIMG/Header.png";
 import music from "../../assetsIMG/pause.png";
 import playing from "../../assetsIMG/play.png";
 import arrow from "../../assetsIMG/Arrow.png";
-import Music from "../../music";
+
+import opensea from "../../assetsIMG/opensea w.png";
+import opensea2 from "../../assetsIMG/opensea.png";
+import discord2 from "../../assetsIMG/discord2.png";
+import discord from "../../assetsIMG/discord.png";
 
 export const CommingSoonSection = ({ onClick1, onClick2 }) => {
   useEffect(() => {
@@ -38,12 +42,30 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
   };
 
   const [play, setPlay] = useState();
+  const [states, setStates] = useState(opensea);
+  const [cord, setCord] = useState(discord);
 
   useEffect(() => {
     document.getElementById("pageSection").scrollIntoView({
       behavior: "smooth",
     });
   }, [scroll]);
+
+  const handleMouseOver = () => {
+    setStates(opensea2);
+  };
+
+  const handleMouseOut = () => {
+    setStates(opensea);
+  };
+
+  const disMouseOver = () => {
+    setCord(opensea2);
+  };
+
+  const disMouseOut = () => {
+    setCord(discord);
+  };
 
   return (
     <div>
@@ -91,18 +113,27 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
               <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
                 <ul className="button-header">
                   <li>
-                    <a href="">
+                    <a href="https://twitter.com/arcadumverse" target="_blank">
                       <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <a
+                      href=""
+                      onMouseOver={() => handleMouseOver()}
+                      onMouseOut={() => handleMouseOut()}
+                    >
+                      <img className="opensea" src={states} />
                     </a>
                   </li>
                   <li>
-                    <a href="">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <a
+                      href="https://discord.com/channels/914886027536138270/915243460745912390"
+                      target="_blank"
+                      onMouseOver={() => disMouseOver()}
+                      onMouseOut={() => disMouseOut()}
+                    >
+                      <img className="discord" src={cord} />
                     </a>
                   </li>
                 </ul>

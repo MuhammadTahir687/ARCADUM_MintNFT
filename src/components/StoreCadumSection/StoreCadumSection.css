@@ -195,6 +195,24 @@ video#myVideo-1 {
     width: 100%;
     height: auto;
   }
+
+  .store-video .container {
+    width: 100% !important;
+    margin: 0px auto;
+  }
+  .card {
+    width: 100%;
+    background: #130e14;
+    border: 2px solid #130e14;
+    border-radius: 25px;
+    margin: 10px 0px !important;
+  }
+
+  .image-waving {
+    width: 100%;
+    margin: 0px auto;
+    transition: 0.3s ease;
+  }
 }
 
 .arcade-image-store {
@@ -330,5 +348,3 @@ button.btn-waving {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-
-

@@ -167,3 +167,98 @@ p.para-6 {
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  h6.head-6 {
+    float: left;
+    width: 28%;
+    margin-bottom: 0;
+    background: #811345;
+    padding: 18px 7px;
+    color: #fff;
+    font-size: 13px;
+  }
+  p.para-6 {
+    float: right;
+    width: 72%;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 14px 2px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .back-to-menu {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .card-sub {
+    width: 100%;
+    background: #130e14;
+    border: 2px solid #130e14;
+    border-radius: 25px;
+    margin: 0px auto 10px auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  h6.head-6 {
+    float: left;
+    width: 28%;
+    margin-bottom: 0;
+    background: #811345;
+    padding: 18px 7px;
+    color: #fff;
+    font-size: 13px;
+  }
+  p.para-6 {
+    float: right;
+    width: 72%;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 14px 2px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .back-to-menu {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h6.head-6 {
+    float: left;
+    width: 28%;
+    margin-bottom: 0;
+    background: #811345;
+    padding: 18px 7px;
+    color: #fff;
+    font-size: 13px;
+  }
+  p.para-6 {
+    float: right;
+    width: 72%;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 14px 2px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .back-to-menu {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}

@@ -54,7 +54,8 @@ img {
 
 ul.button-header li {
   display: inline-block;
-  margin: 12px;
+  margin: 12px 3px;
+  width: 25%;
 }
 
 ul.button-header {
@@ -754,4 +755,12 @@ butoon.btn-cross {
 button.navbar-toggler.collapsed {
   background: #fff;
   z-index: 9999;
+}
+
+img.discord {
+  width: 36%;
+}
+
+img.opensea {
+  width: 36%;
 }
