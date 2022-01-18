@@ -73,6 +73,8 @@ button.onpress {
 
 .image-game {
   position: relative;
+  width: 80%;
+  margin: 0px auto;
 }
 
 @media screen and (max-width: 992px) {

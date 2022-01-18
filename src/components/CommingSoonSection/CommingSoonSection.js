@@ -30,6 +30,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
     }, 1000);
   }, []);
 
+  const [play, setPlay] = useState(true);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [show, setShow] = useState(false);
@@ -41,7 +42,6 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
     setScroll(!scroll);
   };
 
-  const [play, setPlay] = useState();
   const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
 
@@ -60,7 +60,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
   };
 
   const disMouseOver = () => {
-    setCord(opensea2);
+    setCord(discord2);
   };
 
   const disMouseOut = () => {
@@ -195,13 +195,15 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
                 >
                   <ul className="button-header-responsive">
                     <li>
-                      <a href="">Twitter</a>
+                      <a href="https://twitter.com/arcadumverse">Twitter</a>
                     </li>
                     <li>
                       <a href="">OpenSea</a>
                     </li>
                     <li>
-                      <a href="">DisCord</a>
+                      <a href="https://discord.com/channels/914886027536138270/915243460745912390">
+                        DisCord
+                      </a>
                     </li>
                   </ul>
                   <div

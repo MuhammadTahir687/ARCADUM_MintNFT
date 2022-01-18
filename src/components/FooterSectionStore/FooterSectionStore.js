@@ -23,7 +23,7 @@ export const FooterSectionStore = () => {
   };
 
   const disMouseOver = () => {
-    setCord(opensea2);
+    setCord(discord2);
   };
 
   const disMouseOut = () => {
@@ -43,7 +43,9 @@ export const FooterSectionStore = () => {
           <Row>
             <Col sm={12} lg={9} md={9} className="footer-subhead">
               <div className="footer-image">
-                <img src={logo} alt="image" onClick={() => handleScroll()} />
+                <a href="/">
+                  <img src={logo} alt="image" />
+                </a>
               </div>
 
               <p className="mt-2 mb-5">
@@ -69,7 +71,7 @@ export const FooterSectionStore = () => {
                     onMouseOver={() => handleMouseOver()}
                     onMouseOut={() => handleMouseOut()}
                   >
-                    <img className="opensea" src={states} />
+                    <img className="opensea-footer" src={states} />
                   </a>
                 </li>
                 <li>
@@ -79,7 +81,7 @@ export const FooterSectionStore = () => {
                     onMouseOver={() => disMouseOver()}
                     onMouseOut={() => disMouseOut()}
                   >
-                    <img className="discord" src={cord} />
+                    <img className="discord-footer" src={cord} />
                   </a>
                 </li>
               </ul>

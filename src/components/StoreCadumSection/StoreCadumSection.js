@@ -48,7 +48,7 @@ export default function StoreCadumSection() {
   };
 
   const disMouseOver = () => {
-    setCord(opensea2);
+    setCord(discord2);
   };
 
   const disMouseOut = () => {
@@ -194,13 +194,15 @@ export default function StoreCadumSection() {
                   >
                     <ul className="button-header-responsive">
                       <li>
-                        <a href="">Twitter</a>
+                        <a href="https://twitter.com/arcadumverse">Twitter</a>
                       </li>
                       <li>
                         <a href="">OpenSea</a>
                       </li>
                       <li>
-                        <a href="">DisCord</a>
+                        <a href="https://discord.com/channels/914886027536138270/915243460745912390">
+                          DisCord
+                        </a>
                       </li>
                     </ul>
                     <Button className="connect-wallet" id="connect-wallet">

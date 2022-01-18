@@ -1,4 +1,4 @@
-import React, { useEffect, useState }from "react";
+import React, { useEffect, useState } from "react";
 import "./FooterSectionComming.css";
 import "../../App.css";
 import "../NavbarSection/NavbarSection.css";
@@ -11,7 +11,6 @@ import discord2 from "../../assetsIMG/discord2.png";
 import discord from "../../assetsIMG/discord.png";
 
 export const FooterSectionComming = () => {
-
   const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
 
@@ -24,7 +23,7 @@ export const FooterSectionComming = () => {
   };
 
   const disMouseOver = () => {
-    setCord(opensea2);
+    setCord(discord2);
   };
 
   const disMouseOut = () => {
@@ -59,30 +58,30 @@ export const FooterSectionComming = () => {
               <p>Terms & Conditions</p>
               <p> Smart Contract</p>
               <ul className="button-header px-0">
-              <li>
-                    <a href="https://twitter.com/arcadumverse" target="_blank">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href=""
-                      onMouseOver={() => handleMouseOver()}
-                      onMouseOut={() => handleMouseOut()}
-                    >
-                      <img className="opensea" src={states} />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://discord.com/channels/914886027536138270/915243460745912390"
-                      target="_blank"
-                      onMouseOver={() => disMouseOver()}
-                      onMouseOut={() => disMouseOut()}
-                    >
-                      <img className="discord" src={cord} />
-                    </a>
-                  </li>
+                <li>
+                  <a href="https://twitter.com/arcadumverse" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    onMouseOver={() => handleMouseOver()}
+                    onMouseOut={() => handleMouseOut()}
+                  >
+                    <img className="opensea-footer" src={states} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.com/channels/914886027536138270/915243460745912390"
+                    target="_blank"
+                    onMouseOver={() => disMouseOver()}
+                    onMouseOut={() => disMouseOut()}
+                  >
+                    <img className="discord-footer" src={cord} />
+                  </a>
+                </li>
               </ul>
               <h6 className="copy-right">
                 &#169;2021 Ar-Cadum. All Right Reserved

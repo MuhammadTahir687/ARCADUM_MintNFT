@@ -71,7 +71,7 @@ export const NavbarSection = () => {
   };
 
   const disMouseOver = () => {
-    setCord(opensea2);
+    setCord(discord2);
   };
 
   const disMouseOut = () => {
