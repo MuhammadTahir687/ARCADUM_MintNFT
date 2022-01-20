@@ -126,3 +126,7 @@
     margin: 30px 0px 10px 0px;
   }
 }
+
+ul#button-header-footer li {
+  width: 18% !important;
+}

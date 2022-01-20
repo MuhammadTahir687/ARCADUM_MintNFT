@@ -13,7 +13,12 @@ export const CommunitySection = () => {
               <br />
               Learn about the latest product releases and insights.
             </p>
-            <button className="join-button">Join our Discord</button>
+            <a
+              href="https://discord.com/channels/914886027536138270/915243460745912390"
+              target="_blank"
+            >
+              <button className="join-button">Join our Discord</button>
+            </a>
           </div>
         </div>
       </div>

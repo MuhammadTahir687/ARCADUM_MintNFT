@@ -9,6 +9,7 @@ import WOW from "wowjs";
 import { NavbarSection } from "../NavbarSection/NavbarSection";
 
 export const EnterSection = () => {
+  const [value, setValue] = useState("");
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     new WOW.WOW().init({ live: false });
@@ -59,7 +60,7 @@ export const EnterSection = () => {
             </div>
           ) : (
             <>
-              <NavbarSection />
+              <NavbarSection prop = {value == false ? "pre slae" : "main sale"} />
             </>
           )}
         </div>

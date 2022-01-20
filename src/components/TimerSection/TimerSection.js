@@ -3,12 +3,22 @@ import "./TimerSection.css";
 import "../../App.css";
 
 const TimerSection = () => {
+  const [timer, setTimer] = useState("");
+  var preSale = "2022-02-03T19:00:00Z";
+
+  var mainSale = "2022-02-15T19:00:00Z";
+
+  var dest = new Date().getTime();
+  console.log(dest);
   useEffect(() => {
-    var dest = new Date("feb 03, 2022 00:00:00").getTime();
+    if (dest > 1643914800000) {
+      dest = new Date(mainSale).getTime();
+    } else {
+      dest = new Date(preSale).getTime();
+    }
 
     setInterval(() => {
       var now = new Date().getTime();
-
       var diff = dest - now;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
       var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -16,9 +26,7 @@ const TimerSection = () => {
       var seconds = Math.floor((diff % (1000 * 60)) / 1000);
       setTimer(days + " : " + hours + " : " + mint + " : " + seconds);
     }, 1000);
-  }, []);
-
-  const [timer, setTimer] = useState("");
+  }, [dest]);
 
   return (
     <div className="timer-section py-5 " id="timer">

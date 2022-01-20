@@ -348,3 +348,8 @@ button.btn-waving {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+
+img.shoping-card {
+  width: 22px;
+  margin-left: 15px;
+}

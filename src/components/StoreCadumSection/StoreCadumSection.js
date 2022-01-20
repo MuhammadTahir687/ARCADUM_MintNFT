@@ -11,6 +11,8 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 
 import music from "../../assetsIMG/pause.png";
 import playing from "../../assetsIMG/play.png";
+import shopping from "../../assetsIMG/Group 297.png";
+import shopingcard from "../../assetsIMG/shoping-card.png";
 
 import artboard from "../../assetsIMG/E44.png";
 import Artboard2 from "../../assetsIMG/Artboard 2.png";
@@ -30,8 +32,9 @@ export default function StoreCadumSection() {
   const [play, setPlay] = useState(true);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
-  const [states, setStates] = useState(opensea);
+  // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
+  const [card, setCard] = useState("");
 
   const handleClick = () => {
     document.getElementById("section-store").scrollIntoView({
@@ -39,13 +42,13 @@ export default function StoreCadumSection() {
     });
   };
 
-  const handleMouseOver = () => {
-    setStates(opensea2);
-  };
+  // const handleMouseOver = () => {
+  //   setStates(opensea2);
+  // };
 
-  const handleMouseOut = () => {
-    setStates(opensea);
-  };
+  // const handleMouseOut = () => {
+  //   setStates(opensea);
+  // };
 
   const disMouseOver = () => {
     setCord(discord2);
@@ -53,6 +56,14 @@ export default function StoreCadumSection() {
 
   const disMouseOut = () => {
     setCord(discord);
+  };
+
+  const shopingMouseOver = () => {
+    setCard(shopingcard);
+  };
+
+  const shopingMouseOut = () => {
+    setCard(shopping);
   };
 
   return (
@@ -118,7 +129,7 @@ export default function StoreCadumSection() {
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href=""
                         onMouseOver={() => handleMouseOver()}
@@ -126,7 +137,7 @@ export default function StoreCadumSection() {
                       >
                         <img className="opensea" src={states} />
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         href="https://discord.com/channels/914886027536138270/915243460745912390"
@@ -196,9 +207,9 @@ export default function StoreCadumSection() {
                       <li>
                         <a href="https://twitter.com/arcadumverse">Twitter</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="">OpenSea</a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href="https://discord.com/channels/914886027536138270/915243460745912390">
                           DisCord
@@ -247,9 +258,13 @@ export default function StoreCadumSection() {
                       <br />
                       devices and demons.
                     </p>
-                    <button className="store-btn">
-                      0.1 ETH | Buy Now{" "}
-                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <button
+                      className="store-btn"
+                      onMouseOver={() => shopingMouseOver()}
+                      onMouseOut={() => shopingMouseOut()}
+                    >
+                      0.148 ETH | Buy Now
+                      <img className="shoping-card" src={card} alt="card" />
                     </button>
                   </div>
                 </Col>

@@ -49,13 +49,13 @@ img {
 #comming-soon:hover:before {
   font-size: 17px;
   color: red;
-  width: 10%;
+  width: 6%;
 }
 
 ul.button-header li {
   display: inline-block;
   margin: 12px 3px;
-  width: 25%;
+  width: 41%;
 }
 
 ul.button-header {

@@ -11,16 +11,16 @@ import discord2 from "../../assetsIMG/discord2.png";
 import discord from "../../assetsIMG/discord.png";
 
 export const FooterSectionStore = () => {
-  const [states, setStates] = useState(opensea);
+  // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
 
-  const handleMouseOver = () => {
-    setStates(opensea2);
-  };
+  // const handleMouseOver = () => {
+  //   setStates(opensea2);
+  // };
 
-  const handleMouseOut = () => {
-    setStates(opensea);
-  };
+  // const handleMouseOut = () => {
+  //   setStates(opensea);
+  // };
 
   const disMouseOver = () => {
     setCord(discord2);
@@ -59,13 +59,13 @@ export const FooterSectionStore = () => {
               </a>
               <p>Terms & Conditions</p>
               <p> Smart Contract</p>
-              <ul className="button-header px-0">
+              <ul className="button-header px-0" id="button-header-footer">
                 <li>
                   <a href="https://twitter.com/arcadumverse" target="_blank">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href=""
                     onMouseOver={() => handleMouseOver()}
@@ -73,7 +73,7 @@ export const FooterSectionStore = () => {
                   >
                     <img className="opensea-footer" src={states} />
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://discord.com/channels/914886027536138270/915243460745912390"

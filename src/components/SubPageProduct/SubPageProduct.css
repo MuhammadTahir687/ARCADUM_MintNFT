@@ -262,3 +262,8 @@ a {
     margin-top: 10px;
   }
 }
+video#image-waving-sub {
+  width: 75%;
+  margin: 60px auto;
+  display: block;
+}

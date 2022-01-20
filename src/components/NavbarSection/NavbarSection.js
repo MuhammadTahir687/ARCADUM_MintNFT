@@ -34,12 +34,12 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 
-export const NavbarSection = () => {
+export const NavbarSection = ({ prop }) => {
   const [show, setShow] = useState(false);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [play, setPlay] = useState(true);
-  const [states, setStates] = useState(opensea);
+  // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
   useEffect(() => {
     new WOW.WOW().init({ live: false });
@@ -62,13 +62,13 @@ export const NavbarSection = () => {
   //   }, 6000);
   // }, []);
 
-  const handleMouseOver = () => {
-    setStates(opensea2);
-  };
+  // const handleMouseOver = () => {
+  //   setStates(opensea2);
+  // };
 
-  const handleMouseOut = () => {
-    setStates(opensea);
-  };
+  // const handleMouseOut = () => {
+  //   setStates(opensea);
+  // };
 
   const disMouseOver = () => {
     setCord(discord2);
@@ -127,7 +127,7 @@ export const NavbarSection = () => {
                   className="wow fadeIn nav-link"
                   data-wow-delay=".50s"
                 >
-                  Coming Soon
+                  Pre-Sale
                 </div>
               </Nav>
               <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
@@ -137,7 +137,7 @@ export const NavbarSection = () => {
                       <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href=""
                       onMouseOver={() => handleMouseOver()}
@@ -145,7 +145,7 @@ export const NavbarSection = () => {
                     >
                       <img className="opensea" src={states} />
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://discord.com/channels/914886027536138270/915243460745912390"
@@ -222,9 +222,9 @@ export const NavbarSection = () => {
                         Twitter
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="">OpenSea</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         href="https://discord.com/channels/914886027536138270/915243460745912390"
@@ -240,7 +240,7 @@ export const NavbarSection = () => {
                     className="wow fadeIn nav-link"
                     data-wow-delay=".50s"
                   >
-                    Coming Soon
+                    Pre-Sale
                   </div>
 
                   <Button className="connect-wallet" id="connect-wallet">

@@ -16,6 +16,7 @@ import waving from "../../assetsIMG/Waving_ArCadum.png";
 import blowing from "../../assetsIMG/BlowingBubbles_ArCadum.png";
 import bubbleImage from "../../assetsIMG/BubbleGhostLogo_ArCadum.png";
 import bubbleVideo from "../../assetsIMG/VideoGameImage.png";
+import wavingvideos from "../../video/VideoGame.mp4";
 
 import { Screen } from "../Screen";
 
@@ -60,7 +61,7 @@ function SubPageProduct() {
     return (
       <>
         <Screen
-          wavingimage={bubbleVideo}
+          wavingvideo={wavingvideos}
           children={"Bubble Ghost Screen"}
           child={"1082"}
         />

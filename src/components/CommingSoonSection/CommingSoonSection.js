@@ -16,11 +16,22 @@ import discord2 from "../../assetsIMG/discord2.png";
 import discord from "../../assetsIMG/discord.png";
 
 export const CommingSoonSection = ({ onClick1, onClick2 }) => {
+  var preSale = "2022-02-03T19:00:00Z";
+  
+  var mainSale = "2022-02-15T19:00:00Z";
+
+  var dest = new Date().getTime();
+
   useEffect(() => {
-    var des = new Date("feb 03, 2022 00:00:00").getTime();
-    var x = setInterval(function () {
+    if (dest > 1643914800000) {
+      dest = new Date(mainSale).getTime();
+    } else {
+      dest = new Date(preSale).getTime();
+    }
+
+    setInterval(function () {
       var now = new Date().getTime();
-      var diff = des - now;
+      var diff = dest - now;
       var days = Math.floor(diff / (1000 * 60 * 60 * 24));
       var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var mint = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -42,7 +53,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
     setScroll(!scroll);
   };
 
-  const [states, setStates] = useState(opensea);
+  // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
 
   useEffect(() => {
@@ -51,13 +62,13 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
     });
   }, [scroll]);
 
-  const handleMouseOver = () => {
-    setStates(opensea2);
-  };
+  // const handleMouseOver = () => {
+  //   setStates(opensea2);
+  // };
 
-  const handleMouseOut = () => {
-    setStates(opensea);
-  };
+  // const handleMouseOut = () => {
+  //   setStates(opensea);
+  // };
 
   const disMouseOver = () => {
     setCord(discord2);
@@ -100,16 +111,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="me-auto">
-                <div
-                  onClick={() => setShow(true)}
-                  id="comming-soon"
-                  className="wow fadeIn nav-link"
-                  data-wow-delay=".50s"
-                >
-                  Coming Soon
-                </div>
-              </Nav>
+              <Nav className="me-auto"></Nav>
               <Nav className="wow fadeInRightBig " data-wow-delay=".50s">
                 <ul className="button-header">
                   <li>
@@ -117,7 +119,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
                       <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href=""
                       onMouseOver={() => handleMouseOver()}
@@ -125,7 +127,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
                     >
                       <img className="opensea" src={states} />
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://discord.com/channels/914886027536138270/915243460745912390"
@@ -197,23 +199,15 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
                     <li>
                       <a href="https://twitter.com/arcadumverse">Twitter</a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="">OpenSea</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="https://discord.com/channels/914886027536138270/915243460745912390">
                         DisCord
                       </a>
                     </li>
                   </ul>
-                  <div
-                    onClick={() => setShow(true)}
-                    id="comming-soon-responsive"
-                    className="wow fadeIn nav-link"
-                    data-wow-delay=".50s"
-                  >
-                    Coming Soon
-                  </div>
 
                   <Button className="connect-wallet" id="connect-wallet">
                     {" "}
@@ -245,7 +239,7 @@ export const CommingSoonSection = ({ onClick1, onClick2 }) => {
           </div>
           <div className="scrool-lorem text-center">
             <p>Own 1,987 unique in-game sprites</p>
-            <button className="scrol-btn">Power Up</button>
+            <button className="scrol-btn">Mint Now</button>
             <div className="box-img" onClick={() => handleClick()}>
               <img src={arrow} alt="arrow" />
             </div>

@@ -20,21 +20,21 @@ import discord from "../assetsIMG/discord.png";
 import logo from "../assetsIMG/logo.png";
 import audio from "../Audio/I Cry Night after Night (Instrumental) - The Egyptian Lover.mp3";
 import { Link } from "react-router-dom";
-export const Screen = ({ wavingimage, children, child }) => {
+export const Screen = ({ wavingimage, children, child, wavingvideo }) => {
   const [play, setPlay] = useState(true);
   const [visibl, setVisibl] = useState(false);
   const [scroll, setScroll] = useState(false);
 
-  const [states, setStates] = useState(opensea);
+  // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
 
-  const handleMouseOver = () => {
-    setStates(opensea2);
-  };
+  // const handleMouseOver = () => {
+  //   setStates(opensea2);
+  // };
 
-  const handleMouseOut = () => {
-    setStates(opensea);
-  };
+  // const handleMouseOut = () => {
+  //   setStates(opensea);
+  // };
 
   const disMouseOver = () => {
     setCord(discord2);
@@ -97,7 +97,7 @@ export const Screen = ({ wavingimage, children, child }) => {
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href=""
                         onMouseOver={() => handleMouseOver()}
@@ -105,7 +105,7 @@ export const Screen = ({ wavingimage, children, child }) => {
                       >
                         <img className="opensea" src={states} />
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         href="https://discord.com/channels/914886027536138270/915243460745912390"
@@ -175,9 +175,9 @@ export const Screen = ({ wavingimage, children, child }) => {
                       <li>
                         <a href="https://twitter.com/arcadumverse">Twitter</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="">OpenSea</a>
-                      </li>
+                      </li> */}
                       <li>
                         <a href="https://discord.com/channels/914886027536138270/915243460745912390">
                           DisCord
@@ -202,7 +202,13 @@ export const Screen = ({ wavingimage, children, child }) => {
                 <Col sm={12} lg={6} md={6}>
                   <div className="card-sub">
                     <div className="image-waving-sub">
-                      <img src={wavingimage} alt="image" />
+                      {wavingimage ? (
+                        <img src={wavingimage} alt="image" />
+                      ) : (
+                        <video autoPlay loop id="image-waving-sub">
+                          <source src={wavingvideo} type="video/mp4" />
+                        </video>
+                      )}
                     </div>
                     <button className="btn-waving-sub">
                       <h6>{children}</h6>
