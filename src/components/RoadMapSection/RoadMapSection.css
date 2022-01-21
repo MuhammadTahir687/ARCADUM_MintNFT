@@ -1,0 +1,333 @@
+.section-roadmap {
+  background-color: #000000;
+  position: relative;
+}
+
+.border-roadmap::after {
+  content: "";
+  width: 1px;
+  height: 150px;
+  background-color: #ff00c2;
+  z-index: 99999;
+  position: absolute;
+  top: -115px;
+  left: 79px;
+}
+
+.roadmap-heading {
+  text-align: center;
+  padding: 100px 0px 0px 0px;
+}
+
+.roadmap-heading h1 {
+  color: #fff;
+  font-size: 35px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.roadmap-heading p {
+  color: #6f6f6f;
+  font-size: 25px;
+  width: 70%;
+  margin: 0px auto;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.roadmap-heading-1 {
+  background-color: #120d13;
+  position: relative;
+  z-index: 1;
+}
+
+.roadmap-heading-1 h1 {
+  color: #fff;
+  font-size: 38px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+}
+
+.roadmap-heading-1 h1 span.span-roadmap {
+  color: #e9328b;
+}
+
+.roadmap-heading-1 p {
+  color: #9e9b9e;
+  font-size: 17px;
+  margin: 0px auto;
+  padding-top: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 20px 80px 40px 150px;
+}
+
+.box-roadmap-2 {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.box-roadmap-3 {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+div#roadimg-2 {
+  width: 36%;
+  margin: 30px auto;
+}
+
+.roadmap-image {
+  width: 47%;
+  margin: 30px auto;
+}
+
+.roadmap-image-4 {
+  width: 45%;
+  margin: 0px auto;
+}
+
+.roadmap-image-art img {
+  width: 58%;
+  margin: 0px auto;
+  display: block;
+}
+
+.box-roadmap-5 {
+  position: relative;
+}
+
+.rectangle-img {
+  width: 5%;
+  margin-right: 40px;
+}
+
+h1.head-img {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 40px 1px 1px 60px;
+}
+
+.roadmap-heading-1::before {
+  content: "";
+  height: 268px;
+  width: 1px;
+  background-color: #787778;
+  z-index: 9999999;
+  position: absolute;
+  top: 100px;
+  left: 78px;
+}
+
+div#roadimg-5 {
+  width: 48%;
+  position: absolute;
+  top: 0%;
+  right: 140px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .roadmap-image,
+  .roadmap-image-art,
+  div#roadimg-2,
+  .roadmap-image-5 {
+    display: none;
+  }
+
+  .roadmap-heading p {
+    color: #6f6f6f;
+    font-size: 16px !important;
+    width: 100%;
+    margin: 20px auto;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .roadmap-heading-1 p {
+    color: #9e9b9e;
+    font-size: 17px;
+    margin: 0px auto;
+    padding-top: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px 10px 40px 60px !important;
+  }
+
+  .roadmap-heading-5 p {
+    color: #9e9b9e;
+    font-size: 15px;
+    margin: 0px auto;
+    padding-top: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px 10px 40px 60px !important;
+  }
+
+  .border-roadmap::after {
+    content: "";
+    width: 1px;
+    height: 150px;
+    background-color: #ff00c2;
+    z-index: 99999;
+    position: absolute;
+    top: -119px !important;
+    left: 39px !important;
+  }
+
+  h1.head-img {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 37px 1px 1px 20px !important;
+  }
+
+  .roadmap-image,
+  .roadmap-image-4,
+  .roadmap-image-art,
+  .roadmap-image-5,
+  div#roadimg-2 {
+    display: none;
+  }
+
+  .rectangle-img {
+    width: 10% !important;
+    margin-right: 5px;
+  }
+  .roadmap-heading-1::before {
+    content: "";
+    height: 686px;
+    width: 1px;
+    background-color: #787778;
+    z-index: 9999999;
+    position: absolute;
+    top: 93px !important;
+    left: 41px !important;
+  }
+
+  .roadmap-heading-1 h1 {
+    color: #fff;
+    font-size: 18px !important;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+  }
+
+  .roadmap-heading-5 h1 {
+    color: #fff;
+    font-size: 18px !important ;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .roadmap-heading p {
+    color: #6f6f6f;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px auto;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .roadmap-heading-1 p {
+    color: #9e9b9e;
+    font-size: 13px;
+    margin: 0px auto;
+    padding-top: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px 10px 40px 60px !important;
+  }
+
+  .roadmap-heading-5 p {
+    color: #9e9b9e;
+    font-size: 13px;
+    margin: 0px auto;
+    padding-top: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 20px 10px 40px 60px !important;
+  }
+
+  .border-roadmap::after {
+    content: "";
+    width: 1px;
+    height: 150px;
+    background-color: #ff00c2;
+    z-index: 99999;
+    position: absolute;
+    top: -119px;
+    left: 34px !important;
+  }
+
+  h1.head-img {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 37px 1px 1px 20px;
+  }
+
+  .roadmap-image,
+  .roadmap-image-4 .roadmap-image-art,
+  .roadmap-image-5 {
+    display: none;
+  }
+
+  .rectangle-img {
+    width: 12%;
+    margin-right: 5px;
+  }
+  .roadmap-heading-1::before {
+    content: "";
+    height: 455px !important;
+    width: 1px;
+    background-color: #787778;
+    z-index: 9999999;
+    position: absolute;
+    top: 93px;
+    left: 34px !important;
+  }
+
+  .roadmap-heading-1 h1 {
+    color: #fff;
+    font-size: 16px !important;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+  }
+
+  .roadmap-heading-5 h1 {
+    color: #fff;
+    font-size: 16px !important ;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+  }
+}
+
+.roadmap-heading-5 {
+  background-color: #120d13;
+  position: relative;
+  z-index: 99;
+}
+
+.roadmap-heading-5 h1 {
+  color: #fff;
+  font-size: 38px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+}
+
+.roadmap-heading-5 h1 span.span-roadmap {
+  color: #e9328b;
+}
+
+.roadmap-heading-5 p {
+  color: #9e9b9e;
+  font-size: 17px;
+  margin: 0px auto;
+  padding-top: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 20px 80px 40px 150px;
+}
+
+.roadmap-heading-5::before {
+  height: 686px;
+  width: 1px;
+  background-color: #787778;
+  z-index: 9999999;
+  position: absolute;
+  top: 93px;
+  left: 41px;
+}

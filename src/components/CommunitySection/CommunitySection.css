@@ -1,0 +1,80 @@
+.join-communitysection {
+  background-image: url("../../assetsIMG/Footer_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.cuminty .container {
+  max-width: 90% !important;
+  margin: 0px auto;
+}
+
+.join-subheading {
+  padding: 110px 0px;
+  text-align: center;
+}
+
+.join-subheading h1 {
+  color: #fff;
+  font-size: 38px;
+  font-family: "IBM Plex Mono";
+  text-align: center;
+  font-weight: bold;
+}
+
+.join-subheading p {
+  width: 60%;
+  margin: 40px auto;
+  color: #fff;
+  font-size: 15px;
+  font-family: "IBM Plex Mono";
+}
+
+button.join-button {
+  font-size: 25px;
+  padding: 8px 30px;
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  color: #000;
+}
+
+button.join-button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .join-subheading p {
+    width: 100%;
+    margin: 37px auto;
+    color: #fff;
+    font-size: 13px;
+    font-family: "IBM Plex Mono";
+    padding: 0px 10px;
+  }
+
+  .join-subheading h1 {
+    color: #fff;
+    font-size: 21px;
+    font-family: "IBM Plex Mono";
+    text-align: center;
+    font-weight: 700;
+  }
+
+  button.join-button {
+    font-size: 17px;
+    padding: 8px 20px;
+    background: #fff;
+    border: 1px solid #fff;
+    font-family: "IBM Plex Mono";
+    font-weight: 700;
+    color: #000;
+  }
+}

@@ -1,0 +1,355 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.store-cadum {
+  background-image: url("../../assetsIMG/Texture.jpg");
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bubble-image-store {
+  width: 60%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.subheading-bubble-store {
+  padding: 80px 0px 0px 0px;
+}
+
+.subheading-bubble-store h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  font-weight: 700;
+}
+
+.subheading-bubble-store h2 span {
+  color: #ff0080 !important;
+  padding-right: 20px;
+}
+
+.subheading-bubble-store p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  font-weight: 700;
+}
+
+.stor-random p {
+  color: #7a7579;
+  text-align: center;
+  font-size: 16px;
+}
+
+button.store-btn {
+  padding: 10px 60px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+
+button.store-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+i.fa.fa-shopping-cart {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+video#myVideo-1 {
+  height: auto;
+  width: 50%;
+  margin: 0px auto;
+  display: block;
+  cursor: pointer;
+}
+
+.store-arrow-btn {
+  width: 7%;
+  display: block;
+  margin: 30px auto 30px auto;
+}
+
+.store-subheading {
+  padding: 80px 0px 20px 0px;
+}
+
+.table-heading-2 {
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+}
+
+.table-heading {
+  background-color: #7c1143;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+}
+
+.border-bottom-2 {
+  border-bottom: 1px solid #eaeaea;
+  padding: 5px 0px;
+}
+
+.border-bottom-2 p {
+  font-size: 12px;
+  font-family: "IBM Plex Mono";
+}
+
+.border-bottom-1 p {
+  font-size: 12px;
+  font-family: "IBM Plex Mono";
+}
+
+.video-store {
+  z-index: 9999;
+  position: relative;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.store-video {
+  padding: 50px 0px 20px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  button.store-btn {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stor-random p {
+    display: none;
+  }
+
+  button.store-btn {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  div#store-cadum {
+    width: 58%;
+  }
+
+  button.store-btn {
+    display: none;
+  }
+
+  .store-arrow-btn {
+    width: 7%;
+    display: none;
+    margin: 30px auto 30px auto;
+  }
+
+  .subheading-bubble-store p {
+    font-size: 14px;
+  }
+
+  .subheading-bubble-store h2 {
+    color: #fff;
+    font-size: 20px;
+  }
+  .subheading-bubble-store {
+    padding: 5px 0px 0px 0px;
+  }
+
+  .bubble-image-store {
+    width: 100%;
+
+    margin: 0px auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .store-video .container {
+    width: 100% !important;
+    margin: 0px auto;
+  }
+  .card {
+    width: 100%;
+    background: #130e14;
+    border: 2px solid #130e14;
+    border-radius: 25px;
+    margin: 10px 0px !important;
+  }
+
+  .image-waving {
+    width: 100%;
+    margin: 0px auto;
+    transition: 0.3s ease;
+  }
+}
+
+.arcade-image-store {
+  width: 30%;
+  right: 16px;
+  top: -28%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.arcade-image-store-1 {
+  width: 14%;
+  left: -55px;
+  bottom: 20%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+.arcade-image-store-2 {
+  width: 8%;
+  right: 12%;
+  bottom: 20%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+.arcade-image-store-22 {
+  width: 5%;
+  left: 24%;
+  top: 14%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.arcade-image-store-12 {
+  width: 7%;
+  position: absolute;
+  top: 18%;
+  right: 35%;
+  z-index: 0;
+  transform: rotate(55deg);
+  opacity: 0.3;
+}
+
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(36px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(14px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(8px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.wobble-vertical-on-hover {
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-vertical-on-hover:hover {
+  animation-name: wobble-vertical-on-hover;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.image-waving {
+  width: 85%;
+  margin: 0px auto;
+  transition: 0.3s ease;
+}
+
+.image-waving:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  width: 100%;
+  background: #130e14;
+  border: 2px solid #130e14;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.button-bottom {
+  display: grid;
+  background-color: #efefef !important;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.store-video .container {
+  width: 55%;
+}
+
+button.btn-waving {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 11px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0px;
+  background-color: #fff;
+  box-shadow: 0px 15px 10px -15px #fff;
+}
+
+.btn-rarity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 11px;
+  background-color: #efefef;
+  border: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+img.shoping-card {
+  width: 22px;
+  margin-left: 15px;
+}

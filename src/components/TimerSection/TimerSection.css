@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans&family=IBM+Plex+Mono:wght@300&family=VT323&display=swap");
+
+@font-face {
+  font-family: "8 Bit Fortress";
+  src: url("../../fonts/8-bit-fortress.ttf");
+}
+
+.subheading-timer {
+  text-align: center;
+}
+
+.subheading-timer h1 {
+  font-size: 35px;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.subheading-timer p {
+  padding-top: 17px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "8 Bit Fortress";
+  line-height: 40px;
+  color: #706e71;
+}
+
+.subheading-timer h2 {
+  font-size: 100px;
+  font-family: "8 Bit Fortress";
+  color: #fff;
+  font-weight: 400;
+}
+
+.subheading-timer h4 {
+  font-size: 50px;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .subheading-timer h1 {
+    font-size: 18px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .subheading-timer p {
+    padding-top: 16px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: "8 Bit Fortress";
+    line-height: 36px;
+    color: #706e71;
+    padding: 3px 13px;
+  }
+
+  .subheading-timer h2 {
+    font-size: 55px;
+    font-family: "8 Bit Fortress";
+    color: #fff;
+    padding: 16px 0px;
+  }
+
+  .subheading-timer h4 {
+    font-size: 30px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subheading-timer h1 {
+    font-size: 18px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .subheading-timer p {
+    padding-top: 16px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: "8 Bit Fortress";
+    line-height: 36px;
+    color: #706e71;
+    padding: 3px 13px;
+  }
+
+  .subheading-timer h2 {
+    font-size: 30px;
+    font-family: "8 Bit Fortress";
+    color: #fff;
+    padding: 4px 0px;
+  }
+
+  .subheading-timer h4 {
+    font-size: 23px;
+    font-family: "IBM Plex Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    line-height: 38px;
+    padding: 20px 0px;
+  }
+}

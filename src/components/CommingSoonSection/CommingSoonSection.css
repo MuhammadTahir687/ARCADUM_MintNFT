@@ -1,0 +1,177 @@
+.modal-body {
+  background-image: url("../../assetsIMG/ComingSoon_BG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+}
+
+.srcool-Group {
+  position: relative;
+}
+
+.scrool-timer {
+  padding-top: 100px;
+}
+
+.scrool-timer h2 {
+  color: #fff;
+  font-family: "8 Bit Fortress";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.scrool-timer h4 {
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 31px 0px;
+}
+
+.scrol-screen-subheading {
+  position: relative;
+  height: calc(100% - 60px);
+}
+
+.scrol-screen-subheading {
+  background-image: url("../../assetsIMG/Casette..png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 611px;
+  height: 727px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: -97px;
+}
+
+.scrool-lorem p {
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 80px;
+}
+
+button.scrol-btn {
+  padding: 6px 30px;
+  font-size: 20px;
+  font-family: "IBM Plex Mono";
+  font-weight: bold;
+  border: 1px solid #fff;
+  margin: 15px auto;
+}
+
+button.scrol-btn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.close i {
+  font-size: 50px;
+}
+
+.box-img {
+  /* height: 0px; */
+  width: 70px;
+  text-align: center;
+  margin: 7px auto 0px auto;
+  cursor: pointer;
+}
+
+.header-image-comming {
+  width: 80%;
+  height: auto;
+  margin: 0px auto 0px auto;
+  position: relative;
+  z-index: 99;
+  padding-top: 100px;
+}
+
+/* .close {
+  width: 3%;
+  position: absolute;
+  top: -13px;
+  z-index: 99999;
+  left: 8%;
+} */
+
+@media screen and (max-width: 992px) {
+  .scrol-screen-subheading {
+    background-image: url("../../assetsIMG/Casette..png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 605px;
+    height: 727px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    top: -97px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scrol-screen-subheading {
+    background-image: url("../../assetsIMG/Casette..png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 445px;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+  }
+  .scrool-timer h2 {
+    color: #fff;
+    font-family: "8 Bit Fortress";
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .scrool-timer {
+    padding-top: 35px;
+  }
+  .scrool-timer h4 {
+    color: #fff;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0px;
+  }
+  .scrool-lorem p {
+    color: #fff;
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 40px;
+  }
+
+  button.scrol-btn {
+    padding: 6px 30px;
+    font-size: 20px;
+    font-family: "IBM Plex Mono";
+    font-weight: bold;
+    border: 1px solid #fff;
+    margin: 0px auto;
+  }
+
+  .header-image-comming {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px -9px;
+    position: relative;
+    z-index: 99;
+    padding-top: 80px;
+  }
+  .box-img {
+    width: 70px;
+    text-align: center;
+    margin: 97px auto 0px auto;
+    cursor: pointer;
+  }
+}

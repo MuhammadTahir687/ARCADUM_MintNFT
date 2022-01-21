@@ -1,0 +1,269 @@
+.subpage {
+  background-image: url("../../assetsIMG/Texture.jpg");
+  width: 100%;
+  height: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 80px 0px 80px 0px;
+}
+
+.sub-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sub-image {
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.sub-page-section-heading {
+  color: #fff;
+}
+
+.sub-page-section-heading p {
+  padding: 30px 0px;
+  font-size: 20px;
+  color: #fff;
+}
+
+button.sub-button {
+  width: 100%;
+  padding: 14px 0px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+ul.description-list {
+  padding-left: 0px !important;
+}
+
+ul.description-list li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+.product-description p {
+  padding: 0px 80px 20px !important;
+  color: #fff;
+}
+
+ul.description-list li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #2f001c;
+  transition: width 0.3s;
+}
+
+ul.description-list li:hover::after {
+  width: 100%;
+}
+
+h6.head-6 {
+  float: left;
+  width: 20%;
+  margin-bottom: 0px;
+  background: #811345;
+  padding: 17px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.list-price {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+p.para-6 {
+  float: right;
+  width: 80%;
+  margin-bottom: 0px;
+  background: #fff;
+  padding: 14px;
+  color: #0009;
+}
+
+.detail {
+  border: 1px solid;
+  display: grid;
+}
+
+.btn-waving-sub {
+  display: block;
+  padding: 14px 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.image-waving-sub {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.back-to-menu {
+  color: #fff;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+
+.back-to-menu:hover {
+  color: #fff;
+}
+
+.back-to-menu::before {
+  height: 2px;
+  width: 0;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  content: "";
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+.back-to-menu:hover:before {
+  width: 100%;
+}
+
+.card-sub {
+  width: 60%;
+  background: #130e14;
+  border: 2px solid #130e14;
+  border-radius: 25px;
+  margin: 0px auto 10px auto;
+}
+
+.discription p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.discription {
+  margin: 15px 0px 33px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  h6.head-6 {
+    float: left;
+    width: 28%;
+    margin-bottom: 0;
+    background: #811345;
+    padding: 18px 7px;
+    color: #fff;
+    font-size: 13px;
+  }
+  p.para-6 {
+    float: right;
+    width: 72%;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 14px 2px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .back-to-menu {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .card-sub {
+    width: 100%;
+    background: #130e14;
+    border: 2px solid #130e14;
+    border-radius: 25px;
+    margin: 0px auto 10px auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  h6.head-6 {
+    float: left;
+    width: 28%;
+    margin-bottom: 0;
+    background: #811345;
+    padding: 18px 7px;
+    color: #fff;
+    font-size: 13px;
+  }
+  p.para-6 {
+    float: right;
+    width: 72%;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 14px 2px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .back-to-menu {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h6.head-6 {
+    float: left;
+    width: 28%;
+    margin-bottom: 0;
+    background: #811345;
+    padding: 18px 7px;
+    color: #fff;
+    font-size: 13px;
+  }
+  p.para-6 {
+    float: right;
+    width: 72%;
+    margin-bottom: 0;
+    background: #fff;
+    padding: 14px 2px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .back-to-menu {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}
+video#image-waving-sub {
+  width: 75%;
+  margin: 60px auto;
+  display: block;
+}

@@ -1,0 +1,140 @@
+.member-image {
+  width: 55%;
+  margin: 0px auto;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.member-section-subheading ul.button-header {
+  width: 100% !important;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-image:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.member-section-subheading h1 {
+  color: #795c7a;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.member-section-subheading p {
+  color: #9c9c9c;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 0px;
+}
+
+.sword {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sword-flex {
+  margin: 0px 40px;
+}
+
+ul.button-header-team-section li {
+  display: inline-block;
+  margin: 8px;
+}
+
+ul.button-header-team-section {
+  margin-bottom: 0;
+  margin-top: 9px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.button-header-team-section li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  z-index: 0;
+  transition: border-color 0.35s ease;
+}
+ul.button-header-team-section li a::before {
+  background-color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.35s ease;
+}
+
+ul.button-header-team-section li a:hover:before {
+  top: 0;
+}
+
+ul.button-header-team-section li a:hover {
+  color: #000;
+  transition: 0.25s;
+}
+
+@media only screen and (max-width: 600px) {
+  .member-section-subheading ul.button-header-team-section {
+    width: 65% !important;
+    margin: 12px auto;
+  }
+  ul.button-header-team-section li {
+    display: inline-block;
+    margin: 3px !important;
+  }
+
+  .member-section-subheading ul.team-section {
+    width: 100% !important;
+    margin: 10px auto;
+  }
+  .sword {
+    margin-top: 40px;
+    display: contents !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .member-section-subheading ul.team-section {
+    width: 100% !important;
+    margin: 12px auto;
+  }
+
+  ul.button-header-team-section li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  ul.button-header-team-section {
+    margin: 8px auto;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px !important;
+  }
+  .sword-flex {
+    margin: 0px 3px;
+  }
+}
