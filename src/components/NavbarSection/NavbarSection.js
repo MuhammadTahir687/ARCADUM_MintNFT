@@ -22,6 +22,9 @@ import artboard4 from "../../assetsIMG/Artboard 4.png";
 import { CommingSoonSection } from "../CommingSoonSection/CommingSoonSection";
 import Music from "../../music";
 import WOW from "wowjs";
+import { ethers } from "ethers";
+
+import metamaskicon from '../../assetsIMG/MetaMask_Fox.svg.png';
 
 import { Modal } from "react-bootstrap";
 
@@ -41,6 +44,11 @@ export const NavbarSection = ({ prop }) => {
   const [play, setPlay] = useState(true);
   // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
+  const[btname,setBtname]=useState("Connect Wallet");
+  const [showalert, setShowalert] = useState(false);
+  const [useraddress, setUseraddress] = useState('');
+  const [balance, setBalance] = useState('');
+
   useEffect(() => {
     new WOW.WOW().init({ live: false });
   }, []);
@@ -78,6 +86,33 @@ export const NavbarSection = ({ prop }) => {
     setCord(discord);
   };
 
+  useEffect(()=>{
+    setTimeout(()=>{WalletConnection()},2000)},[])
+
+  const WalletConnection = () => {
+    
+    if (typeof window.ethereum !== 'undefined')  {
+      window.ethereum.request({ method: 'eth_requestAccounts' })
+        .then(response => { accountChangeHandler(response[0]);setBtname('Connected') })
+    }
+    else {
+        setShowalert(true)
+    }
+  }
+  const accountChangeHandler = (newAccount) => {
+    setUseraddress(newAccount);
+  }
+  const chainChangeHandler = () => {
+    window.location.reload()
+  }
+
+  if (typeof window.ethereum !== 'undefined') {
+    window.ethereum.on('accountsChanged', accountChangeHandler);
+    window.ethereum.on('chainChanged', chainChangeHandler)
+  }
+  else {}
+
+  const handleClose = () => setShowalert(false);
   return (
     <>
       <Modal fullscreen={true} show={show} onHide={() => setShow(false)}>
@@ -87,6 +122,25 @@ export const NavbarSection = ({ prop }) => {
             <button className="btn-close-comming">X</button>
           </div>
         </Modal.Body>
+      </Modal>
+
+      <Modal
+        show={showalert}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header id="modalheader">
+          <img src={metamaskicon} id="metaicon" />
+          <Modal.Title>Please Install Metamask First</Modal.Title>
+        </Modal.Header>
+        <Modal.Body id='modalbody'>
+          <p>Metamask is available on <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" style={{paddingleft:"10"}}>Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/" style={{padding:"10"}}>Firefox</a>. You can choose anyone.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>Close</Button>
+          {/* <Button variant="primary">Understood</Button> */}
+        </Modal.Footer>
       </Modal>
 
       <div className="navbar-section" id="nav">
@@ -157,7 +211,7 @@ export const NavbarSection = ({ prop }) => {
                     </a>
                   </li>
                 </ul>
-                <Button className="connect-wallet"> Connect Wallet </Button>
+                <Button onClick={()=>{WalletConnection()}} className="connect-wallet">{btname}</Button>
 
                 <audio
                   autoplay="autoplay"

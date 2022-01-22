@@ -764,3 +764,23 @@ img.discord {
 img.opensea {
   width: 36%;
 }
+#metaicon{
+  width: 100px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  }
+  #modalheader{
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: left !important;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid #dee2e6;
+      border-top-left-radius: calc(0.3rem - 1px);
+      border-top-right-radius: calc(0.3rem - 1px);
+  }
+  #modalbody{
+    padding: 20px !important;
+  }
+  

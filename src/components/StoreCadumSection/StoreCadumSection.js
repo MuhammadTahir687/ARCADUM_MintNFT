@@ -28,6 +28,14 @@ import opensea2 from "../../assetsIMG/opensea.png";
 import discord2 from "../../assetsIMG/discord2.png";
 import discord from "../../assetsIMG/discord.png";
 
+import metamaskicon from '../../assetsIMG/MetaMask_Fox.svg.png';
+import Modal from 'react-bootstrap/Modal'
+import { ethers } from "ethers";
+import contract from '../Contract/TestNFT.json';
+const contractAddress='0x64a4bdf5733862fe27D042C202EC590d1D435879';
+const abi=contract.abi;
+
+
 export default function StoreCadumSection() {
   const [play, setPlay] = useState(true);
   const [visibl, setVisibl] = useState(false);
@@ -35,6 +43,11 @@ export default function StoreCadumSection() {
   // const [states, setStates] = useState(opensea);
   const [cord, setCord] = useState(discord);
   const [card, setCard] = useState("");
+  const [showalert, setShowalert] = useState(false);
+  const[btname,setBtname]=useState("Connect Wallet");
+  const [useraddress, setUseraddress] = useState('');
+  const [balance, setBalance] = useState('');
+
 
   const handleClick = () => {
     document.getElementById("section-store").scrollIntoView({
@@ -66,8 +79,80 @@ export default function StoreCadumSection() {
     setCard(shopping);
   };
 
+  useEffect(()=>{ setTimeout(()=>{WalletConnection()},2000)},[])
+
+  const WalletConnection = () => {
+      if (typeof window.ethereum !== 'undefined') {
+        window.ethereum.request({ method: 'eth_requestAccounts' })
+          .then(response => { accountChangeHandler(response[0]);setBtname('Connected') })
+      }
+      else {
+       setShowalert(true)
+      }
+  }
+  const accountChangeHandler = (newAccount) => {
+    setUseraddress(newAccount);
+  }
+  const chainChangeHandler = () => {
+    window.location.reload()
+  }
+
+  if (typeof window.ethereum !== 'undefined') {
+    window.ethereum.on('accountsChanged', accountChangeHandler);
+    window.ethereum.on('chainChanged', chainChangeHandler)
+  }
+  else {}
+
+
+  const MintNFT = async () => {
+    try {
+        if (window.ethereum) {
+          const a = await window.ethereum.request({ method: 'eth_requestAccounts' })
+          const b = await a[0];
+          const balance= await window.ethereum.request({ method: "eth_getBalance", params: [b.toString(), "latest"] })
+          if(ethers.utils.formatEther(balance) > 0.100000000014995852){
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+            const nftcontract = new ethers.Contract(contractAddress, abi, signer);
+            let nftTxn =  nftcontract.mintTo(b, { value: ethers.utils.parseEther('0.1') })
+            console.log(nftTxn)
+            console.log(`Mined, tee transaction: https://rinkeby.etherscan.io/tx/${nftTxn.hash}`)
+            console.log("Initialize Payment") 
+          }
+          else{
+               alert('Not sufficient Funds')
+          }
+        }
+        else { console.log("Ethereum Object not found") }
+    }
+    catch (e) {
+        alert(JSON.stringify(e))
+    }
+}
+
+const handleClose = () => setShowalert(false);
+
   return (
     <>
+<Modal
+        show={showalert}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header id="modalheader">
+          <img src={metamaskicon} id="metaicon" />
+          <Modal.Title>Please Install Metamask First</Modal.Title>
+        </Modal.Header>
+        <Modal.Body id='modalbody'>
+          <p>Metamask is available on <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" style={{paddingleft:"10"}}>Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/" style={{padding:"10"}}>Firefox</a>. You can choose anyone.</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>Close</Button>
+          {/* <Button variant="primary">Understood</Button> */}
+        </Modal.Footer>
+      </Modal>
+
       <div className="store-cadum" id="store">
         <div className="overlay">
           <Row className="arcade-image-store">
@@ -149,7 +234,7 @@ export default function StoreCadumSection() {
                       </a>
                     </li>
                   </ul>
-                  <Button className="connect-wallet"> Connect Wallet </Button>
+                  <Button onClick={()=>{WalletConnection()}} className="connect-wallet">{btname}</Button>
                   <audio
                     autoplay="autoplay"
                     loop="loop"
@@ -260,6 +345,7 @@ export default function StoreCadumSection() {
                     </p>
                     <button
                       className="store-btn"
+                      onClick={()=>{MintNFT()}}
                       onMouseOver={() => shopingMouseOver()}
                       onMouseOut={() => shopingMouseOut()}
                     >
