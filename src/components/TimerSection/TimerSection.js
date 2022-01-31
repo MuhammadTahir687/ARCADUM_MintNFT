@@ -9,7 +9,7 @@ const TimerSection = () => {
   var mainSale = "2022-02-15T19:00:00Z";
 
   var dest = new Date().getTime();
-  console.log(dest);
+  // console.log(dest);
   useEffect(() => {
     if (dest > 1643914800000) {
       dest = new Date(mainSale).getTime();

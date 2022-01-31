@@ -32,7 +32,7 @@ import metamaskicon from '../../assetsIMG/MetaMask_Fox.svg.png';
 import Modal from 'react-bootstrap/Modal'
 import { ethers } from "ethers";
 import contract from '../Contract/TestNFT.json';
-const contractAddress='0x64a4bdf5733862fe27D042C202EC590d1D435879';
+const contractAddress='0x959e9A259Aa39E34663968dE62CBC17247a8D70d';
 const abi=contract.abi;
 
 
